@@ -4,6 +4,8 @@ Does a **System One** model ([TypeSafe Jev](https://docs.typesafe.ai/introductio
 tickets as well as general-purpose LLMs, at a fraction of the cost and latency? And can its
 confidence score decide which tickets are safe to automate?
 
+**Live dashboard: https://beese54.github.io/jev-ticket-triage/**
+
 This repo is a reproducible, head-to-head evaluation:
 
 | System | Role |
