@@ -1,0 +1,118 @@
+{
+  "seed": 20260926,
+  "sources": {
+    "banking77_test": {
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/master/banking_data/test.csv",
+      "license": "CC-BY-4.0",
+      "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+    },
+    "tickets": {
+      "repo": "Tobi-Bueck/customer-support-tickets",
+      "file": "aa_dataset-tickets-multi-lang-5-2-50-version.csv",
+      "license": "CC-BY-NC-4.0",
+      "sha256": "f187c090e59581c2bbf3aa1377c8db4dd647464ecf2ae51bf8966e42e0ed6bc0"
+    }
+  },
+  "tickets_cleaning": {
+    "english_rows_kept": 16306,
+    "dropped": {
+      "non_english_label": 12249,
+      "body_under_20_chars": 31,
+      "german_text_labelled_en": 1,
+      "duplicates": 0
+    }
+  },
+  "splits": {
+    "banking77_dev": {
+      "rows": 154,
+      "intents": 77
+    },
+    "banking77_test": {
+      "rows": 770,
+      "intents": 77
+    },
+    "banking77_holdout": {
+      "rows": 77,
+      "intents": 77
+    },
+    "tickets_dev": {
+      "rows": 100,
+      "queue": {
+        "Billing and Payments": 10,
+        "Customer Service": 15,
+        "General Inquiry": 1,
+        "Human Resources": 2,
+        "IT Support": 12,
+        "Product Support": 19,
+        "Returns and Exchanges": 5,
+        "Sales and Pre-Sales": 3,
+        "Service Outages and Maintenance": 4,
+        "Technical Support": 29
+      },
+      "priority": {
+        "high": 39,
+        "low": 23,
+        "medium": 38
+      },
+      "type": {
+        "Change": 7,
+        "Incident": 46,
+        "Problem": 26,
+        "Request": 21
+      }
+    },
+    "tickets_test": {
+      "rows": 600,
+      "queue": {
+        "Billing and Payments": 59,
+        "Customer Service": 79,
+        "General Inquiry": 26,
+        "Human Resources": 28,
+        "IT Support": 68,
+        "Product Support": 95,
+        "Returns and Exchanges": 40,
+        "Sales and Pre-Sales": 33,
+        "Service Outages and Maintenance": 36,
+        "Technical Support": 136
+      },
+      "priority": {
+        "high": 237,
+        "low": 132,
+        "medium": 231
+      },
+      "type": {
+        "Change": 70,
+        "Incident": 223,
+        "Problem": 126,
+        "Request": 181
+      },
+      "gold_rows": 150
+    },
+    "tickets_holdout": {
+      "rows": 50,
+      "queue": {
+        "Billing and Payments": 5,
+        "Customer Service": 7,
+        "General Inquiry": 1,
+        "Human Resources": 1,
+        "IT Support": 6,
+        "Product Support": 9,
+        "Returns and Exchanges": 3,
+        "Sales and Pre-Sales": 2,
+        "Service Outages and Maintenance": 2,
+        "Technical Support": 14
+      },
+      "priority": {
+        "high": 16,
+        "low": 14,
+        "medium": 20
+      },
+      "type": {
+        "Change": 6,
+        "Incident": 17,
+        "Problem": 11,
+        "Request": 16
+      }
+    }
+  }
+}

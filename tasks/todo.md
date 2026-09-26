@@ -130,7 +130,15 @@ jev_first_project/
         route via OpenRouter (`~typesafe/jev-latest`, same SDK, different base_url/key).
   - Note: Jev Score returns an expected value (e.g. 1.43) → use argmax of
     `probabilities` for the priority label.
-- [ ] **P1 Data** — load, clean, stratified dev/test/holdout splits, freeze IDs.
+- [x] **P1 Data** — `src/triage/data.py`, `scripts/p1_make_splits.py`, `tests/test_data.py` (8 pass).
+  - Banking77 (official test split, balanced per intent): dev 154 · test 770 · holdout 77.
+  - Tickets (EN, 16,306 after cleaning): dev 100 · test 600 (≥20/queue) · holdout 50;
+    gold = 150 test rows (15/queue), marked `in_gold`.
+  - Cleaning: literal `\n` / `<br>` → newlines; dropped 31 bodies <20 chars, 1 German-in-EN.
+  - Splits are deterministic (seed 20260926; rebuild test asserts identical ids);
+    manifest records source sha256 + label counts. Details: `data/README.md`.
+  - Size: Banking77 ≈13 tokens/text, tickets ≈100 → prompts dominated by label
+    descriptions; est. ≈$2 per full Together pass (both models, all splits).
 - [ ] **P2 Gold** — adjudicate 150 Tobi-Bueck tickets (user review step).
 - [ ] **P3 Runners** — Jev + Together runners with caching; smoke test on 10 dev tickets.
 - [ ] **P4 Dev tuning** — label descriptions/prompt iterated on dev only; ledger rows.

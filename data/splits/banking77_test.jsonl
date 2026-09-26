@@ -1,0 +1,770 @@
+{"id": "b77-0004", "text": "My card has not arrived yet.", "intent": "card_arrival"}
+{"id": "b77-0005", "text": "When will I get my card?", "intent": "card_arrival"}
+{"id": "b77-0006", "text": "Do you know if there is a tracking number for the new card you sent me?", "intent": "card_arrival"}
+{"id": "b77-0012", "text": "I still don't have my card after 2 weeks. What should I do?", "intent": "card_arrival"}
+{"id": "b77-0016", "text": "I've been waiting longer than expected for my card.", "intent": "card_arrival"}
+{"id": "b77-0023", "text": "I ordered my card 2 weeks ago and it still isn't here? What do I do?", "intent": "card_arrival"}
+{"id": "b77-0027", "text": "I'm still waiting for delivery of my new card, why is it taking so long?", "intent": "card_arrival"}
+{"id": "b77-0030", "text": "My card hasn't arrived yet.", "intent": "card_arrival"}
+{"id": "b77-0037", "text": "Is there tracking info available?", "intent": "card_arrival"}
+{"id": "b77-0038", "text": "What is the tracking number for the card you sent?", "intent": "card_arrival"}
+{"id": "b77-0040", "text": "Why won't my card show up on the app?", "intent": "card_linking"}
+{"id": "b77-0041", "text": "I would like to reactivate my card.", "intent": "card_linking"}
+{"id": "b77-0046", "text": "How do I re-add a card to the app?", "intent": "card_linking"}
+{"id": "b77-0052", "text": "How do I link one your card if I have one already?", "intent": "card_linking"}
+{"id": "b77-0063", "text": "How do I link this new card?", "intent": "card_linking"}
+{"id": "b77-0070", "text": "Where do I go if I want to link my new card?", "intent": "card_linking"}
+{"id": "b77-0071", "text": "Is there a way to make my old card usable with the app?", "intent": "card_linking"}
+{"id": "b77-0072", "text": "Can I reactivate a card I thought I lost?", "intent": "card_linking"}
+{"id": "b77-0077", "text": "I already have one of your cards, how do I link them?", "intent": "card_linking"}
+{"id": "b77-0078", "text": "How do I link my replacement card?", "intent": "card_linking"}
+{"id": "b77-0084", "text": "How do I find the exchange rate?", "intent": "exchange_rate"}
+{"id": "b77-0085", "text": "What are your international exchange rates?", "intent": "exchange_rate"}
+{"id": "b77-0092", "text": "Can you explain your exchange rate policy to me?", "intent": "exchange_rate"}
+{"id": "b77-0097", "text": "Will I get a curreng foreign exchange rate?", "intent": "exchange_rate"}
+{"id": "b77-0102", "text": "The exchange rates are?", "intent": "exchange_rate"}
+{"id": "b77-0105", "text": "How much will I get with the exchange rate?", "intent": "exchange_rate"}
+{"id": "b77-0106", "text": "The exchange rate would be?", "intent": "exchange_rate"}
+{"id": "b77-0107", "text": "What is the exchange rate like?", "intent": "exchange_rate"}
+{"id": "b77-0110", "text": "Where did your guys exchange rates come from?", "intent": "exchange_rate"}
+{"id": "b77-0111", "text": "How are you determining your exchange rates?", "intent": "exchange_rate"}
+{"id": "b77-0122", "text": "the card payment exchange rate is wrong", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0127", "text": "The rate applied to my foreign purchase was incorrect", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0129", "text": "My exchange went wrong. I swapped Russian Ruble for UK pounds and was charged too much.", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0133", "text": "Why is the exchange rate wrong when I purchase something abroad?", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0138", "text": "Why am I being charged more ?", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0143", "text": "I believe my card payment exchange rate is incorrect.", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0144", "text": "Hi, I have been overcharged for my payment last Saturday. I guess exchange rate was wrong.", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0149", "text": "I wasn't applied the correct exchange rate for an item I bought", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0150", "text": "the conversion value for my card payments is incorrect.", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0151", "text": "The wrong exchange rate was used when I bought something with a foriegn currency.", "intent": "card_payment_wrong_exchange_rate"}
+{"id": "b77-0162", "text": "I'm not okay with this fee on my statement.", "intent": "extra_charge_on_statement"}
+{"id": "b77-0170", "text": "I can see an extra 1£ charge on my app. Why did you charge me extra?", "intent": "extra_charge_on_statement"}
+{"id": "b77-0175", "text": "There is an extra $1 charge", "intent": "extra_charge_on_statement"}
+{"id": "b77-0177", "text": "Why is there an extra 1 pound charge on my card?", "intent": "extra_charge_on_statement"}
+{"id": "b77-0182", "text": "I have a 1 euro fee on my statement.", "intent": "extra_charge_on_statement"}
+{"id": "b77-0185", "text": "Where did the extra fee on my statement come from?", "intent": "extra_charge_on_statement"}
+{"id": "b77-0187", "text": "I am seeing an extra fee on my statement what is that for?", "intent": "extra_charge_on_statement"}
+{"id": "b77-0189", "text": "I am a new customer, and I happened to look at my app and there is a charge I am not familiar with. Could you tell me why the extra charge is there?", "intent": "extra_charge_on_statement"}
+{"id": "b77-0194", "text": "$1 extra has been charged on my statement, why is that?", "intent": "extra_charge_on_statement"}
+{"id": "b77-0199", "text": "Can you please check why I am having this extra fee on my statement.", "intent": "extra_charge_on_statement"}
+{"id": "b77-0202", "text": "My transaction is still showing that is pending from my cash withdrawal.", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0203", "text": "Hey I tried to get some money out earlier but the machine didn't work. Now just saw the transaction still seems in progress! Can you please check what's going there, seems something is broken, I don't want to be charged for money that I haven't actually received!", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0216", "text": "how long til my cash out goes through?", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0220", "text": "Why do I have a pending cash withdrawal?", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0225", "text": "I made a cash withdrawal but the pending status is taking forever.", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0226", "text": "My cash withdrawal is still showing as pending.", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0227", "text": "Why am I unable to take money from my card but the statement says the transaction is still pending?", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0232", "text": "I tried to take money from my card, but it didn't work. Later I saw that the transaction is still in progress. What's goign on?", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0236", "text": "My account was charged for a withdraw I tried to make that was decline.", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0238", "text": "Why is my cash withdrawal from the ATM still not yet showing as confirmed in my account?", "intent": "pending_cash_withdrawal"}
+{"id": "b77-0242", "text": "Do you support all fiat currencies?", "intent": "fiat_currency_support"}
+{"id": "b77-0245", "text": "Do you support any currency?", "intent": "fiat_currency_support"}
+{"id": "b77-0247", "text": "What currencies do you do exchanges for?", "intent": "fiat_currency_support"}
+{"id": "b77-0249", "text": "What fiat currencies are used for holding transactions?", "intent": "fiat_currency_support"}
+{"id": "b77-0250", "text": "Where can I exchange my money for EUR?", "intent": "fiat_currency_support"}
+{"id": "b77-0256", "text": "What fiat currencies are supported for holding and exchange?", "intent": "fiat_currency_support"}
+{"id": "b77-0264", "text": "Am I able to exchange currencies?", "intent": "fiat_currency_support"}
+{"id": "b77-0265", "text": "What currencies are used in your exchange?", "intent": "fiat_currency_support"}
+{"id": "b77-0277", "text": "What kind of fiat currency can I used for holding and exchange?", "intent": "fiat_currency_support"}
+{"id": "b77-0278", "text": "Do you support the exchange of EUR from my currency.", "intent": "fiat_currency_support"}
+{"id": "b77-0280", "text": "I need my card now!", "intent": "card_delivery_estimate"}
+{"id": "b77-0289", "text": "I need my card quickly", "intent": "card_delivery_estimate"}
+{"id": "b77-0291", "text": "How long will it take to arrive?", "intent": "card_delivery_estimate"}
+{"id": "b77-0293", "text": "What is the difference between standard and express delivery?", "intent": "card_delivery_estimate"}
+{"id": "b77-0296", "text": "I need it delivered on a certain date.", "intent": "card_delivery_estimate"}
+{"id": "b77-0304", "text": "When will the card arrive?", "intent": "card_delivery_estimate"}
+{"id": "b77-0309", "text": "How long until my card is delivered?", "intent": "card_delivery_estimate"}
+{"id": "b77-0311", "text": "When can I expect to receive my new card?", "intent": "card_delivery_estimate"}
+{"id": "b77-0312", "text": "I am waiting for my card to arrive.", "intent": "card_delivery_estimate"}
+{"id": "b77-0313", "text": "I need my card as soon as possible.", "intent": "card_delivery_estimate"}
+{"id": "b77-0321", "text": "Is there a limit when using auto top-up?", "intent": "automatic_top_up"}
+{"id": "b77-0327", "text": "I read about the auto-top up function, but can't find it in the app.", "intent": "automatic_top_up"}
+{"id": "b77-0330", "text": "Where can I find the \"auto-top\" feature?", "intent": "automatic_top_up"}
+{"id": "b77-0338", "text": "How can I top up automatically?", "intent": "automatic_top_up"}
+{"id": "b77-0343", "text": "Can I have a auto top-up when my account is short?", "intent": "automatic_top_up"}
+{"id": "b77-0345", "text": "Can I space out how often money is transferred along my travels?", "intent": "automatic_top_up"}
+{"id": "b77-0350", "text": "how do I top up my money automatically", "intent": "automatic_top_up"}
+{"id": "b77-0351", "text": "Can I be topped up once I hit a certain balance?", "intent": "automatic_top_up"}
+{"id": "b77-0354", "text": "Can you explain where I can find the auto-top option?", "intent": "automatic_top_up"}
+{"id": "b77-0359", "text": "How do I enable auto-top up?", "intent": "automatic_top_up"}
+{"id": "b77-0364", "text": "My card broke.", "intent": "card_not_working"}
+{"id": "b77-0365", "text": "My card won't work.", "intent": "card_not_working"}
+{"id": "b77-0366", "text": "Why is my card not working?", "intent": "card_not_working"}
+{"id": "b77-0369", "text": "My card does not work", "intent": "card_not_working"}
+{"id": "b77-0381", "text": "Is my card broken?", "intent": "card_not_working"}
+{"id": "b77-0383", "text": "My card stopped working", "intent": "card_not_working"}
+{"id": "b77-0389", "text": "I cannot use my card.", "intent": "card_not_working"}
+{"id": "b77-0392", "text": "My card suddenly quit working.", "intent": "card_not_working"}
+{"id": "b77-0393", "text": "I have tried to use my card several times and it does not work.", "intent": "card_not_working"}
+{"id": "b77-0396", "text": "How can i check if my card is working?", "intent": "card_not_working"}
+{"id": "b77-0403", "text": "How do I change GBP to AUD?", "intent": "exchange_via_app"}
+{"id": "b77-0406", "text": "How are currencies exchanged?", "intent": "exchange_via_app"}
+{"id": "b77-0417", "text": "If I receive foreign currencies, am I able to exchange them on the app?", "intent": "exchange_via_app"}
+{"id": "b77-0418", "text": "Can I change to another currency?", "intent": "exchange_via_app"}
+{"id": "b77-0424", "text": "How do I go through the process of currency exchange?", "intent": "exchange_via_app"}
+{"id": "b77-0425", "text": "Change currency", "intent": "exchange_via_app"}
+{"id": "b77-0429", "text": "What currencies will this app exchange?", "intent": "exchange_via_app"}
+{"id": "b77-0433", "text": "Is there currency exchange on this app?", "intent": "exchange_via_app"}
+{"id": "b77-0435", "text": "I think I want AUD and not GBP, can you help?", "intent": "exchange_via_app"}
+{"id": "b77-0439", "text": "I would like to exchange currencies", "intent": "exchange_via_app"}
+{"id": "b77-0441", "text": "I can't find my card and think it may have been stolen.", "intent": "lost_or_stolen_card"}
+{"id": "b77-0444", "text": "My card is lost! What can I do?", "intent": "lost_or_stolen_card"}
+{"id": "b77-0451", "text": "How do I report my card stolen?", "intent": "lost_or_stolen_card"}
+{"id": "b77-0458", "text": "What should I do if I lost my card?", "intent": "lost_or_stolen_card"}
+{"id": "b77-0460", "text": "I think my card was stolen.", "intent": "lost_or_stolen_card"}
+{"id": "b77-0465", "text": "My bags were stolen. I need a new card but need to cancel the stolen one.", "intent": "lost_or_stolen_card"}
+{"id": "b77-0472", "text": "I'm in Spain and my stuff has been stolen. My card was with it and I need a new one shipped and the old one frozen.", "intent": "lost_or_stolen_card"}
+{"id": "b77-0473", "text": "I believe my credit card was stolen.", "intent": "lost_or_stolen_card"}
+{"id": "b77-0476", "text": "I cannot find my credit card.", "intent": "lost_or_stolen_card"}
+{"id": "b77-0478", "text": "My card got stolen!", "intent": "lost_or_stolen_card"}
+{"id": "b77-0480", "text": "how old do i need to be to get an account for myself", "intent": "age_limit"}
+{"id": "b77-0485", "text": "How do I go about setting up an account for my daughter?", "intent": "age_limit"}
+{"id": "b77-0486", "text": "Is there an age minimum?", "intent": "age_limit"}
+{"id": "b77-0490", "text": "What is the minimum age to open an account?", "intent": "age_limit"}
+{"id": "b77-0491", "text": "What is the minimum age?", "intent": "age_limit"}
+{"id": "b77-0503", "text": "I would like an account for my children, how do I go about doing this?", "intent": "age_limit"}
+{"id": "b77-0504", "text": "Can my children have their own account?", "intent": "age_limit"}
+{"id": "b77-0506", "text": "Do my kids have to be a certain age to use this service?", "intent": "age_limit"}
+{"id": "b77-0510", "text": "will i be able to open an account for my daughter", "intent": "age_limit"}
+{"id": "b77-0512", "text": "What age can sign up for services?", "intent": "age_limit"}
+{"id": "b77-0522", "text": "Will you reinstate my PIN?", "intent": "pin_blocked"}
+{"id": "b77-0523", "text": "I accidentally blocked my PIN. How do I reset it?", "intent": "pin_blocked"}
+{"id": "b77-0526", "text": "I need help because I drunken blocked my card?", "intent": "pin_blocked"}
+{"id": "b77-0531", "text": "What should I do if I've tried to enter my PIN too often?", "intent": "pin_blocked"}
+{"id": "b77-0544", "text": "Are you able to unblock my pin?", "intent": "pin_blocked"}
+{"id": "b77-0548", "text": "Can you unblock my pin after too many wrong pin attempts?", "intent": "pin_blocked"}
+{"id": "b77-0551", "text": "Can I reactivate my PIN?", "intent": "pin_blocked"}
+{"id": "b77-0555", "text": "My card's frozen, what can I do?", "intent": "pin_blocked"}
+{"id": "b77-0557", "text": "Since my pin is blocked, would you help me unblock it?", "intent": "pin_blocked"}
+{"id": "b77-0558", "text": "My PIN is not working and I need assistance.", "intent": "pin_blocked"}
+{"id": "b77-0563", "text": "I don't know what's wrong, my contactless stopped working. Tried it in a few different places today and it didn't work in any of them.", "intent": "contactless_not_working"}
+{"id": "b77-0564", "text": "How do I get the contactless feature to work for my card?", "intent": "contactless_not_working"}
+{"id": "b77-0570", "text": "For some reason my contactless has stopped working. I don't know what the problem is. What can I do?", "intent": "contactless_not_working"}
+{"id": "b77-0574", "text": "How do I check my security settings to allow contactless pay?", "intent": "contactless_not_working"}
+{"id": "b77-0577", "text": "How can I make my contactless work for the metro?", "intent": "contactless_not_working"}
+{"id": "b77-0580", "text": "For some reason my contactless won't work for me.", "intent": "contactless_not_working"}
+{"id": "b77-0581", "text": "I'm unable to use contactless payments for purchases.", "intent": "contactless_not_working"}
+{"id": "b77-0588", "text": "Why isn't my contactless not working?", "intent": "contactless_not_working"}
+{"id": "b77-0589", "text": "I wanted to use my contactless at the metro today but it didn't accept it!", "intent": "contactless_not_working"}
+{"id": "b77-0594", "text": "How can I fix a problem where contactless isn't working?", "intent": "contactless_not_working"}
+{"id": "b77-0604", "text": "Can I also transfer with SWIFT?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0607", "text": "Do I have to pay for topping up by transfer?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0608", "text": "Are there any sort of fees involved for top of transfers?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0612", "text": "Will you deal with SWIFT transfers?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0613", "text": "Will there be any charges for money received?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0616", "text": "If I transfer money from my bank to top-up my account will I be charged?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0618", "text": "What are the fees for top-ups?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0621", "text": "What is the fee to receive money?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0626", "text": "Do you do SWIFT transfers?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0635", "text": "When topping up by transfer, will I be charged?", "intent": "top_up_by_bank_transfer_charge"}
+{"id": "b77-0646", "text": "Could you explain why my top-up has gone through yet?", "intent": "pending_top_up"}
+{"id": "b77-0649", "text": "I do not see a top-up processed.", "intent": "pending_top_up"}
+{"id": "b77-0653", "text": "Can you look into my top up please. I made it over three hours ago and yet it's still pending.", "intent": "pending_top_up"}
+{"id": "b77-0656", "text": "why hasn't my top up gone through yet", "intent": "pending_top_up"}
+{"id": "b77-0661", "text": "top up did not complete", "intent": "pending_top_up"}
+{"id": "b77-0670", "text": "My top up hasn't worked, it's been stuck in pending for the last couple hours", "intent": "pending_top_up"}
+{"id": "b77-0672", "text": "Why does my top up say still pending when I used my card to do it.", "intent": "pending_top_up"}
+{"id": "b77-0674", "text": "Hi. I'm a new customer to your system and I think something isn't working right - or maybe it is. Maybe you can confirm. I tried to top up today (my first time ever) and it's been stuck at \"pending\" for over an hour now. Is it supposed to do this or is there something wrong in the system?", "intent": "pending_top_up"}
+{"id": "b77-0677", "text": "When will my top-up process?", "intent": "pending_top_up"}
+{"id": "b77-0679", "text": "I tried topping up but my funds seem to be pending. I want to buy something right now, what do I do?", "intent": "pending_top_up"}
+{"id": "b77-0680", "text": "I made a transaction this morning and would like to revert it.", "intent": "cancel_transfer"}
+{"id": "b77-0685", "text": "I need you to cancel a transfer that I made. It is the wrong account number and the app won't let me stop the transaction. Please stop it!", "intent": "cancel_transfer"}
+{"id": "b77-0688", "text": "If I make a transaction can I cancel it?", "intent": "cancel_transfer"}
+{"id": "b77-0696", "text": "I want to reverse my transaction from earlier", "intent": "cancel_transfer"}
+{"id": "b77-0706", "text": "The transfer I just made needs to be cancelled right now. It was my mistake. Please help me cancel it before it goes through!", "intent": "cancel_transfer"}
+{"id": "b77-0707", "text": "I want to go back on what I did this morning", "intent": "cancel_transfer"}
+{"id": "b77-0708", "text": "Can a transaction be cancelled?", "intent": "cancel_transfer"}
+{"id": "b77-0712", "text": "I made a mistake and need to cancel a transaction", "intent": "cancel_transfer"}
+{"id": "b77-0715", "text": "My recent transfer needs to be cancelled immediately; it was a mistake, please can you cancel it before it goes through?", "intent": "cancel_transfer"}
+{"id": "b77-0717", "text": "I don't want the transaction to go through now", "intent": "cancel_transfer"}
+{"id": "b77-0720", "text": "can you limit my top up?", "intent": "top_up_limits"}
+{"id": "b77-0725", "text": "What are the restrictions to top-offs?", "intent": "top_up_limits"}
+{"id": "b77-0729", "text": "Do you have a limit to top ups?", "intent": "top_up_limits"}
+{"id": "b77-0730", "text": "What is maximum top up?", "intent": "top_up_limits"}
+{"id": "b77-0738", "text": "Is there a limit to top-ups?", "intent": "top_up_limits"}
+{"id": "b77-0747", "text": "What's the top up limit?", "intent": "top_up_limits"}
+{"id": "b77-0750", "text": "how much can i top up?", "intent": "top_up_limits"}
+{"id": "b77-0751", "text": "what is the most i can top up?", "intent": "top_up_limits"}
+{"id": "b77-0752", "text": "Is there a limit to how high I can top-up?", "intent": "top_up_limits"}
+{"id": "b77-0754", "text": "Is there a limit for top-ups?", "intent": "top_up_limits"}
+{"id": "b77-0767", "text": "The ATM gave me the wrong amount of cash today when I went to withdraw. The app says it was more.", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0774", "text": "Why did I not get all the cash I asked for?", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0778", "text": "I went to withdraw some cash earlier today, but seems the ATM gave me the wrong amount of cash! The amount showing up in the app is a lot more", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0779", "text": "I tried to get $100 but I just got $20", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0781", "text": "I asked for $100 cash but only got $20?", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0786", "text": "I asked for 100 but only got 20.", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0788", "text": "The ATM gave me less cash than I requested", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0794", "text": "The right amount of cash was not sent to me.", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0798", "text": "did not receive correct cash upon withdrawal", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0799", "text": "Will declined funds I tried to withdraw be returned to me?", "intent": "wrong_amount_of_cash_received"}
+{"id": "b77-0801", "text": "I was charged a fee after using my card and I shouldn't have been.", "intent": "card_payment_fee_charged"}
+{"id": "b77-0803", "text": "I show another charge on my card from when I used it, why?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0825", "text": "How do I avoid getting charged a fee on my card?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0831", "text": "Why was I charged an extra fee when using a card?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0832", "text": "What fees apply when using a card?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0833", "text": "Why do you charge for payments? Why aren't your charges clearly laid out in the agreement?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0834", "text": "Why was I charged a fee when I paid with card?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0836", "text": "Why do you charge fees on card payments?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0837", "text": "I was charged a fee for a card payment. Why?", "intent": "card_payment_fee_charged"}
+{"id": "b77-0839", "text": "They charged me for paying with my card.", "intent": "card_payment_fee_charged"}
+{"id": "b77-0842", "text": "I am still waiting for a transaction to be completed", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0844", "text": "I tried to send someone money but they haven't received it.", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0846", "text": "How can the recipient see my money transaction?", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0850", "text": "I transferred some money and it didint arrive", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0853", "text": "I just finished sending money, but it's not logging on the recipient side.", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0855", "text": "The receipient doesn't see my money transfer.", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0857", "text": "I need to find out why my transfer didn't get there.", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0865", "text": "My friend still hasn't gotten a transaction I made.", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0870", "text": "I sent some money and the receiver can't access it.", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0879", "text": "I transferred some money but the recipient is having trouble withdrawing.", "intent": "transfer_not_received_by_recipient"}
+{"id": "b77-0896", "text": "What credit cards are supported?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0897", "text": "What cards and currencies do you support?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0899", "text": "How can I use American Express to add money to my account?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0900", "text": "When adding money, what are the currencies you take?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0902", "text": "Are US credit cards accepted?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0907", "text": "Which credit or debit cards can I use to top up?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0908", "text": "What options do I have in regards to payment?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0912", "text": "Do you accept other currencies besides US Dollars?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0913", "text": "Can I use any currency to add money?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0919", "text": "Which cards and currencies do you support?", "intent": "supported_cards_and_currencies"}
+{"id": "b77-0920", "text": "Where can I obtain my virtual card?", "intent": "getting_virtual_card"}
+{"id": "b77-0925", "text": "I requested a virtual card but it is not showing up. Why?", "intent": "getting_virtual_card"}
+{"id": "b77-0926", "text": "Can you tell me how to order a virtual card?", "intent": "getting_virtual_card"}
+{"id": "b77-0932", "text": "How can I order virtual cards?", "intent": "getting_virtual_card"}
+{"id": "b77-0933", "text": "Can you tell me where I can order a virtual card?", "intent": "getting_virtual_card"}
+{"id": "b77-0938", "text": "Where is the virtual card located?", "intent": "getting_virtual_card"}
+{"id": "b77-0939", "text": "Where can I order a virtual card?", "intent": "getting_virtual_card"}
+{"id": "b77-0943", "text": "Are virtual cards available to get?", "intent": "getting_virtual_card"}
+{"id": "b77-0949", "text": "I thought I was going to get a virtual card but I haven't received it yet, how can we resolve this?", "intent": "getting_virtual_card"}
+{"id": "b77-0950", "text": "Please help me get a virtual card.", "intent": "getting_virtual_card"}
+{"id": "b77-0969", "text": "Is there anywhere my card will not be accepted?", "intent": "card_acceptance"}
+{"id": "b77-0970", "text": "What are the rules to where I can use my card?", "intent": "card_acceptance"}
+{"id": "b77-0977", "text": "Where can I use my card?", "intent": "card_acceptance"}
+{"id": "b77-0978", "text": "Which outlets accept my card?", "intent": "card_acceptance"}
+{"id": "b77-0981", "text": "Is there any place I cannot use my card?", "intent": "card_acceptance"}
+{"id": "b77-0982", "text": "Will I be able to use my card anywhere?", "intent": "card_acceptance"}
+{"id": "b77-0986", "text": "Where is my card accepted?", "intent": "card_acceptance"}
+{"id": "b77-0988", "text": "Where should my card work?", "intent": "card_acceptance"}
+{"id": "b77-0992", "text": "Does every place of business accept this card?", "intent": "card_acceptance"}
+{"id": "b77-0994", "text": "Can I use my card anywere?", "intent": "card_acceptance"}
+{"id": "b77-1003", "text": "My top-up showed as complete, but it's no longer there! What's going on here?", "intent": "top_up_reverted"}
+{"id": "b77-1009", "text": "My top-up was reverted, why did this happen?", "intent": "top_up_reverted"}
+{"id": "b77-1010", "text": "I put money into my account for the minimum balance but the application didn't accept.", "intent": "top_up_reverted"}
+{"id": "b77-1012", "text": "I got topped up but the application reverted it.", "intent": "top_up_reverted"}
+{"id": "b77-1021", "text": "Can you tell me why my top up was reverted?", "intent": "top_up_reverted"}
+{"id": "b77-1024", "text": "What happened to where my top-up was canceled?", "intent": "top_up_reverted"}
+{"id": "b77-1029", "text": "I see my top-up was canceled, but why?", "intent": "top_up_reverted"}
+{"id": "b77-1030", "text": "Do you know if my top-up has been cancelled?", "intent": "top_up_reverted"}
+{"id": "b77-1033", "text": "Causes of top-up cancellation", "intent": "top_up_reverted"}
+{"id": "b77-1038", "text": "On my last transaction it seem that my top-up was not successful.", "intent": "top_up_reverted"}
+{"id": "b77-1041", "text": "How come I don't see my deposit in my account yet?", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1045", "text": "Where is my cash deposit?", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1050", "text": "Cash deposit to my account but it has not appeared.", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1052", "text": "I made a deposit this morning but it is still pending?", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1053", "text": "cash deposit to my account has shown a red flag.", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1056", "text": "Are cheques accepted to my account? Mine didn't seem to work.", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1057", "text": "I deposited a check but my balance is still the same.", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1058", "text": "IM still waiting for my account to update from a cash deposit?", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1067", "text": "Why does my account not accept cash deposits?", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1074", "text": "How long does it take to process cheque deposits?", "intent": "balance_not_updated_after_cheque_or_cash_deposit"}
+{"id": "b77-1080", "text": "I have a strange payment in my statement", "intent": "card_payment_not_recognised"}
+{"id": "b77-1090", "text": "There are some payments with my card that I don't know where they are coming from. Just checked today and it's been since a couple days as well! What to I do? Can I revert this retrospectively? My card needs to be frozen immediately as well!", "intent": "card_payment_not_recognised"}
+{"id": "b77-1092", "text": "There are some strange charges on my card that I didn't make from a few days ago. Is my card stolen and if so should I cancel it? Will I get refunded the charges?", "intent": "card_payment_not_recognised"}
+{"id": "b77-1095", "text": "There is a payment that is not mine.", "intent": "card_payment_not_recognised"}
+{"id": "b77-1096", "text": "Can you freeze my account? I just saw there are transactions on my account that I don't recognize. How can I fix this?", "intent": "card_payment_not_recognised"}
+{"id": "b77-1103", "text": "What should I do to get transactions off of my account if I didn't make them? My card must have been compromised and I need to freeze it asap!", "intent": "card_payment_not_recognised"}
+{"id": "b77-1109", "text": "I don't know where this transaction came from?", "intent": "card_payment_not_recognised"}
+{"id": "b77-1112", "text": "Somebody used my card to make a purchase", "intent": "card_payment_not_recognised"}
+{"id": "b77-1114", "text": "Some of my card payments look different than where I purchased products from. Why is that?", "intent": "card_payment_not_recognised"}
+{"id": "b77-1115", "text": "There is a strange payment on my statement. What should I do?", "intent": "card_payment_not_recognised"}
+{"id": "b77-1122", "text": "How do I update my details?", "intent": "edit_personal_details"}
+{"id": "b77-1123", "text": "My address needs to be revised.", "intent": "edit_personal_details"}
+{"id": "b77-1132", "text": "How do I change my information?", "intent": "edit_personal_details"}
+{"id": "b77-1133", "text": "I need to change my account details", "intent": "edit_personal_details"}
+{"id": "b77-1134", "text": "I moved. Where do I update my details?", "intent": "edit_personal_details"}
+{"id": "b77-1138", "text": "I need to update my info.", "intent": "edit_personal_details"}
+{"id": "b77-1141", "text": "My address has updated and I need to change it.", "intent": "edit_personal_details"}
+{"id": "b77-1146", "text": "How do I update my current residence details?", "intent": "edit_personal_details"}
+{"id": "b77-1148", "text": "I need to change my name since I got married", "intent": "edit_personal_details"}
+{"id": "b77-1152", "text": "I need to update my current address", "intent": "edit_personal_details"}
+{"id": "b77-1161", "text": "I'd rather not verify my identity.", "intent": "why_verify_identity"}
+{"id": "b77-1168", "text": "Why is identity verification mandatory?", "intent": "why_verify_identity"}
+{"id": "b77-1169", "text": "Do I have to do an identity check?", "intent": "why_verify_identity"}
+{"id": "b77-1171", "text": "Can I still use my account, even though the identity verification has not passed yet?", "intent": "why_verify_identity"}
+{"id": "b77-1180", "text": "Why am I required to do an identity check?", "intent": "why_verify_identity"}
+{"id": "b77-1190", "text": "Why do I have to verify my identity?", "intent": "why_verify_identity"}
+{"id": "b77-1193", "text": "Do I need to verify my identity?", "intent": "why_verify_identity"}
+{"id": "b77-1196", "text": "Why is it asking me to verify my identity", "intent": "why_verify_identity"}
+{"id": "b77-1198", "text": "Why do you need to know so much about me", "intent": "why_verify_identity"}
+{"id": "b77-1199", "text": "Why did I need to verfiy my identity?", "intent": "why_verify_identity"}
+{"id": "b77-1200", "text": "I cannot verify my identity", "intent": "unable_to_verify_identity"}
+{"id": "b77-1201", "text": "I do not have what is required to prove my identity", "intent": "unable_to_verify_identity"}
+{"id": "b77-1202", "text": "Why doesn't the app believe I am who I say I am?", "intent": "unable_to_verify_identity"}
+{"id": "b77-1210", "text": "The app failed to verify my identity.", "intent": "unable_to_verify_identity"}
+{"id": "b77-1211", "text": "I can't verify my ID.", "intent": "unable_to_verify_identity"}
+{"id": "b77-1212", "text": "I can't prove my identity.", "intent": "unable_to_verify_identity"}
+{"id": "b77-1217", "text": "I cannot prove my own identity.", "intent": "unable_to_verify_identity"}
+{"id": "b77-1227", "text": "How do I show this stupid system that this is really my identity?", "intent": "unable_to_verify_identity"}
+{"id": "b77-1234", "text": "Why am I having trouble verifying my id?", "intent": "unable_to_verify_identity"}
+{"id": "b77-1237", "text": "Why can't I verify my identity?", "intent": "unable_to_verify_identity"}
+{"id": "b77-1240", "text": "What do I do with my card PIN?", "intent": "get_physical_card"}
+{"id": "b77-1242", "text": "I do not have my pin", "intent": "get_physical_card"}
+{"id": "b77-1243", "text": "Are PIN separately?", "intent": "get_physical_card"}
+{"id": "b77-1244", "text": "I cannot seem to find my PIN. Where is it?", "intent": "get_physical_card"}
+{"id": "b77-1245", "text": "How do I set-up my PIN for the new card?", "intent": "get_physical_card"}
+{"id": "b77-1251", "text": "I just got my new card but am not sure how to check its PIN.", "intent": "get_physical_card"}
+{"id": "b77-1252", "text": "do i need a pin", "intent": "get_physical_card"}
+{"id": "b77-1266", "text": "I still don't have my pin.", "intent": "get_physical_card"}
+{"id": "b77-1267", "text": "So what about the card PIN?", "intent": "get_physical_card"}
+{"id": "b77-1272", "text": "Help me find my card pin!", "intent": "get_physical_card"}
+{"id": "b77-1283", "text": "Do you guys accept Visa or Mastercard?", "intent": "visa_or_mastercard"}
+{"id": "b77-1286", "text": "Are both Visa and Mastercard offered?", "intent": "visa_or_mastercard"}
+{"id": "b77-1294", "text": "I would prefer a visa card", "intent": "visa_or_mastercard"}
+{"id": "b77-1299", "text": "Am I able to choose my card?", "intent": "visa_or_mastercard"}
+{"id": "b77-1301", "text": "Do you do Visa or Mastercard?", "intent": "visa_or_mastercard"}
+{"id": "b77-1302", "text": "How do I select a Mastercard instead of a Visa?", "intent": "visa_or_mastercard"}
+{"id": "b77-1304", "text": "Do I get to choose between Visa and Mastercard?", "intent": "visa_or_mastercard"}
+{"id": "b77-1310", "text": "I like Mastercard better.", "intent": "visa_or_mastercard"}
+{"id": "b77-1311", "text": "Do you offer Visa or Mastercard?", "intent": "visa_or_mastercard"}
+{"id": "b77-1315", "text": "What major card payments are accepted?", "intent": "visa_or_mastercard"}
+{"id": "b77-1322", "text": "How can I top up by card?", "intent": "topping_up_by_card"}
+{"id": "b77-1325", "text": "Can friends add to my account", "intent": "topping_up_by_card"}
+{"id": "b77-1327", "text": "Why can't I see my topup in my wallet anymore?", "intent": "topping_up_by_card"}
+{"id": "b77-1328", "text": "Use credit card to transfer money", "intent": "topping_up_by_card"}
+{"id": "b77-1333", "text": "I am missing some funds from my account - I tried to transfer them using my credit card number, and it disappeared.", "intent": "topping_up_by_card"}
+{"id": "b77-1334", "text": "I have friends that would like to top-up my account is that possible?", "intent": "topping_up_by_card"}
+{"id": "b77-1335", "text": "How do I transfer money using a credit card?", "intent": "topping_up_by_card"}
+{"id": "b77-1350", "text": "Who else can top up my account", "intent": "topping_up_by_card"}
+{"id": "b77-1356", "text": "I topped up my card but the money disappeared.", "intent": "topping_up_by_card"}
+{"id": "b77-1358", "text": "Why can't I see the top-up amount I just added to my account?", "intent": "topping_up_by_card"}
+{"id": "b77-1361", "text": "Can I make many disposable cards per day?", "intent": "disposable_card_limits"}
+{"id": "b77-1365", "text": "what is the disposable cards limit?", "intent": "disposable_card_limits"}
+{"id": "b77-1369", "text": "What is the amount of disposable cards I can have each day?", "intent": "disposable_card_limits"}
+{"id": "b77-1377", "text": "How many disposable cards is the limit?", "intent": "disposable_card_limits"}
+{"id": "b77-1378", "text": "Tell me how many transactions I can do with a disposable card.", "intent": "disposable_card_limits"}
+{"id": "b77-1381", "text": "How can I create many temporary cards daily?", "intent": "disposable_card_limits"}
+{"id": "b77-1382", "text": "Is it possible to make several disposable cards in a day?", "intent": "disposable_card_limits"}
+{"id": "b77-1389", "text": "Are there any hindrances to using a disposable virtual card?", "intent": "disposable_card_limits"}
+{"id": "b77-1395", "text": "Do you know what the restriction of the disposable cards are?", "intent": "disposable_card_limits"}
+{"id": "b77-1397", "text": "What are the limits to using disposable virtual cards?", "intent": "disposable_card_limits"}
+{"id": "b77-1400", "text": "I think someone is using my card to make transactions I don't remember.", "intent": "compromised_card"}
+{"id": "b77-1403", "text": "My card was used without my permission.", "intent": "compromised_card"}
+{"id": "b77-1406", "text": "There are transactions I didn't make, someone else must have used my card.", "intent": "compromised_card"}
+{"id": "b77-1408", "text": "Someone is using my account to do online shopping! Please freeze it asap", "intent": "compromised_card"}
+{"id": "b77-1412", "text": "How can I stop fraud on my account right now?", "intent": "compromised_card"}
+{"id": "b77-1416", "text": "Can I use app to freeze account and dispute fraud?", "intent": "compromised_card"}
+{"id": "b77-1419", "text": "I see random purchases to my account, was it hacked?", "intent": "compromised_card"}
+{"id": "b77-1422", "text": "My card has been compromised", "intent": "compromised_card"}
+{"id": "b77-1426", "text": "I'm not certain, but someone may be using my card.", "intent": "compromised_card"}
+{"id": "b77-1434", "text": "I think my child used my card while I wasn't home.", "intent": "compromised_card"}
+{"id": "b77-1445", "text": "How do I know which ATMs will accept this card?", "intent": "atm_support"}
+{"id": "b77-1446", "text": "Which ATM's accept my card?", "intent": "atm_support"}
+{"id": "b77-1447", "text": "Is there any nearby ATM's?", "intent": "atm_support"}
+{"id": "b77-1458", "text": "At what ATMS am I able to use the card?", "intent": "atm_support"}
+{"id": "b77-1459", "text": "Can I use my card at any ATMs?", "intent": "atm_support"}
+{"id": "b77-1463", "text": "Are there any ATM machines near me?", "intent": "atm_support"}
+{"id": "b77-1469", "text": "I want to withdraw money, where can I go?", "intent": "atm_support"}
+{"id": "b77-1470", "text": "Where can I withdrawal my money?", "intent": "atm_support"}
+{"id": "b77-1474", "text": "At which ATMs can I use this card?", "intent": "atm_support"}
+{"id": "b77-1475", "text": "Are there certain ATMs that I can use this card at?", "intent": "atm_support"}
+{"id": "b77-1491", "text": "Weird charges are appearing in my debit account.", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1494", "text": "What is this direct debit I am seeing?", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1497", "text": "There is a suspicious direct debit payment.", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1498", "text": "There is a transaction from my account that I don't recognize can you trace back the information so I can make sure it's something I did or not?", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1501", "text": "I am seeing a weird payment showing up that I know I did not make, how can I get it cancelled?", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1502", "text": "This Direct Debit payment may not be right.", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1504", "text": "Can I dispute a payment even if I notice it several weeks after it was made?", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1507", "text": "I have a direct debit charge that I do not recognize", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1509", "text": "There's a direct debit on my account that I didn't authorize", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1514", "text": "There is a direct debit I do not recognise in my statement", "intent": "direct_debit_payment_not_recognised"}
+{"id": "b77-1529", "text": "I can't recall my passcode and need to reset it.", "intent": "passcode_forgotten"}
+{"id": "b77-1533", "text": "I no longer have my passcode.", "intent": "passcode_forgotten"}
+{"id": "b77-1536", "text": "I need to reset my passcode. How do I do it?", "intent": "passcode_forgotten"}
+{"id": "b77-1537", "text": "Show me please how to reset my passcode.", "intent": "passcode_forgotten"}
+{"id": "b77-1538", "text": "Help me reset the passcode.", "intent": "passcode_forgotten"}
+{"id": "b77-1539", "text": "I have forgotten my passcode to access my app", "intent": "passcode_forgotten"}
+{"id": "b77-1541", "text": "I do not remember the code, what should I do?", "intent": "passcode_forgotten"}
+{"id": "b77-1548", "text": "I forgot the code to access the app.", "intent": "passcode_forgotten"}
+{"id": "b77-1552", "text": "How do I reset the passcode?", "intent": "passcode_forgotten"}
+{"id": "b77-1556", "text": "I need a new passcode.", "intent": "passcode_forgotten"}
+{"id": "b77-1564", "text": "Why was my ATM transaction cancelled?", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1566", "text": "I was at the ATM trying to made a withdraw and I was declined.", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1567", "text": "The ATM didn't let me get any cash", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1571", "text": "Hi, I was trying to use my card but it was declining by ATM. I have cross checked with two different ATMs but i was facing the same issue. Could you please check my account.", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1576", "text": "I was declined when I tried to get cash.", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1581", "text": "I attempted to get cash but was declined.", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1584", "text": "The ATM keeps declining my card. I tried at two different ATMs. Can you tell me if there's an issue with my account?", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1590", "text": "i tried to withdraw money from an atm and i was declined on front of my friends. Why did this happen?", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1591", "text": "The ATM isn't giving out any money.", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1593", "text": "I couldn't get cash at the atm", "intent": "declined_cash_withdrawal"}
+{"id": "b77-1601", "text": "Why is my payment pending?", "intent": "pending_card_payment"}
+{"id": "b77-1604", "text": "Why is my card payment showing as pending?", "intent": "pending_card_payment"}
+{"id": "b77-1605", "text": "Why has my payment not gone through?", "intent": "pending_card_payment"}
+{"id": "b77-1613", "text": "I bought some stuff this morning but the payment shows as pending", "intent": "pending_card_payment"}
+{"id": "b77-1617", "text": "I would like to know why my purchases from this morning are still pending.", "intent": "pending_card_payment"}
+{"id": "b77-1619", "text": "My card payment is pending.", "intent": "pending_card_payment"}
+{"id": "b77-1625", "text": "My payment still hasn't processed!", "intent": "pending_card_payment"}
+{"id": "b77-1627", "text": "I have waited 15 days, but my payment still hasn't cleared.", "intent": "pending_card_payment"}
+{"id": "b77-1635", "text": "I had a payment that I made and it's been some amount of time and would like to know when it's suppose to go though.", "intent": "pending_card_payment"}
+{"id": "b77-1639", "text": "I have a pending payment from stuff I bought this morning.", "intent": "pending_card_payment"}
+{"id": "b77-1642", "text": "If my phone is missing, can I block someone from using the app?", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1645", "text": "I can't find my phone.", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1648", "text": "Can I used my card even if my phone has been stolen?", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1649", "text": "My phone was stolen, what do I do?", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1656", "text": "My phone is not with me at the moment so I will not be able to access the app.", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1657", "text": "my phone was taken! can you place cancel my account so no one uses it", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1663", "text": "I was mugged and everything taken. What do I do to protect my account?", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1665", "text": "Someone attacked me yesterday and took my things, so I am unable to use the app. I am in need of some help.", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1668", "text": "I got mugged yesterday and lost access to the app. I need to regain it.", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1670", "text": "I am not able to use the app since I forgot my phone at the hotel I was staying at.", "intent": "lost_or_stolen_phone"}
+{"id": "b77-1681", "text": "Can I receive a refund for my item?", "intent": "request_refund"}
+{"id": "b77-1686", "text": "I would like a refund for something I bought", "intent": "request_refund"}
+{"id": "b77-1689", "text": "I wasn't charged the correct amount for an item I purchased, how can I fix this?", "intent": "request_refund"}
+{"id": "b77-1694", "text": "Can I have an item refunded?", "intent": "request_refund"}
+{"id": "b77-1696", "text": "What do I need to do to get a refund?", "intent": "request_refund"}
+{"id": "b77-1699", "text": "I bought something but now I would like a refund. How do I do that?", "intent": "request_refund"}
+{"id": "b77-1703", "text": "I would appreciate it if I could get an item refunded", "intent": "request_refund"}
+{"id": "b77-1708", "text": "I am not Happy with this product can i get a refund?", "intent": "request_refund"}
+{"id": "b77-1712", "text": "I am chatting about an order from a long while back. I never got it to this day and am deeply upset by this! I want all of my money back! I just can not accept paying for something I never got.", "intent": "request_refund"}
+{"id": "b77-1716", "text": "I want a refund for my purchase", "intent": "request_refund"}
+{"id": "b77-1724", "text": "What would make a decline message show up during a transfer?", "intent": "declined_transfer"}
+{"id": "b77-1730", "text": "The card got declined twice when I tried to use it to buy something online yesterday.", "intent": "declined_transfer"}
+{"id": "b77-1734", "text": "How do I contact customer support about a transfer?", "intent": "declined_transfer"}
+{"id": "b77-1739", "text": "When I try and to buy something using my card it keeps getting declined.", "intent": "declined_transfer"}
+{"id": "b77-1742", "text": "Why was the transfer declined?", "intent": "declined_transfer"}
+{"id": "b77-1743", "text": "What is the reason my transfer was declined?", "intent": "declined_transfer"}
+{"id": "b77-1745", "text": "My transfer was declined", "intent": "declined_transfer"}
+{"id": "b77-1747", "text": "I would like to know why my transfer was declined.", "intent": "declined_transfer"}
+{"id": "b77-1749", "text": "For what reason was my transfer declined?", "intent": "declined_transfer"}
+{"id": "b77-1751", "text": "Double check your funds may be declined", "intent": "declined_transfer"}
+{"id": "b77-1763", "text": "I was supposed to get a purchase refunded but I don't see the money in my account", "intent": "Refund_not_showing_up"}
+{"id": "b77-1764", "text": "There's a refund missing from my statement", "intent": "Refund_not_showing_up"}
+{"id": "b77-1768", "text": "Help! I keep checking my account, but my refund is not showing. I requested that a seller refund my money a while back, but there is no money showing in my account. What can you do for me?", "intent": "Refund_not_showing_up"}
+{"id": "b77-1786", "text": "I am missing a refund.", "intent": "Refund_not_showing_up"}
+{"id": "b77-1789", "text": "Why can't I see a recent refund in my statement?", "intent": "Refund_not_showing_up"}
+{"id": "b77-1790", "text": "I did what you told me earlier and contacted the seller for a refund directly, but nothing is happening! It's been a week and I still haven't got anything. Please just give me back my money", "intent": "Refund_not_showing_up"}
+{"id": "b77-1793", "text": "My refund is missing", "intent": "Refund_not_showing_up"}
+{"id": "b77-1796", "text": "I am waiting patiently for a week now for the seller to get back to me and there has been no response, could you please help me further with getting my money back. Thank you.", "intent": "Refund_not_showing_up"}
+{"id": "b77-1797", "text": "I would like some help getting a refund back from a seller. It still isn't showing up on my statement and I requested this a long time ago. I'm not sure why it's not returned yet. Can you assist me in getting this money back?", "intent": "Refund_not_showing_up"}
+{"id": "b77-1799", "text": "I should have received a refund however it is not showing on my statement", "intent": "Refund_not_showing_up"}
+{"id": "b77-1801", "text": "The new card that was just sent to me was declined multiple times yesterday when I tried to use it at a restaurant to pay for my dinner. I am really disappointed and embarrassed that my card was denied when I tried to use it to pay for my friend's birthday dinner.", "intent": "declined_card_payment"}
+{"id": "b77-1802", "text": "Why was my card payment declined?", "intent": "declined_card_payment"}
+{"id": "b77-1806", "text": "Why did it decline my payment?", "intent": "declined_card_payment"}
+{"id": "b77-1807", "text": "My card declined", "intent": "declined_card_payment"}
+{"id": "b77-1808", "text": "Can you look at my account ans see why my card was declined", "intent": "declined_card_payment"}
+{"id": "b77-1813", "text": "I know I have enough funds in my account but my card payment hasn't worked for some reason. What do I do?", "intent": "declined_card_payment"}
+{"id": "b77-1814", "text": "Why doesn't the card payment work", "intent": "declined_card_payment"}
+{"id": "b77-1818", "text": "Something is wrong with my payment account since it has been declined", "intent": "declined_card_payment"}
+{"id": "b77-1834", "text": "My card payment did not complete.", "intent": "declined_card_payment"}
+{"id": "b77-1835", "text": "My card didn't work in one of the shops.", "intent": "declined_card_payment"}
+{"id": "b77-1842", "text": "Why is my transfer not done yet?", "intent": "pending_transfer"}
+{"id": "b77-1843", "text": "I have a pending transfer", "intent": "pending_transfer"}
+{"id": "b77-1853", "text": "I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.", "intent": "pending_transfer"}
+{"id": "b77-1860", "text": "Please explain why the transfers shows up as pending?", "intent": "pending_transfer"}
+{"id": "b77-1864", "text": "When will the transfer be completed?", "intent": "pending_transfer"}
+{"id": "b77-1865", "text": "Pending transfer?", "intent": "pending_transfer"}
+{"id": "b77-1866", "text": "I would like to know why my payment is still pending, can you help?", "intent": "pending_transfer"}
+{"id": "b77-1871", "text": "How long can I expect a transfer to pend for?", "intent": "pending_transfer"}
+{"id": "b77-1874", "text": "Why is a money transfer not showing?", "intent": "pending_transfer"}
+{"id": "b77-1877", "text": "My transfer hasn't gone through yet.", "intent": "pending_transfer"}
+{"id": "b77-1885", "text": "I'm tired of all the problems I've had. I want to quit this account!", "intent": "terminate_account"}
+{"id": "b77-1887", "text": "I want to close my account", "intent": "terminate_account"}
+{"id": "b77-1889", "text": "I would like to delete my account.", "intent": "terminate_account"}
+{"id": "b77-1893", "text": "This company is terrible! Can you delete my account?", "intent": "terminate_account"}
+{"id": "b77-1895", "text": "please delete my account, your services are not up to par.", "intent": "terminate_account"}
+{"id": "b77-1899", "text": "How do I get rid of my account ASAP?", "intent": "terminate_account"}
+{"id": "b77-1903", "text": "Please delete my account. I am not happy with the service from your company.", "intent": "terminate_account"}
+{"id": "b77-1904", "text": "Please terminate my account.", "intent": "terminate_account"}
+{"id": "b77-1905", "text": "I am sick of this damn company and want to close out my account.", "intent": "terminate_account"}
+{"id": "b77-1917", "text": "I want to delete my account. I'm unhappy with the service you're providing.", "intent": "terminate_account"}
+{"id": "b77-1920", "text": "What do I do if an ATM \"stole\" my card?", "intent": "card_swallowed"}
+{"id": "b77-1929", "text": "How can I get my card out of the damn ATM?", "intent": "card_swallowed"}
+{"id": "b77-1934", "text": "My ATM got stuck and I'm not sure what to do.", "intent": "card_swallowed"}
+{"id": "b77-1936", "text": "The ATM won't give me my card back.", "intent": "card_swallowed"}
+{"id": "b77-1937", "text": "My card was confiscated by an ATM. How do I get my card back?", "intent": "card_swallowed"}
+{"id": "b77-1938", "text": "What do I do if the ATM ate my card?", "intent": "card_swallowed"}
+{"id": "b77-1946", "text": "Help! The atm won't give me my card back.", "intent": "card_swallowed"}
+{"id": "b77-1950", "text": "I was getting cash and can't get my card back.", "intent": "card_swallowed"}
+{"id": "b77-1952", "text": "My card has been swallowed by an ATM", "intent": "card_swallowed"}
+{"id": "b77-1954", "text": "What should I do with my atm that got stuck?", "intent": "card_swallowed"}
+{"id": "b77-1962", "text": "Why am I being charged twice fro a restaurant?", "intent": "transaction_charged_twice"}
+{"id": "b77-1966", "text": "Why is there more then one charge on my card I only paid for one not twice how can I fix this?", "intent": "transaction_charged_twice"}
+{"id": "b77-1971", "text": "I have been charged twice", "intent": "transaction_charged_twice"}
+{"id": "b77-1975", "text": "I think something may have happened that caused a charge to show up twice.", "intent": "transaction_charged_twice"}
+{"id": "b77-1980", "text": "Hello. I checked my transactions and saw I was double charged on my card for a restaurant visit. I would like to get my money back.", "intent": "transaction_charged_twice"}
+{"id": "b77-1983", "text": "Please check payments on my card. There is a duplicate and I only bought it once.", "intent": "transaction_charged_twice"}
+{"id": "b77-1987", "text": "My card has been charged two separate times for a single transaction.", "intent": "transaction_charged_twice"}
+{"id": "b77-1988", "text": "Can you explain why there is a payment showing twice?", "intent": "transaction_charged_twice"}
+{"id": "b77-1995", "text": "I recently got charged twice from a restaurant that I was at this week and I would like for one of those payments to be removed from my account.", "intent": "transaction_charged_twice"}
+{"id": "b77-1997", "text": "I have a duplicate payment showing", "intent": "transaction_charged_twice"}
+{"id": "b77-2007", "text": "I would like to see the source of my money.", "intent": "verify_source_of_funds"}
+{"id": "b77-2010", "text": "How can I tell where my funds came from?", "intent": "verify_source_of_funds"}
+{"id": "b77-2014", "text": "What information do you need to verify my Source of Funds?", "intent": "verify_source_of_funds"}
+{"id": "b77-2015", "text": "I need the source of my funds verified. How do I do this?", "intent": "verify_source_of_funds"}
+{"id": "b77-2018", "text": "I want to know where the funds come from.", "intent": "verify_source_of_funds"}
+{"id": "b77-2020", "text": "Where can I find the source of my available money?", "intent": "verify_source_of_funds"}
+{"id": "b77-2024", "text": "How can I view the source of my available funds?", "intent": "verify_source_of_funds"}
+{"id": "b77-2025", "text": "Why does my money come from?", "intent": "verify_source_of_funds"}
+{"id": "b77-2035", "text": "How can I check the source of my fund?", "intent": "verify_source_of_funds"}
+{"id": "b77-2036", "text": "How can I see my source of funds?", "intent": "verify_source_of_funds"}
+{"id": "b77-2040", "text": "What is the number of days I have to wait for my Europe transfer?", "intent": "transfer_timing"}
+{"id": "b77-2043", "text": "how soon will I see the transfer in my account?", "intent": "transfer_timing"}
+{"id": "b77-2049", "text": "If I started the Bank transfer from Europe, how long will the process take to complete?", "intent": "transfer_timing"}
+{"id": "b77-2050", "text": "How long until the money is in my account?", "intent": "transfer_timing"}
+{"id": "b77-2057", "text": "How long does it take for funds to come through the US to my account?", "intent": "transfer_timing"}
+{"id": "b77-2059", "text": "How many days does a transfer from the US take?", "intent": "transfer_timing"}
+{"id": "b77-2063", "text": "How long does it take for a transfer?", "intent": "transfer_timing"}
+{"id": "b77-2069", "text": "How long does a funds transfer take from one back to another?", "intent": "transfer_timing"}
+{"id": "b77-2072", "text": "How long to I have to wait for a transfer to reach my account?", "intent": "transfer_timing"}
+{"id": "b77-2079", "text": "When will money be available in my account?", "intent": "transfer_timing"}
+{"id": "b77-2081", "text": "My card payment was reverted. Why?", "intent": "reverted_card_payment?"}
+{"id": "b77-2082", "text": "the app reverted my payment", "intent": "reverted_card_payment?"}
+{"id": "b77-2091", "text": "I'm not sure why my account has been refunded a payment for an item I've already received about 2 weeks ago. Can you please tell me what is going on?", "intent": "reverted_card_payment?"}
+{"id": "b77-2093", "text": "Can you tell my why my card payment has been reverted.", "intent": "reverted_card_payment?"}
+{"id": "b77-2098", "text": "I have a payment listed as cancelled.", "intent": "reverted_card_payment?"}
+{"id": "b77-2101", "text": "what happens to the funds if a merchant refuses the payment", "intent": "reverted_card_payment?"}
+{"id": "b77-2107", "text": "My account shows the card payment cancelled.", "intent": "reverted_card_payment?"}
+{"id": "b77-2108", "text": "I'm not sure why my card payment was cancelled, can you find out why?", "intent": "reverted_card_payment?"}
+{"id": "b77-2113", "text": "I did a payment but the app reverted it", "intent": "reverted_card_payment?"}
+{"id": "b77-2115", "text": "There was a canceled payment for my card.", "intent": "reverted_card_payment?"}
+{"id": "b77-2120", "text": "What kind of cash machines would allow me to change my PIN?", "intent": "change_pin"}
+{"id": "b77-2126", "text": "I would like to change my PIN but I am not currently in the country.", "intent": "change_pin"}
+{"id": "b77-2139", "text": "I would like to change my pin.", "intent": "change_pin"}
+{"id": "b77-2141", "text": "I am travelling for two more weeks but really need to change my PIN asap. What do I do?", "intent": "change_pin"}
+{"id": "b77-2145", "text": "I need to change my PIN.", "intent": "change_pin"}
+{"id": "b77-2149", "text": "Which cash machines will allow me to change my PIN?", "intent": "change_pin"}
+{"id": "b77-2151", "text": "Where can I find instructions to change my PIN?", "intent": "change_pin"}
+{"id": "b77-2152", "text": "I need to change my pin but I am on the road.", "intent": "change_pin"}
+{"id": "b77-2155", "text": "Show me how to change my pin?", "intent": "change_pin"}
+{"id": "b77-2159", "text": "How can I change the PIN? Do I have to go to a real bank?", "intent": "change_pin"}
+{"id": "b77-2168", "text": "Hey I want to buy some crypto but the app doesn't allow me to! What's the issue, I really want to exchange this", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2176", "text": "I have tried transferring money numerous times. All I keep getting is an error message. Can you tell me what is going on and how this van be fixed?", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2180", "text": "How come I'm not allowed to transfer funds right now? I just keep getting an error message.", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2184", "text": "Explain why I can't do a transfer to a beneficiary.", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2185", "text": "My transfer to beneficiary didn't go through", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2190", "text": "The account transfer I was trying to do failed.", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2191", "text": "My beneficiary is not allowed, please may I have answer as to why this is?", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2194", "text": "I want to transfer money to a beneficiery. Why can't I?", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2197", "text": "I want to buy cryptocurrency, but your app doesn't let me. Why?", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2199", "text": "Why was a transfer to an account not allowed?", "intent": "beneficiary_not_allowed"}
+{"id": "b77-2211", "text": "Why am I being charged a fee for transferring money?", "intent": "transfer_fee_charged"}
+{"id": "b77-2215", "text": "Why did I get charged for something I bought online? Even though it was international, I thought it would be covered.", "intent": "transfer_fee_charged"}
+{"id": "b77-2217", "text": "I was charged more when I transferred!", "intent": "transfer_fee_charged"}
+{"id": "b77-2223", "text": "I sent out money, but was charged extra for transferring. Why?", "intent": "transfer_fee_charged"}
+{"id": "b77-2226", "text": "I need someone to alert me as to what's going on. I had transferred an amount but the receiver is saying that the amount is somewhat less than what I sent over. I now have to make another transfer to make up the difference.", "intent": "transfer_fee_charged"}
+{"id": "b77-2228", "text": "Why was there a fee for my transfer?", "intent": "transfer_fee_charged"}
+{"id": "b77-2232", "text": "Why was I charged a fee for a transfer?", "intent": "transfer_fee_charged"}
+{"id": "b77-2233", "text": "What extra charges are there?", "intent": "transfer_fee_charged"}
+{"id": "b77-2234", "text": "I know that I am able to make transfers for free. That was something that I valued. After I bought something online from abroad I noticed that I got charged a fee? What is this and can it be removed?", "intent": "transfer_fee_charged"}
+{"id": "b77-2236", "text": "I was charged for something I didn't expect", "intent": "transfer_fee_charged"}
+{"id": "b77-2243", "text": "Can I get my salary through this?", "intent": "receiving_money"}
+{"id": "b77-2247", "text": "I get paid in GBP. Should I configure this and if so, where?", "intent": "receiving_money"}
+{"id": "b77-2248", "text": "Is it possible for me to get money out in a different currency?", "intent": "receiving_money"}
+{"id": "b77-2254", "text": "Salary in GBP has been received, does it need to be configured elsewhere?", "intent": "receiving_money"}
+{"id": "b77-2256", "text": "What are the ways for others to transfer me money?", "intent": "receiving_money"}
+{"id": "b77-2257", "text": "What different ways are there for someone to send me money?", "intent": "receiving_money"}
+{"id": "b77-2261", "text": "Can this be used to receive my salary?", "intent": "receiving_money"}
+{"id": "b77-2264", "text": "How can my friend transfer money to me?", "intent": "receiving_money"}
+{"id": "b77-2268", "text": "Can i deposit my salary to this account?", "intent": "receiving_money"}
+{"id": "b77-2278", "text": "Can I get paid in another currency?", "intent": "receiving_money"}
+{"id": "b77-2282", "text": "My transfer didn't work", "intent": "failed_transfer"}
+{"id": "b77-2284", "text": "Tell me why my transfer failed!", "intent": "failed_transfer"}
+{"id": "b77-2285", "text": "My transfer did not go through.", "intent": "failed_transfer"}
+{"id": "b77-2289", "text": "My transfer didn't go through.", "intent": "failed_transfer"}
+{"id": "b77-2291", "text": "how come my transfer didn't work", "intent": "failed_transfer"}
+{"id": "b77-2295", "text": "Why hasn't my transfer been made?", "intent": "failed_transfer"}
+{"id": "b77-2303", "text": "Why couldn't I complete a transfer?", "intent": "failed_transfer"}
+{"id": "b77-2309", "text": "Please help me as i am continuously facing the issue in transferring money to my friends, as all my transactions are getting failed.", "intent": "failed_transfer"}
+{"id": "b77-2310", "text": "I am trying to make a transfer and am unsuccessful, can you please tell me why?", "intent": "failed_transfer"}
+{"id": "b77-2317", "text": "I've attempted to do a very standard transfer and have tried 5 times at this point. Can you tell me what the issue is? Is the system down?", "intent": "failed_transfer"}
+{"id": "b77-2320", "text": "Can I do a bank transfer to put additional money in my account because I am out of money?", "intent": "transfer_into_account"}
+{"id": "b77-2321", "text": "I'm out of money, can I add money with my bank?", "intent": "transfer_into_account"}
+{"id": "b77-2324", "text": "I don't understand the money transfer process.", "intent": "transfer_into_account"}
+{"id": "b77-2326", "text": "What do I need to do to transfer money into my account?", "intent": "transfer_into_account"}
+{"id": "b77-2327", "text": "I don't know what to do. Should I transfer funds. My account is out of money.", "intent": "transfer_into_account"}
+{"id": "b77-2339", "text": "How can I transfer money from an outside bank?", "intent": "transfer_into_account"}
+{"id": "b77-2352", "text": "I would like use the bank transfer, but I don't understand the process, can you please explain, topping up?", "intent": "transfer_into_account"}
+{"id": "b77-2355", "text": "How can I transfer money to my account?", "intent": "transfer_into_account"}
+{"id": "b77-2358", "text": "I would like to transfer money from my other bank account into this one.", "intent": "transfer_into_account"}
+{"id": "b77-2359", "text": "Can I use a bank transfer to refill my account?", "intent": "transfer_into_account"}
+{"id": "b77-2363", "text": "Why do I have to verify the top-up that I started?", "intent": "verify_top_up"}
+{"id": "b77-2382", "text": "What is the verification code on a top-up?", "intent": "verify_top_up"}
+{"id": "b77-2385", "text": "Where do I find the top-up verification code?", "intent": "verify_top_up"}
+{"id": "b77-2386", "text": "How is the top-up card verified?", "intent": "verify_top_up"}
+{"id": "b77-2389", "text": "help me find the top-up card's verification code?", "intent": "verify_top_up"}
+{"id": "b77-2390", "text": "I don't understand why it says I have to verify the top-up.", "intent": "verify_top_up"}
+{"id": "b77-2393", "text": "The top-up verification code is missing", "intent": "verify_top_up"}
+{"id": "b77-2397", "text": "I need help finding the verification code for my top-up card.", "intent": "verify_top_up"}
+{"id": "b77-2398", "text": "Is there a verification code for top-ups?", "intent": "verify_top_up"}
+{"id": "b77-2399", "text": "What is the necessity of verifying the top up?", "intent": "verify_top_up"}
+{"id": "b77-2402", "text": "I want to order another crad", "intent": "getting_spare_card"}
+{"id": "b77-2404", "text": "Is there a fee for extra cards?", "intent": "getting_spare_card"}
+{"id": "b77-2413", "text": "I need to get some more physical cards.", "intent": "getting_spare_card"}
+{"id": "b77-2414", "text": "Would I be able to get another card for my account, so I could give one to my daughter?", "intent": "getting_spare_card"}
+{"id": "b77-2415", "text": "What is the procedure for getting another card?", "intent": "getting_spare_card"}
+{"id": "b77-2416", "text": "Can I have a second card?", "intent": "getting_spare_card"}
+{"id": "b77-2422", "text": "Where can I get a second card?", "intent": "getting_spare_card"}
+{"id": "b77-2423", "text": "I was looking to buy another card today.", "intent": "getting_spare_card"}
+{"id": "b77-2428", "text": "May I have a second card?", "intent": "getting_spare_card"}
+{"id": "b77-2436", "text": "Is it possible to give a second card for this account to my daughter?", "intent": "getting_spare_card"}
+{"id": "b77-2441", "text": "How do I top-up using cash?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2442", "text": "Can I top up with a cheque?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2444", "text": "Can you help me find top up by cash deposit?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2448", "text": "How do I top up my account with a cash payment?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2464", "text": "Will you accept a cheque to top up my account?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2465", "text": "How can I top up with this cheque I got?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2466", "text": "What methods can I use to top up my account?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2468", "text": "how come i can't find anywhere to load using cash", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2472", "text": "Can I send a cheque to do my top ups?", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2476", "text": "I want to top-up using cash", "intent": "top_up_by_cash_or_cheque"}
+{"id": "b77-2480", "text": "How do I receive my physical card", "intent": "order_physical_card"}
+{"id": "b77-2482", "text": "What do you charge for physical cards?", "intent": "order_physical_card"}
+{"id": "b77-2489", "text": "Is there a charge for physical cards", "intent": "order_physical_card"}
+{"id": "b77-2502", "text": "Can I get a physical card through this app?", "intent": "order_physical_card"}
+{"id": "b77-2503", "text": "can I have a non virtual card?", "intent": "order_physical_card"}
+{"id": "b77-2505", "text": "What are the fees to get a physical card?", "intent": "order_physical_card"}
+{"id": "b77-2506", "text": "Where can my card be delivered?", "intent": "order_physical_card"}
+{"id": "b77-2509", "text": "What locations can a card be delivered to?", "intent": "order_physical_card"}
+{"id": "b77-2512", "text": "How can I get a real-life card of my own?", "intent": "order_physical_card"}
+{"id": "b77-2518", "text": "How do I get an actual card?", "intent": "order_physical_card"}
+{"id": "b77-2524", "text": "Why did the disposable virtual card which I used to pay a gym subscription get denied?", "intent": "virtual_card_not_working"}
+{"id": "b77-2526", "text": "Are there restrictions for my disposable card since it does not seem to be working?", "intent": "virtual_card_not_working"}
+{"id": "b77-2527", "text": "I cannot get my virtual card to work.", "intent": "virtual_card_not_working"}
+{"id": "b77-2529", "text": "My disposable virtual card will not work", "intent": "virtual_card_not_working"}
+{"id": "b77-2530", "text": "I cannot use my disposable virtual card.", "intent": "virtual_card_not_working"}
+{"id": "b77-2533", "text": "Why doesn't my disposable virtual card work?", "intent": "virtual_card_not_working"}
+{"id": "b77-2538", "text": "My disposable virtual card has been rejected by the merchant earlier today. What should I do?", "intent": "virtual_card_not_working"}
+{"id": "b77-2539", "text": "How can I fix a problem where my virtual card is rejected?", "intent": "virtual_card_not_working"}
+{"id": "b77-2548", "text": "My transaction was just declined when I was using my disposable virtual card. What can I do?", "intent": "virtual_card_not_working"}
+{"id": "b77-2549", "text": "My disposable virtual card is not working", "intent": "virtual_card_not_working"}
+{"id": "b77-2561", "text": "I took out money from a transaction machine and it exchanged the wrong dollar value amount from another currency!", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2564", "text": "Exchange rate for my cash withdrawal is wrong", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2566", "text": "Why was the exchange rate wrong when I got cash", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2568", "text": "Why is the exchange rate wrong for my international withdrawal?", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2576", "text": "It seems I was overcharged when I used an ATM while on vacation. If I knew about your fees in advance I sure would have gone somewhere else.", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2579", "text": "Can I make a withdraw if I am out of country from with out any fees at an ATM?", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2583", "text": "I need the right foreign money, at the right rate, at ATMs, when I go abroad.", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2587", "text": "I withdrew some cash out of the ATM over the holiday. It seems that I was charged some outrageous fees. I would not have done that had I been aware of these outrageous charges!", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2596", "text": "how do you determine your exchange rates because one of yours was off when i got cash", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2597", "text": "I used the ATM machine to get money out for Holiday shopping and saw the outrageous charges. Why is that? I would not have used the ATM if I had known!", "intent": "wrong_exchange_rate_for_cash_withdrawal"}
+{"id": "b77-2600", "text": "can i get a description of how to use a disposable virtual card", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2611", "text": "Is there anyway, I can get a disposable virtual card?", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2615", "text": "I want to get a disposable virtual card.", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2616", "text": "Can you explain disposable cards?", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2617", "text": "how do i get a virtual card for one time use", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2619", "text": "Can i get a single use virtual card", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2621", "text": "I have a disposable virtual card here, so would you tell me what to do with it?", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2626", "text": "Is it possible to also get a disposable virtual card?", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2633", "text": "Will I be able to get a disposable virtual card as well?", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2637", "text": "how many transactions can i make with a disposable card", "intent": "get_disposable_virtual_card"}
+{"id": "b77-2640", "text": "The app denied my topped up.", "intent": "top_up_failed"}
+{"id": "b77-2641", "text": "Heyy I tried to top up with my card today but it failed! I just got the couple days before but it has worked last time. What's going on, can you double check please?", "intent": "top_up_failed"}
+{"id": "b77-2643", "text": "So, I tried topping up my card for the today. Unfortunately, it failed. A couple of days back I used it and it works fine. Can you double check and tell me what's going on?", "intent": "top_up_failed"}
+{"id": "b77-2644", "text": "Why did the app deny my top up?", "intent": "top_up_failed"}
+{"id": "b77-2653", "text": "Why would my topup not go through?", "intent": "top_up_failed"}
+{"id": "b77-2654", "text": "Why caused my top up to not work?", "intent": "top_up_failed"}
+{"id": "b77-2664", "text": "can you check why I wasn't able to top up?", "intent": "top_up_failed"}
+{"id": "b77-2672", "text": "Why can't I top up?", "intent": "top_up_failed"}
+{"id": "b77-2676", "text": "How do I know if my top up was unsuccessful?", "intent": "top_up_failed"}
+{"id": "b77-2678", "text": "why isnt top up working", "intent": "top_up_failed"}
+{"id": "b77-2680", "text": "I made a transfer a few hours ago from a UK banking account. I do not yet see the transfer. Please check on this for me.", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2693", "text": "I made a transfer and am still waiting.", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2694", "text": "I made an out of country transfer and it hasn't went through yet.", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2697", "text": "I had cash transferred but the balance did not change.", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2698", "text": "I can't see my latest bank transfer", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2704", "text": "Why isn't the transfer on my account showing up?", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2706", "text": "I have completed a transfer but it is not showing up.", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2708", "text": "How long until my transfer will be available to me", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2710", "text": "I made a bank transfer a couple of hours ago from my UK account. It hasn't appeared, can you check to make sure it went through?", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2718", "text": "My account balance has not gone up even though I just transferred money into it", "intent": "balance_not_updated_after_bank_transfer"}
+{"id": "b77-2720", "text": "Think someone has took money out with my card. What shall I do?", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2721", "text": "There is a withdrawal that isn't mind in the app.", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2725", "text": "Why is there a random withdrawal in my app?", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2728", "text": "The app said I withdrew cash at an ATM and I didn't", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2733", "text": "I have a strange cash withdrawal in my statement", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2740", "text": "I think I see a withdraw I did not make.", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2746", "text": "How do I cancel my card? There are charges on my account that I didn't make.", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2748", "text": "Can anyone help me, I lost my wallet and they've started withdrawing from my account.", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2752", "text": "There is a cash withdrawal transaction that I am unsure of.", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2759", "text": "The app made a mistake and said I made a cash withdrawal.", "intent": "cash_withdrawal_not_recognised"}
+{"id": "b77-2760", "text": "Is there an exchange fee?", "intent": "exchange_charge"}
+{"id": "b77-2761", "text": "whats your exchange rate", "intent": "exchange_charge"}
+{"id": "b77-2762", "text": "What are your currency exchange fees?", "intent": "exchange_charge"}
+{"id": "b77-2769", "text": "whats the exchange charge", "intent": "exchange_charge"}
+{"id": "b77-2774", "text": "Is there a fee for exchanging foreign currencies?", "intent": "exchange_charge"}
+{"id": "b77-2776", "text": "How much is a cross currency exchange, and can I check to see if I have any discounts available?", "intent": "exchange_charge"}
+{"id": "b77-2778", "text": "How much do I have to pay for the exchange fee?", "intent": "exchange_charge"}
+{"id": "b77-2783", "text": "What is the exchange fee?", "intent": "exchange_charge"}
+{"id": "b77-2789", "text": "Does it cost money for currency exchange services?", "intent": "exchange_charge"}
+{"id": "b77-2799", "text": "does it cost to exchange currencies?", "intent": "exchange_charge"}
+{"id": "b77-2809", "text": "In exchange for top ups will you take fees?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2811", "text": "How much does it cost to top up by card?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2814", "text": "How much is the charge to top up my card?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2816", "text": "What fee is included if I top up by card?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2824", "text": "Will it cost anything to top up a US card?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2826", "text": "Are there fees for adding money using an international card", "intent": "top_up_by_card_charge"}
+{"id": "b77-2827", "text": "When using a US card, what is the cost for a top up/off?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2834", "text": "Is their a fee for top ups?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2838", "text": "What are the fees for top ups?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2839", "text": "What are the top up charges for US cards?", "intent": "top_up_by_card_charge"}
+{"id": "b77-2840", "text": "Could you please activate my card", "intent": "activate_my_card"}
+{"id": "b77-2845", "text": "How long will it take to activate my new card?", "intent": "activate_my_card"}
+{"id": "b77-2846", "text": "What's the right way to activate my card?", "intent": "activate_my_card"}
+{"id": "b77-2852", "text": "WHAT CAN I DO AFTER THE CARD MISSING", "intent": "activate_my_card"}
+{"id": "b77-2860", "text": "I have a new card and I want to activate it", "intent": "activate_my_card"}
+{"id": "b77-2865", "text": "When will my card be activated?", "intent": "activate_my_card"}
+{"id": "b77-2869", "text": "What is the activation process on my new card?", "intent": "activate_my_card"}
+{"id": "b77-2870", "text": "I would like to get help from someone with activating my card.", "intent": "activate_my_card"}
+{"id": "b77-2874", "text": "What are the steps to activating a new card?", "intent": "activate_my_card"}
+{"id": "b77-2879", "text": "What do I need to do to activate my card?", "intent": "activate_my_card"}
+{"id": "b77-2885", "text": "How come you charge for cash withdrawals? I withdrew cash after buying groceries today, and there seems to be a new fee", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2886", "text": "It looks like I was charged a withdrawal fee for going to my ATM. Why is that because I haven't been charged previously for doing so?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2887", "text": "Do ATM cash withdrawals carry a charge now? They've been free in the past, but all of a sudden I have to pay to make ATM withdrawals?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2888", "text": "Why is there an extra charge for money that was withdrawn?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2894", "text": "A fee was charged for my recent withdrawal.", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2898", "text": "Is there a fee for withdrawing cash?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2910", "text": "More fees, this time for withdrawing my own cash. Why are you robbing me?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2911", "text": "I have never been charged a fee for cash withdrawal before. When did that change?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2913", "text": "Why did you charge me for a cash withdrawal?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2919", "text": "Why is there a fee for withdrawing?", "intent": "cash_withdrawal_charge"}
+{"id": "b77-2920", "text": "Am I able to order a new card and have it sent to me in China?", "intent": "card_about_to_expire"}
+{"id": "b77-2921", "text": "Will you be able to send the new card to China?", "intent": "card_about_to_expire"}
+{"id": "b77-2927", "text": "how long and how much does it cost for new card", "intent": "card_about_to_expire"}
+{"id": "b77-2928", "text": "What do I do if my card is expiring soon?", "intent": "card_about_to_expire"}
+{"id": "b77-2931", "text": "My card is about to expire and I need to know how much it costs and how long it takes to get a new one.", "intent": "card_about_to_expire"}
+{"id": "b77-2933", "text": "What is the next step if my card is about to expire.", "intent": "card_about_to_expire"}
+{"id": "b77-2945", "text": "My card is very close to expiring. When can I order a new one and how do I do so?", "intent": "card_about_to_expire"}
+{"id": "b77-2950", "text": "The expiration date of my card is approaching .", "intent": "card_about_to_expire"}
+{"id": "b77-2953", "text": "My card is about to expire.", "intent": "card_about_to_expire"}
+{"id": "b77-2958", "text": "My card is about to expire. How do I get a new one?", "intent": "card_about_to_expire"}
+{"id": "b77-2960", "text": "Is the top up feature available on the Apple Watch?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2967", "text": "Is it possible to top up with Apple Pay?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2970", "text": "How can I top up my Google Pay?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2972", "text": "I received my American Express card, but I am having problems making it work with Apple pay. Can you help me with this problem?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2974", "text": "Why can't I use my American Express with Apple Pay to top up my account?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2982", "text": "Can I top up from my Apple Watch?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2986", "text": "I can't top up my account using my American Express with Apple Pay.", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2987", "text": "I got my American Express in Apple Pay, why is top up not working?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2990", "text": "Is it possible to use Apple Pay to put money in my account?", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-2993", "text": "can google pay be used to make a top-up", "intent": "apple_pay_or_google_pay"}
+{"id": "b77-3001", "text": "What do you need to verify my identity?", "intent": "verify_my_identity"}
+{"id": "b77-3005", "text": "What do you need for my identity check?", "intent": "verify_my_identity"}
+{"id": "b77-3006", "text": "How do you verify an identity?", "intent": "verify_my_identity"}
+{"id": "b77-3013", "text": "I need some help with identity verification.", "intent": "verify_my_identity"}
+{"id": "b77-3014", "text": "What's the process for ID verification?", "intent": "verify_my_identity"}
+{"id": "b77-3015", "text": "I would like to know how I can verify my Identity.", "intent": "verify_my_identity"}
+{"id": "b77-3017", "text": "Let me know the steps for the identity checks", "intent": "verify_my_identity"}
+{"id": "b77-3019", "text": "What are the steps to verify my identity?", "intent": "verify_my_identity"}
+{"id": "b77-3035", "text": "Is there any way to verify who I am?", "intent": "verify_my_identity"}
+{"id": "b77-3039", "text": "What do I need to do to verify my identity?", "intent": "verify_my_identity"}
+{"id": "b77-3043", "text": "What countries are supported?", "intent": "country_support"}
+{"id": "b77-3046", "text": "I'm not in the UK, can I still get a card?", "intent": "country_support"}
+{"id": "b77-3048", "text": "Now that I live in the US how can I get a card?", "intent": "country_support"}
+{"id": "b77-3053", "text": "how do i get a card if i am in the usa", "intent": "country_support"}
+{"id": "b77-3058", "text": "Where can I find your locations?", "intent": "country_support"}
+{"id": "b77-3064", "text": "What locations are you in?", "intent": "country_support"}
+{"id": "b77-3065", "text": "Can you tell me what countries you operate in?", "intent": "country_support"}
+{"id": "b77-3068", "text": "Do you have a list of countries you operate in?", "intent": "country_support"}
+{"id": "b77-3069", "text": "In what countries do you do business?", "intent": "country_support"}
+{"id": "b77-3079", "text": "Can the card be mailed and used in Europe?", "intent": "country_support"}
