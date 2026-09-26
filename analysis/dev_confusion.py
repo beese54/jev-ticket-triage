@@ -8,8 +8,9 @@ import sys
 
 import pandas as pd
 
-from triage import cache, data
+from triage import data
 from triage.backends import get_backend
+from triage.runner import cached_record
 from triage.tasks import TASKS
 
 system, field = sys.argv[1], sys.argv[2]
@@ -18,8 +19,7 @@ task, backend = TASKS[dataset], get_backend(system)
 rows = data.read_split(dataset, "dev").to_dict(orient="records")
 gold, pred = [], []
 for row in rows:
-    key = cache.request_key(backend.model, backend.build_payload(task, row))
-    rec = cache.load(cache.path_for(system, dataset, row["id"], key))
+    rec = cached_record(backend, task, row)
     if rec is None:
         continue
     gold.append(task.gold(row)[field])

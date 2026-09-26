@@ -25,6 +25,9 @@ def main() -> None:
     ap.add_argument("--split", required=True, choices=["dev", "test", "holdout"])
     ap.add_argument("--limit", type=int, help="first N rows only (by id)")
     ap.add_argument("--concurrency", type=int, default=4)
+    ap.add_argument(
+        "--repeat", type=int, default=0, help="repeat index >0 re-runs cached requests"
+    )
     args = ap.parse_args()
 
     task = TASKS[args.dataset]
@@ -36,7 +39,9 @@ def main() -> None:
     budget = (
         config.together_budget_usd() if args.system.startswith("together") else None
     )
-    records, stats = asyncio.run(run(backend, task, rows, args.concurrency, budget))
+    records, stats = asyncio.run(
+        run(backend, task, rows, args.concurrency, budget, args.repeat)
+    )
 
     print(
         f"{backend.system} ({backend.model}) {args.dataset}/{args.split}: "

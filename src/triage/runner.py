@@ -22,8 +22,22 @@ class RunStats:
     errors: list[str] = field(default_factory=list)
 
 
+def cached_record(
+    backend: Backend, task: Task, row: dict, repeat: int = 0
+) -> dict | None:
+    """The cached record for this row under the current request, if any."""
+    key = cache.request_key(backend.model, backend.build_payload(task, row), repeat)
+    return cache.load(cache.path_for(backend.system, task.dataset, row["id"], key))
+
+
 def make_record(
-    backend: Backend, task: Task, row: dict, key: str, payload: dict, result: dict
+    backend: Backend,
+    task: Task,
+    row: dict,
+    key: str,
+    payload: dict,
+    result: dict,
+    repeat: int = 0,
 ) -> dict:
     cost = config.cost_usd(
         backend.model, result["input_tokens"], result["output_tokens"]
@@ -34,6 +48,7 @@ def make_record(
         "dataset": task.dataset,
         "id": row["id"],
         "key": key,
+        "repeat": repeat,
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "latency_ms": round(result["latency_ms"], 1),
         "attempts": result["attempts"],
@@ -51,6 +66,7 @@ async def run(
     rows: list[dict],
     concurrency: int = 4,
     budget_usd: float | None = None,
+    repeat: int = 0,
 ) -> tuple[list[dict], RunStats]:
     """Returns (records in row order, stats). Records for failed calls are omitted."""
     stats = RunStats()
@@ -60,7 +76,7 @@ async def run(
 
     async def one(row: dict) -> dict | None:
         payload = backend.build_payload(task, row)
-        key = cache.request_key(backend.model, payload)
+        key = cache.request_key(backend.model, payload, repeat)
         path = cache.path_for(backend.system, task.dataset, row["id"], key)
         if (hit := cache.load(path)) is not None:
             stats.cached += 1
@@ -78,7 +94,7 @@ async def run(
                 stats.failed += 1
                 stats.errors.append(f"{row['id']}: {type(exc).__name__}: {exc}"[:300])
                 return None
-        record = make_record(backend, task, row, key, payload, result)
+        record = make_record(backend, task, row, key, payload, result, repeat)
         cache.save(path, record)
         async with lock:
             stats.called += 1

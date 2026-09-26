@@ -15,8 +15,13 @@ ROOT = Path(__file__).resolve().parents[2]
 CACHE_DIR = ROOT / "cache"
 
 
-def request_key(model: str, payload: dict) -> str:
-    canonical = json.dumps({"model": model, "payload": payload}, sort_keys=True)
+def request_key(model: str, payload: dict, repeat: int = 0) -> str:
+    """Repeat > 0 marks a deliberate re-run of the same request (determinism checks);
+    it is left out of the hash for repeat 0 so the primary run keeps its key."""
+    body = {"model": model, "payload": payload}
+    if repeat:
+        body["repeat"] = repeat
+    canonical = json.dumps(body, sort_keys=True)
     return hashlib.sha256(canonical.encode()).hexdigest()[:16]
 
 

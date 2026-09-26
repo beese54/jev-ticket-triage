@@ -1,0 +1,86 @@
+{
+  "together-small/banking77": {
+    "rows": 50,
+    "fields": {
+      "intent": {
+        "label_identical": 1.0,
+        "max_p_change": 0.0948
+      }
+    }
+  },
+  "together-small/tickets": {
+    "rows": 50,
+    "fields": {
+      "queue": {
+        "label_identical": 0.98,
+        "max_p_change": 0.088
+      },
+      "priority": {
+        "label_identical": 1.0,
+        "max_p_change": 0.1299
+      },
+      "type": {
+        "label_identical": 1.0,
+        "max_p_change": 0.1136
+      },
+      "security_or_data_breach": {
+        "label_identical": 1.0,
+        "max_p_change": 0.0403
+      },
+      "service_outage": {
+        "label_identical": 0.98,
+        "max_p_change": 0.0519
+      },
+      "customer_frustrated": {
+        "label_identical": 1.0,
+        "max_p_change": 0.0627
+      },
+      "asks_for_refund": {
+        "label_identical": 1.0,
+        "max_p_change": 0.0008
+      }
+    }
+  },
+  "together-large/banking77": {
+    "rows": 50,
+    "fields": {
+      "intent": {
+        "label_identical": 0.98,
+        "max_p_change": 0.1204
+      }
+    }
+  },
+  "together-large/tickets": {
+    "rows": 50,
+    "fields": {
+      "queue": {
+        "label_identical": 0.92,
+        "max_p_change": 0.1956
+      },
+      "priority": {
+        "label_identical": 1.0,
+        "max_p_change": 0.2015
+      },
+      "type": {
+        "label_identical": 0.92,
+        "max_p_change": 0.2586
+      },
+      "security_or_data_breach": {
+        "label_identical": 1.0,
+        "max_p_change": 0.0005
+      },
+      "service_outage": {
+        "label_identical": 1.0,
+        "max_p_change": 0.3176
+      },
+      "customer_frustrated": {
+        "label_identical": 0.98,
+        "max_p_change": 0.4039
+      },
+      "asks_for_refund": {
+        "label_identical": 1.0,
+        "max_p_change": 0.0055
+      }
+    }
+  }
+}

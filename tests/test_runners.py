@@ -259,3 +259,19 @@ def test_runner_caches_and_enforces_budget(tmp_path, monkeypatch):
 
     with pytest.raises(BudgetExceeded):
         asyncio.run(run(backend, TICKETS, rows, concurrency=1, budget_usd=0.30))
+
+
+def test_repeat_changes_key_but_repeat_zero_keeps_legacy_key():
+    payload = {"messages": ["x"]}
+    legacy = cache.request_key("m", payload)
+    assert cache.request_key("m", payload, 0) == legacy
+    assert (
+        len(
+            {
+                legacy,
+                cache.request_key("m", payload, 1),
+                cache.request_key("m", payload, 2),
+            }
+        )
+        == 3
+    )
