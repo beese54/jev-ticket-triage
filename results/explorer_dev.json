@@ -1,0 +1,6626 @@
+{
+ "banking77": [
+  {
+   "id": "b77-0008",
+   "text": "still waiting on that card",
+   "gold": {
+    "intent": "card_arrival"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 11854.1,
+     "fields": {
+      "intent": {
+       "label": "card_arrival",
+       "p": 0.9991205750703561,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2050.4,
+     "fields": {
+      "intent": {
+       "label": "card_arrival",
+       "p": 0.9999982118622988,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0034",
+   "text": "Does the card you sent have a way to track to it?",
+   "gold": {
+    "intent": "card_arrival"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1398.7,
+     "fields": {
+      "intent": {
+       "label": "card_arrival",
+       "p": 0.9977328705814779,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2099.4,
+     "fields": {
+      "intent": {
+       "label": "card_arrival",
+       "p": 0.9999740127126754,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0057",
+   "text": "How do I view the card I received in the app?",
+   "gold": {
+    "intent": "card_linking"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1176.1,
+     "fields": {
+      "intent": {
+       "label": "card_arrival",
+       "p": 0.6464470119501977,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1276.1,
+     "fields": {
+      "intent": {
+       "label": "card_linking",
+       "p": 0.47603731947100614,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0060",
+   "text": "How do I link to my credit card with you?",
+   "gold": {
+    "intent": "card_linking"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1429.8,
+     "fields": {
+      "intent": {
+       "label": "card_linking",
+       "p": 0.999965190953046,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1646.3,
+     "fields": {
+      "intent": {
+       "label": "card_linking",
+       "p": 0.9999828340087573,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0087",
+   "text": "Please advise what is the exchange rate",
+   "gold": {
+    "intent": "exchange_rate"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1743.8,
+     "fields": {
+      "intent": {
+       "label": "exchange_rate",
+       "p": 0.9999868869995514,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1490.7,
+     "fields": {
+      "intent": {
+       "label": "exchange_rate",
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0090",
+   "text": "what are exchange rates",
+   "gold": {
+    "intent": "exchange_rate"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1289.5,
+     "fields": {
+      "intent": {
+       "label": "exchange_rate",
+       "p": 0.9999860525444508,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1763.9,
+     "fields": {
+      "intent": {
+       "label": "exchange_rate",
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0132",
+   "text": "The rate for a currency exchange was wrong when I bought something.",
+   "gold": {
+    "intent": "card_payment_wrong_exchange_rate"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1512.2,
+     "fields": {
+      "intent": {
+       "label": "card_payment_wrong_exchange_rate",
+       "p": 0.9994829901183374,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1190.6,
+     "fields": {
+      "intent": {
+       "label": "card_payment_wrong_exchange_rate",
+       "p": 0.9999985694895432,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0146",
+   "text": "The exchange rate given to me wasn't correct, after i purchased an item",
+   "gold": {
+    "intent": "card_payment_wrong_exchange_rate"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1250.0,
+     "fields": {
+      "intent": {
+       "label": "card_payment_wrong_exchange_rate",
+       "p": 0.9996844536776143,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1340.6,
+     "fields": {
+      "intent": {
+       "label": "card_payment_wrong_exchange_rate",
+       "p": 0.9999958276834141,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0163",
+   "text": "Why is there an extra dollar charged to my account?",
+   "gold": {
+    "intent": "extra_charge_on_statement"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1088.6,
+     "fields": {
+      "intent": {
+       "label": "extra_charge_on_statement",
+       "p": 0.9996466663933198,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1540.4,
+     "fields": {
+      "intent": {
+       "label": "extra_charge_on_statement",
+       "p": 0.9999544630882566,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0174",
+   "text": "I noticed an extra $1 charge on my statement, can you tell me why that is?",
+   "gold": {
+    "intent": "extra_charge_on_statement"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 788.2,
+     "fields": {
+      "intent": {
+       "label": "extra_charge_on_statement",
+       "p": 0.9999045141893723,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2282.3,
+     "fields": {
+      "intent": {
+       "label": "extra_charge_on_statement",
+       "p": 0.9999957084749186,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0200",
+   "text": "My withdrawl is still pending. Why?",
+   "gold": {
+    "intent": "pending_cash_withdrawal"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 4014.3,
+     "fields": {
+      "intent": {
+       "label": "pending_cash_withdrawal",
+       "p": 0.9998115387937987,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2693.4,
+     "fields": {
+      "intent": {
+       "label": "pending_cash_withdrawal",
+       "p": 0.9999945163877351,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0212",
+   "text": "My cash in the ATM is still pending",
+   "gold": {
+    "intent": "pending_cash_withdrawal"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3774.5,
+     "fields": {
+      "intent": {
+       "label": "pending_cash_withdrawal",
+       "p": 0.999757477431839,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1863.3,
+     "fields": {
+      "intent": {
+       "label": "pending_cash_withdrawal",
+       "p": 0.9999997615814484,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0270",
+   "text": "What kind of currency can I hold money in?",
+   "gold": {
+    "intent": "fiat_currency_support"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1619.0,
+     "fields": {
+      "intent": {
+       "label": "fiat_currency_support",
+       "p": 0.9983699923405795,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2161.7,
+     "fields": {
+      "intent": {
+       "label": "fiat_currency_support",
+       "p": 0.9999992847445158,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0279",
+   "text": "What countries can I travel to and have access to their currencies?",
+   "gold": {
+    "intent": "fiat_currency_support"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3094.2,
+     "fields": {
+      "intent": {
+       "label": "country_support",
+       "p": 0.650349809210586,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1632.9,
+     "fields": {
+      "intent": {
+       "label": "fiat_currency_support",
+       "p": 0.9819758179765997,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0307",
+   "text": "How long does shipping take to get to a US destination?",
+   "gold": {
+    "intent": "card_delivery_estimate"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1389.8,
+     "fields": {
+      "intent": {
+       "label": "card_delivery_estimate",
+       "p": 0.9974621174631912,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1606.0,
+     "fields": {
+      "intent": {
+       "label": "card_delivery_estimate",
+       "p": 0.9998407490717754,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0319",
+   "text": "Can I have it be delivered at a certain time?",
+   "gold": {
+    "intent": "card_delivery_estimate"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2863.0,
+     "fields": {
+      "intent": {
+       "label": "card_delivery_estimate",
+       "p": 0.9988113977791674,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2160.3,
+     "fields": {
+      "intent": {
+       "label": "card_delivery_estimate",
+       "p": 0.999999642372194,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0340",
+   "text": "What's the limit on automatic top-up?",
+   "gold": {
+    "intent": "automatic_top_up"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1703.0,
+     "fields": {
+      "intent": {
+       "label": "automatic_top_up",
+       "p": 0.997798085498633,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1700.6,
+     "fields": {
+      "intent": {
+       "label": "automatic_top_up",
+       "p": 0.9999998807907171,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0344",
+   "text": "Do you have an auto top-up option?",
+   "gold": {
+    "intent": "automatic_top_up"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1476.5,
+     "fields": {
+      "intent": {
+       "label": "automatic_top_up",
+       "p": 0.9998255372474627,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1884.0,
+     "fields": {
+      "intent": {
+       "label": "automatic_top_up",
+       "p": 0.9999979734440535,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0360",
+   "text": "I've tried my card a bunch of times and it never worked.",
+   "gold": {
+    "intent": "card_not_working"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 6599.7,
+     "fields": {
+      "intent": {
+       "label": "card_not_working",
+       "p": 0.9996035243308052,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2380.9,
+     "fields": {
+      "intent": {
+       "label": "card_not_working",
+       "p": 0.9999961853099261,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0398",
+   "text": "How do I find out why my card won't work?",
+   "gold": {
+    "intent": "card_not_working"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 6354.1,
+     "fields": {
+      "intent": {
+       "label": "card_not_working",
+       "p": 0.9994760920848672,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2113.1,
+     "fields": {
+      "intent": {
+       "label": "card_not_working",
+       "p": 0.999993801136113,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0428",
+   "text": "What currency's can i exchange for?",
+   "gold": {
+    "intent": "exchange_via_app"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2184.2,
+     "fields": {
+      "intent": {
+       "label": "exchange_via_app",
+       "p": 0.6320081769175576,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1334.7,
+     "fields": {
+      "intent": {
+       "label": "exchange_via_app",
+       "p": 0.994893757605914,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0438",
+   "text": "Can I exchange currencies with my account?",
+   "gold": {
+    "intent": "exchange_via_app"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 5670.7,
+     "fields": {
+      "intent": {
+       "label": "exchange_via_app",
+       "p": 0.999136342929943,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1066.5,
+     "fields": {
+      "intent": {
+       "label": "exchange_via_app",
+       "p": 0.9999049947122882,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0447",
+   "text": "I believe my card has been stolen, what can I do about this situation? It's urgent.",
+   "gold": {
+    "intent": "lost_or_stolen_card"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1486.7,
+     "fields": {
+      "intent": {
+       "label": "lost_or_stolen_card",
+       "p": 0.999968409549726,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1016.0,
+     "fields": {
+      "intent": {
+       "label": "lost_or_stolen_card",
+       "p": 0.9999982118622988,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0462",
+   "text": "I think I lost my card . I dont know how long it has been missing. Can you see if maybe someone else has been using it?",
+   "gold": {
+    "intent": "lost_or_stolen_card"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 973.6,
+     "fields": {
+      "intent": {
+       "label": "lost_or_stolen_card",
+       "p": 0.9997419716965433,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2258.0,
+     "fields": {
+      "intent": {
+       "label": "compromised_card",
+       "p": 0.5008711637211751,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0500",
+   "text": "Can my 19 year old daughter open a savings account at the bank?",
+   "gold": {
+    "intent": "age_limit"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2604.3,
+     "fields": {
+      "intent": {
+       "label": "age_limit",
+       "p": 0.9999772310302258,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2004.5,
+     "fields": {
+      "intent": {
+       "label": "age_limit",
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0509",
+   "text": "What are the age requirements for opening an account?",
+   "gold": {
+    "intent": "age_limit"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2366.6,
+     "fields": {
+      "intent": {
+       "label": "age_limit",
+       "p": 0.9999911785141651,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1745.2,
+     "fields": {
+      "intent": {
+       "label": "age_limit",
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0527",
+   "text": "How do I reset my PIN, I can't seem to use my card?",
+   "gold": {
+    "intent": "pin_blocked"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1870.8,
+     "fields": {
+      "intent": {
+       "label": "change_pin",
+       "p": 0.99484694305134,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1226.2,
+     "fields": {
+      "intent": {
+       "label": "change_pin",
+       "p": 0.999992966676734,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0540",
+   "text": "How can I unlock my pin from too many tries?",
+   "gold": {
+    "intent": "pin_blocked"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2146.2,
+     "fields": {
+      "intent": {
+       "label": "pin_blocked",
+       "p": 0.999599875301571,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1217.0,
+     "fields": {
+      "intent": {
+       "label": "pin_blocked",
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0571",
+   "text": "I couldn't use my contactless this morning, it wasn't accepted.",
+   "gold": {
+    "intent": "contactless_not_working"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 11986.8,
+     "fields": {
+      "intent": {
+       "label": "contactless_not_working",
+       "p": 0.9999207267218988,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1981.0,
+     "fields": {
+      "intent": {
+       "label": "contactless_not_working",
+       "p": 0.9999972581901088,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0595",
+   "text": "How do I use contactless pay?",
+   "gold": {
+    "intent": "contactless_not_working"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 11729.8,
+     "fields": {
+      "intent": {
+       "label": "contactless_not_working",
+       "p": 0.9999738933353741,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1976.6,
+     "fields": {
+      "intent": {
+       "label": "contactless_not_working",
+       "p": 0.9999991655353482,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0609",
+   "text": "Is it possible to get a transfer from SWIFT?",
+   "gold": {
+    "intent": "top_up_by_bank_transfer_charge"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1959.2,
+     "fields": {
+      "intent": {
+       "label": "transfer_into_account",
+       "p": 0.9846834741836594,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1971.6,
+     "fields": {
+      "intent": {
+       "label": "transfer_into_account",
+       "p": 0.9991883950625977,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0623",
+   "text": "How much is the fee for a SEPA transfer?",
+   "gold": {
+    "intent": "top_up_by_bank_transfer_charge"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1186.0,
+     "fields": {
+      "intent": {
+       "label": "transfer_fee_charged",
+       "p": 0.9838140997422664,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2238.8,
+     "fields": {
+      "intent": {
+       "label": "transfer_fee_charged",
+       "p": 0.9957657351830812,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0644",
+   "text": "Is there a reason my top up hasn't gone through",
+   "gold": {
+    "intent": "pending_top_up"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 910.8,
+     "fields": {
+      "intent": {
+       "label": "top_up_failed",
+       "p": 0.965544131549135,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2845.4,
+     "fields": {
+      "intent": {
+       "label": "top_up_failed",
+       "p": 0.8520088236862401,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0657",
+   "text": "top-up is slow to process",
+   "gold": {
+    "intent": "pending_top_up"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1139.1,
+     "fields": {
+      "intent": {
+       "label": "pending_top_up",
+       "p": 0.9990508145200131,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1456.9,
+     "fields": {
+      "intent": {
+       "label": "pending_top_up",
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0684",
+   "text": "Tell me how to cancel a transfer.",
+   "gold": {
+    "intent": "cancel_transfer"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1793.5,
+     "fields": {
+      "intent": {
+       "label": "cancel_transfer",
+       "p": 0.9999816417777386,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1707.5,
+     "fields": {
+      "intent": {
+       "label": "cancel_transfer",
+       "p": 0.9999997615814484,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0701",
+   "text": "I made a mistake when I did a transfer so now what can I do to fix that?",
+   "gold": {
+    "intent": "cancel_transfer"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1305.0,
+     "fields": {
+      "intent": {
+       "label": "cancel_transfer",
+       "p": 0.9998059869322269,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1990.2,
+     "fields": {
+      "intent": {
+       "label": "cancel_transfer",
+       "p": 0.9999997615814484,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0743",
+   "text": "What is the top-ups limit?",
+   "gold": {
+    "intent": "top_up_limits"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 795.2,
+     "fields": {
+      "intent": {
+       "label": "top_up_limits",
+       "p": 0.9999221569582366,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1447.8,
+     "fields": {
+      "intent": {
+       "label": "top_up_limits",
+       "p": 0.9999979734440535,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0759",
+   "text": "What are the top-up limits?",
+   "gold": {
+    "intent": "top_up_limits"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1054.3,
+     "fields": {
+      "intent": {
+       "label": "top_up_limits",
+       "p": 0.9999341968778709,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2125.1,
+     "fields": {
+      "intent": {
+       "label": "top_up_limits",
+       "p": 0.9999990463261548,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0772",
+   "text": "How can I request cash back? The ATM just gave me the wrong amount, the app shows the amount that I've been actually charged though...",
+   "gold": {
+    "intent": "wrong_amount_of_cash_received"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1528.3,
+     "fields": {
+      "intent": {
+       "label": "wrong_amount_of_cash_received",
+       "p": 0.9994446935923863,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2629.3,
+     "fields": {
+      "intent": {
+       "label": "wrong_amount_of_cash_received",
+       "p": 0.9993670798435158,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "b77-0791",
+   "text": "I tried to take out cash but the amount isn't right, so what do I do?",
+   "gold": {
+    "intent": "wrong_amount_of_cash_received"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1004.1,
+     "fields": {
+      "intent": {
+       "label": "wrong_amount_of_cash_received",
+       "p": 0.9996155373160905,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1375.6,
+     "fields": {
+      "intent": {
+       "label": "wrong_amount_of_cash_received",
+       "p": 0.9999946355963685,
+       "confidence": null
+      }
+     }
+    }
+   }
+  }
+ ],
+ "tickets": [
+  {
+   "id": "tb-0000921a59",
+   "text": "Subject: Failure in Smart Robot Lawn Mower Operation\n\nProblem with connectivity",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 5317.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.966222346275473,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.94499719107004,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.43591312431333606,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999346733113517,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9740371106231624,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9840869300519874,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999983310699747,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2734.6,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.6221280246568045,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999965429365757,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9999904633024745,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999833108392656,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9859396274705614,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-02651de619",
+   "text": "Subject: Problem with Investment Data Analysis Tools\n\nAn issue has arisen with the investment data analysis tools. Recent software updates and configuration changes might be the cause. We have restarted the affected systems and checked for updates.",
+   "gold": {
+    "queue": "General Inquiry",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2506.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.7892698668538956,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9341034898163212,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8245540300987931,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9998434782009223,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9940863849374942,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.998673319837521,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999978542328165,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2478.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9995518735086834,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999866486491301,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8177718608461166,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999898672613365,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-03dfe4a01c",
+   "text": "Subject: Concern Regarding Monthly Invoices\n\nCustomer Support, we have noticed a billing discrepancy on the user's invoice from the previous month. This issue might have arisen due to a recent system update. So far, we have reviewed the transaction logs and confirmed the user's account settings. However, we require your assistance to resolve this matter. The discrepancy is causing confusion for the users and we would greatly appreciate your help in investigating and resolving the issue as soon as possible. Could you please provide more details about the discrepancy, including the date and amount of the invoice in question (<acc_num>). Once we have this information, we will look into it and provide a solution as soon as possible. If you need to discuss this further, please contact us at <tel_num>. Thank you for bringing this to our attention and we look forward to resolving the issue.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2671.3,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.999484777742349,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9087947614614523,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9489471322158676,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999436140059956,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999783039100157,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8932978513770004,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9989666938770801,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2031.6,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9999891520138399,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999825955954584,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.6136802511983586,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9992907179595119,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-0590248d54",
+   "text": "Subject: Efficacy of Marketing Strategies\n\nMarketing campaigns have been initiated, yet engagement levels remain low.",
+   "gold": {
+    "queue": "Customer Service",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 4870.0,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.7388104171905155,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9624296413982124,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9856135248032397,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999462366114378,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999926090240764,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.990285575444818,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999984502791861,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1574.8,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.8177718608461166,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9626302108213645,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9933086206505375,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9890134350227241,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-069a4f3b31",
+   "text": "Subject: Problem with Adobe Effects\n\nThe marketing team is encountering software crashes while using Adobe Effects 2021 with OBS Studio 27. The issue might be due to compatibility problems or hardware limitations, possibly related to a gaming monitor. They have already tried updating the software, verifying hardware settings, and reinstalling the programs, but the problem still persists. The team is seeking assistance to resolve this matter, as it is impacting their productivity. Could you please provide a guide on how to troubleshoot the issue?",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1803.9,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8350030716805182,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9648266429206329,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.5615963373262225,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999438524257108,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.999289274221542,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9046393644709719,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999986886977652,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2180.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9933086206505375,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999961853099759,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.6221280246568045,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-07648d1673",
+   "text": "Subject: Unusual Reduction in Investment Returns Noted, Potentially Resulting from Outdated Analytics Models\n\nWe have noticed an unexpected drop in investment returns, which may be due to outdated analytics models. We have recalibrated the existing models and analyzed recent market trends.",
+   "gold": {
+    "queue": "Returns and Exchanges",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1656.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.5716087745007864,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.7759760533541312,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.5751924620158708,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999470710756025,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9984977245024511,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9840869300519874,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9998196959517942,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1730.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9623952229678291,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9998741229131854,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9966486946020026,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999998807907171,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-0cffbab6fa",
+   "text": "Subject: Problem with Website Traffic Decrease\n\nA marketing agency has noticed a sudden drop in website traffic. Efforts to resolve the issue have included analyzing Google Analytics and improving SEO strategies.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 4565.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8595575068304023,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.8879754566965486,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.7868433625113447,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999420642865083,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9914199112560499,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9840869300519874,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999966621397789,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2237.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9933086206505375,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999917745928288,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9990887028337012,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.995918994528247,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-13caa93b15",
+   "text": "Subject: Trouble with Alteryx WooCommerce Data Integration\n\nFacing data integration problems between platforms",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2414.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.753602438574994,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.912242290382166,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.7295352350554078,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999417066575965,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9971969127695157,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9947755338221625,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999982118606638,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1493.7,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.5008712234296745,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999723438274389,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9988181427440423,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9988333836265973,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-144a369f01",
+   "text": "Subject: Incorrect Charge\n\nRecently received an unexpected charge on the invoice, believed to be due to a billing error.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "low",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 4263.7,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9999573230936074,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.6210627672084549,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9795767061370334,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999498128897736,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999964237213419,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9706819061146265,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9241333640611324,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1908.7,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9999998807907171,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9998417025903573,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9584091830695148,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9239460837156731,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": true,
+       "p": 0.9988333836265973,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-1a83003cd5",
+   "text": "Subject: Insights for Enhancing Brand Growth with Oracle Database 19c and Microsoft Azure\n\nHello, could you offer insights into effective strategies for enhancing brand growth utilizing Oracle Database 19c and Microsoft Azure?",
+   "gold": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "low",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1408.5,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.4073272088870848,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9953151939947558,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9997685551617511,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999424219119104,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999986886977652,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999982118606638,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999994039535594,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1465.4,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.6648438220293678,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-1b1c3a3204",
+   "text": "Subject: Concern Regarding Data Storage System\n\nDetected potential data breach impacting medical data storage on RAID-Controller following a misconfiguration during the last software update.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3778.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8831155877528797,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9998556375524438,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.7759926810461152,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9995877146727626,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.70576775908836,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9964016677092772,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999959468841837,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3058.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9997921206099153,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9947950867475456,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999647146725418,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-1d3b8beb56",
+   "text": "Subject: Trouble with Integration of Data Analytics Tools\n\nHello Customer Support, we are experiencing issues with the integration of our data analytics tools with the existing hardware and software systems at our financial firm. It seems that recent updates may have caused compatibility problems. Our team has attempted to troubleshoot the issue by rebooting devices and reinstalling affected applications, but unfortunately, the problem still persists. We have not yet been able to identify the root cause, and we would greatly appreciate your assistance.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2869.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9562981139776965,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.8904382592830233,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.7636837889718304,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999489784233208,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9959277508678134,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9525648361515724,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999982118606638,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2588.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9998769835771407,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9995690320933586,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.5631446537543375,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9998769835771407,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-1f2da93b72",
+   "text": "Subject: Interruption in Service\n\nThe healthcare organization encountered data access interruptions impacting several platforms and devices. Potential causes include network setup issues or security breaches. The initial steps involved rebooting systems and performing fundamental network diagnostics. Support is needed to resolve the problem.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2642.0,
+     "fields": {
+      "queue": {
+       "label": "Service Outages and Maintenance",
+       "p": 0.6782317295804157,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9396159067375963,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8659722188363296,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.7772331763192455,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.9982953668113984,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9740337723435644,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999892711641967,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2612.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9969833191533833,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.999941827559082,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9999151265879519,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.998970561935292,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999998807907171,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-1f8c6563c5",
+   "text": "Subject: Security Incident: Patient Records Data Breach\n\nA data breach involving patient records was detected during a routine audit. It might have occurred due to outdated security protocols. Despite updating the software, the incidents still persist. Please investigate and resolve the issue.",
+   "gold": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2424.9,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9707615967618427,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9992887973744004,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.5921131283790617,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9999860525130737,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.998673319837521,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8670220395196898,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999917745591989,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2401.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9998645874191113,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9626302108213645,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8520106519007895,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-2873e41b09",
+   "text": "Subject: Recent incident on project management SaaS platform today\n\nCustomer Support is documenting an incident that occurred on the project management SaaS platform. The issue appears to be related to potential incompatibility between network and software. The team has undertaken several troubleshooting measures, such as rebooting systems, clearing caches, and verifying integrations, but the problem remains unresolved. This incident has caused considerable disruption to workflows, raising concerns about possible project impacts. We would appreciate it if you could prioritize this matter and provide a solution at your earliest convenience.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1991.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8618355362456445,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9045797570921862,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9015895113399248,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9996799230703681,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.7981769413014669,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.5926559669166498,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999717473991301,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2190.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9999828340093373,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9999041603229153,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9990887028337012,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.9525773346914514,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9995690320933586,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-2b5313ec75",
+   "text": "Subject: Revise Digital Marketing Plan\n\nRequesting an update to our digital marketing plan to strengthen brand development and improve campaign effectiveness. Assist us in expanding our reach and boosting engagement.",
+   "gold": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "high",
+    "type": "Change"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1320.0,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.5748357090584887,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9041352856830329,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9046360887938933,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999576807027534,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999978542328165,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999955892564643,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999989271164011,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1964.4,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.9963749944542264,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.999941827559082,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9999938011362131,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-2c20ab586a",
+   "text": "Subject: Support for Integrating Oracle Database 19c with Zoho CRM for Enhanced Data Analytics\n\nCan offer assistance in integrating Oracle Database 19c with Zoho CRM to optimize data analytics and improve customer insights? Please provide details on your current setup and expected outcomes so we can better understand your requirements and schedule a convenient call to discuss the integration process.",
+   "gold": {
+    "queue": "Customer Service",
+    "priority": "low",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3044.9,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.4353875826242624,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.8803079127728393,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9970588683583635,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999718666068776,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999972581862338,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999935626981654,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999982118606638,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3707.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9999985694895231,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-2ecff63122",
+   "text": "Subject: Support for Integrating Project Management SaaS Tools\n\nNeed assistance with integrating project management SaaS tools such as Zoho CRM, Outlook 2021, and Notion to enhance user productivity. Integration should enable team access and seamless management of projects across various platforms, thus saving time and increasing efficiency.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "high",
+    "type": "Change"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2814.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.5137534742325608,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.7051218630716435,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9982860684586379,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999477863301158,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999983310699747,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999982118606638,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999995231628418,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2332.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9047490595475024,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9239460837156731,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-2f2e8dd76e",
+   "text": "Subject: Issue with File Upload\n\nUsers are experiencing error messages during file uploads.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2344.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.993898153074951,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9589673285458133,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.7593883962843838,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999966859817318,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9924198982995142,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9971961974293572,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999983310699747,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3265.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9997968880000357,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9988333836265973,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9999883175582402,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999991655353482,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999989271169756,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-2f87876836",
+   "text": "Subject: Failure\n\nExpressing dissatisfaction with the digital strategies executed by the marketing agency. Despite their efforts, there has been no notable increase in brand growth. I suspect there may be a misalignment with the target audience. We attempted rebranding and content updates, but the results have been disappointing. I would appreciate it if you could examine this issue and offer guidance to enhance our digital marketing initiatives. Looking forward to your prompt response.",
+   "gold": {
+    "queue": "IT Support",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1842.4,
+     "fields": {
+      "queue": {
+       "label": "Customer Service",
+       "p": 0.6549148711192134,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.7037510915194753,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9983975291134357,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999653100981828,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999865293500613,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.6513453676164568,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999536275847567,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2822.6,
+     "fields": {
+      "queue": {
+       "label": "Customer Service",
+       "p": 0.41361797370441067,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.998071624909013,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.7772811761563689,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9999998807907171,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-3512f7ca9b",
+   "text": "Looking for customer support on integration strategies for Apple macOS Monterey. Could you provide some relevant information or documentation on this topic? Your assistance would be greatly appreciated. I look forward to hearing back from you soon.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2165.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.5733165851612663,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9840288750051576,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9999822378153543,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999393224717571,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999986886977652,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.999795973307972,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1476.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.998071624909013,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-3539294a84",
+   "text": "Subject: Challenges with Financial Data Analysis\n\nA financial organization is facing integration problems across various products, leading to inconsistent outcomes in investment optimization. Efforts to troubleshoot by updating software, restarting devices, and consulting vendor support have not resolved the issue. The root cause may be due to compatibility conflicts between software and hardware components. Your prompt assistance in resolving this matter would be highly valued to maintain peak performance.",
+   "gold": {
+    "queue": "Customer Service",
+    "priority": "low",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3016.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9431934972480133,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.6708308310994597,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8252736385044014,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999418258672196,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9968256951309684,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.7549029083120214,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.999994039535551,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2149.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9990887028337012,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.8177718608461166,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9770735385672259,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9525773346914514,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-36fc11bfb7",
+   "text": "Subject: Technical Outage Customer Assistance\n\nThere was a technical disruption that impacted several software and hardware products, along with data analytics operations. This may have been caused by software incompatibilities or network issues. Users tried restarting their devices and reinstalling affected applications, but these efforts were unsuccessful. The disruption led to significant delays and impacted productivity. We request your prompt assistance in resolving this matter. Please provide guidance on the next steps and let us know if you would prefer to schedule a meeting to discuss the matter further. We appreciate your cooperation.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2282.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.7452824663959287,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9322960961078592,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9942933321661962,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.997796177937615,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.9525694848034265,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.5311991989307551,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999958276749297,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1604.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9997177522393957,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9999938011362131,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9999945163877351,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9047490595475024,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-37011ffb55",
+   "text": "Subject: Enquiry on Project Management SaaS\n\nInterested in learning about the features and pricing options of the project management SaaS. Could you provide details on the different plans and the features included in each? I would appreciate information on any discounts or promotions currently running. Additionally, I would like to know about the scalability of the platform to support business growth. Please let me know about any case studies or testimonials from existing customers.",
+   "gold": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1733.6,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.9993696811858893,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.99828797579407,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9997058510709192,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999541044217434,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999995231628418,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1635.6,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.999990820927128,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-37edfb4316",
+   "text": "Subject: Seeking Information on Digital Marketing Strategies\n\nKindly provide detailed information on the services offered.",
+   "gold": {
+    "queue": "Customer Service",
+    "priority": "low",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2060.4,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.7247596406067065,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.999187171480319,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9992528557487522,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999611377700629,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999988079071329,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999935626981654,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999995231628418,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2031.0,
+     "fields": {
+      "queue": {
+       "label": "General Inquiry",
+       "p": 0.459625270884992,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-38074ab2db",
+   "text": "Subject: Alert for Unauthorized Access in Medical Data System Triggered\n\nCustomer Support, in preparation of the report, the unauthorized access alert has triggered in our medical data system. This alert might be due to outdated security protocols. We have attempted to reset access credentials and reinforce firewalls, but the issue still persists. We would greatly appreciate if you could look into this matter urgently and provide a solution to prevent potential data breaches. Please let us know if you require any additional information to facilitate the investigation. We look forward to hearing from you soon. Thank you.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 7844.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9863157867181894,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9998226761749012,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.7731410849256272,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9940667152646635,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9796625976524681,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8807821239998442,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.999994039535551,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2171.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9996605495663397,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9890134350227241,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9999998807907171,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-389a6b7d62",
+   "text": "A healthcare provider has indicated a possible unauthorized attempt to access confidential medical information due to outdated firewall configurations. Restoring access credentials and updating the firewall rules should resolve the problem.",
+   "gold": {
+    "queue": "Customer Service",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1743.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9271881003105487,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9979154466613247,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.810092799410852,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9947570562739032,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9959273933050636,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9975249171972992,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999970197676546,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2402.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8177718608461166,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8520106519007895,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-3d852e2033",
+   "text": "Subject: Unusual Activity Affecting Healthcare System Data\n\nCurrently encountering unusual activities that are interfering with the NAS-System SAP ERP. The issue might be caused by outdated antivirus programs. Attempts to resolve this by rebooting the systems, updating the software, and running Malwarebytes scans have not been successful. Assistance is needed to resolve this problem and prevent interruptions to healthcare services.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2398.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8747121708333955,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9901358489121475,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.5292125271029681,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.817538078180854,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.7057725126795014,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.7310437632810601,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999923706054689,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1951.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9858794524818076,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9999997615814484,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9770735385672259,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9998417025903573,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.7772811761563689,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-3f9c6a2ad3",
+   "text": "Subject: Assistance with WooCommerce OBS Studio Integration\n\nSeeking clarification on the SaaS capabilities, particularly the integration between WooCommerce and OBS Studio. Would be grateful for detailed information on the services the platform supports, including setup and customization procedures, as well as accessible documentation and support resources.",
+   "gold": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1674.3,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.47491191890924267,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.979603349364045,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9998415708471081,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999962806702132,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999983310699747,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999866485595711,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1923.1,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.6221280246568045,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-41bf2ae67c",
+   "text": "Subject: Several Equipment Failures\n\nSupport Team,\n\nNumerous gadgets are experiencing failures during daily activities. We believe the root cause might be linked to recent modifications in the network power configuration impacting the hardware. We have attempted basic troubleshooting measures such as restarting the devices and inspecting the connections, but these efforts have not resolved the issue. We would be grateful for prompt assistance to address this problem.\n\nThank you.",
+   "gold": {
+    "queue": "Human Resources",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2695.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9553632150805129,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.7525894732935469,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9564657223537041,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999471902858652,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9914201494756685,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9579029670499125,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.999994039535551,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1692.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.999443209265523,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.6221280246568045,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.5008712234296745,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999982118622988,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9998417025903573,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-4607da371c",
+   "text": "Subject: Request for Assistance with System Crash\n\nDear Customer Support Team,\n\nI am reporting an issue with the analysis system, which is crashing unexpectedly. The crash might be due to data overload or software conflicts. I have already attempted initial troubleshooting steps such as restarting the system and updating the software, but the problem persists.\n\nI would greatly appreciate your assistance in resolving this matter promptly. Since the analysis system is a critical tool for operations, the downtime is causing significant disruptions. Please inform me of any additional steps I should take.",
+   "gold": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1389.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9940223099513975,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9706071015099669,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.986071884775777,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999657869334646,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.5311993889024264,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.7772850407985316,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999954700467981,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1531.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9999780657305596,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9999985694895231,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9999951124309442,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.9992907179595119,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9995690320933586,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-49452688fa",
+   "text": "Subject: Multiple Digital Products Facing Disruptions\n\nThe marketing agency encountered service interruptions impacting several digital hardware devices due to conflicts during system updates. Despite performing rapid reboot diagnostics, the problem remains unresolved and needs expert support.",
+   "gold": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1575.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.6660805815959261,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.5307270127815585,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8115411424873801,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999481439575643,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.754905698051797,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8519387196957254,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999973773956583,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1848.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9979878668594864,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.6792821161581865,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9998207253016296,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9047490595475024,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-499683261d",
+   "text": "Subject: Discrepancies in Model Predictions Noted\n\nThere are inconsistencies in the outputs of our investment prediction models, which might be related to recent data integration problems. After checking the data sources and restarting the analytics platform, the issue still exists. We require help to address this problem.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1749.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.945262133945203,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.8151684378558834,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9257840521186272,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999936699869898,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.996404886151167,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9579035058885252,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999961853027344,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3482.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9994470218488053,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9947950867475456,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999952316397687,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-4a74fefcaf",
+   "text": "Subject: Problem with Network Access to Products\n\nUsers have reported sporadic difficulties in accessing various products, likely due to errors in network configuration. The team examined network settings and carried out initial troubleshooting steps, but the problems continue. We would appreciate it if you could investigate the matter and offer a solution at your earliest convenience. Please inform us if any further information is required. We look forward to your prompt resolution of the issue.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1644.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8585163406781327,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9398021118779134,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8507043145305329,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999701976778769,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9859332446430752,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9148886783825684,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999941587445919,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1863.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9979269564290898,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999920130098962,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.995918994528247,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.998071624909013,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999963045188283,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-4e425331d8",
+   "text": "Subject: Delay in Financial Data Processing Issue\n\nDear Customer Support, I am writing to draw attention to a critical issue faced by our financial firm concerning delays in data processing. These delays are significantly affecting the accuracy of analytics, which are essential for our investment optimization strategies. Despite our efforts to troubleshoot the problem, it remains unresolved. Our initial actions included restarting systems and updating Python libraries and Adobe software to ensure compatibility and optimal performance. However, the issue persists. We suspect there may be a software-hardware incompatibility causing this problem.",
+   "gold": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1317.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9809159640449997,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.8803666816277255,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8150598998808963,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9977986216886672,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9706823834362329,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.7549050456117323,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999970197676546,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1401.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9999036835327288,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9999898672613365,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.7772811761563689,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9996643629787116,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-4f7fe737dc",
+   "text": "Subject: Enquiry About SaaS Project Management Tool\n\nHello Customer Support, I am reaching out to inquire about the billing features of the SaaS project management tool. Could you provide information on the available plans, payment options, and any discounts that may be offered? I am particularly interested in learning about the scalability of the tool and how it can adapt to growing business needs. Additionally, I would appreciate details on the level of support provided and the security measures in place to protect user data. Thank you for your time, and I look forward to hearing back soon.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3319.1,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.7271250542223142,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9795850519103664,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9996478557557484,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999624490730773,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999977350235625,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999964237213419,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999986886977652,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1390.8,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.8379827109813951,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-53f4acc47b",
+   "text": "Subject: Support for Campaign Performance Analytics\n\nFacing delays in campaign performance analytics due to system slowdowns, which might be caused by high server load during peak usage. Despite clearing the cache and restarting the system, the issue persists. This could impact our ability to deliver timely insights to clients. We would appreciate your assistance in resolving this matter as soon as possible. Please provide any additional troubleshooting steps and let us know a suitable time for a call to discuss a permanent solution. Reach us at <tel_num>.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 4088.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9446504119203679,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.7297336998586095,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.5560454182225195,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999454021443316,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9890097973647168,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8519396210324116,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999974966048697,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2739.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9996624562807039,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9706540503472074,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9239460837156731,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999785425582142,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9770735385672259,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-572b5d6dc7",
+   "text": "Subject: Incorporate SaaS Project Management API Integration\n\nSupply documentation for integration tools.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2345.6,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.6104101621818044,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9392840839141211,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9986478686796617,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999459981911542,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999973773956583,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999927282334015,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999994039535594,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1859.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9819759350372468,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.999999642372194,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-592a7c2294",
+   "text": "Dear Customer Support, we are experiencing critical performance degradation during peak usage hours. It is possible that this issue is due to server resource limitations or inefficient query handling. Despite our efforts to optimize database queries and increase server capacity, the problem continues to persist. We would greatly appreciate if you could look into this matter urgently and provide a solution to prevent any further disruptions. The performance degradation is significantly impacting our operations, and a prompt resolution would be greatly appreciated.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1875.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9747799045588644,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9901360868232301,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9287397867411444,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999936580660886,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9914201494756685,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.5926576271962494,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999926090240764,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 4165.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9999828340093373,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.5008712234296745,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9998417025903573,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9984981382248634,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-59d0505819",
+   "text": "Subject: Clarify Invoice Discrepancies\n\nThe marketing agency has observed inconsistencies in the billed amounts for digital tools and hardware purchases. These discrepancies might be due to incorrect pricing on the invoice. Efforts to review account statements and contact vendors for clarification have not resolved the issue. A prompt resolution would be greatly appreciated.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1417.4,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9996693136660177,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.946495831869634,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9801167844233675,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999519586570941,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999928474427408,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.817565744576616,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9982981086037117,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2067.2,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9999986886986597,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999547014960082,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9430898215843259,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9770735385672259,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-5a909d73c9",
+   "text": "Subject: Notification of Data Security Compromise\n\nA healthcare organization has encountered a data security incident, potentially due to outdated security measures. They attempted to update passwords and apply security patches. The breach might have exposed confidential patient details, such as medical records and personal information. The organization is actively working to inform those impacted and to prevent similar incidents in the future. Meanwhile, patients are advised to keep an eye on their accounts and report any unusual activity. The healthcare provider apologizes for any inconvenience caused.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2302.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9481446143829217,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9996298551660359,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8342488983378249,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9999781846996817,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9964046478937775,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9859308003394398,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999805688854149,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3920.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9988562453864798,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9047490595475024,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-5f46deaa1a",
+   "text": "Subject: Request for Update on Security Operations Compliance Summary\n\nDear Customer Support Team,\n\nI hope this message reaches you in good health. I am writing to request an update concerning the overview of security operations compliance related to account services. Considering the importance of maintaining robust security protocols in line with compliance standards, the latest information on this topic is essential for sustaining trust and service integrity.\n\nCould you kindly provide comprehensive documentation detailing the current status, recent modifications, and upcoming enhancements to the security operations compliance measures?",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "low",
+    "type": "Change"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1689.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.6457536723233491,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.8667485094010098,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9999846220016563,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9991822838711026,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999964237213419,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999481439575643,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999986886977652,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1820.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.999031536164102,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9999724630331492,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-613d543082",
+   "text": "Dear Customer Support, I am reporting an issue with the financial analytics dashboard, specifically with the investment performance metrics displayed on the platform. It seems that the metrics are incorrect and might be due to a disruption in the data feed caused by a recent software update. Despite restarting the application and clearing the cache, the issue still persists. I would greatly appreciate it if you could look into this matter and provide a resolution as soon as possible. Please let me know if there is any additional information you need to facilitate the troubleshooting process.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2377.9,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9572224025883742,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.7958930681536973,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8038907688274707,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999423027022163,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9933052660909262,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.957902849290521,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999941587445919,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1836.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9994470218488053,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9997387273776379,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.999975681600697,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999898672613365,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-62dce88559",
+   "text": "Subject: Digital Marketing Pricing Options\n\nCustomer Support is inquiring about digital marketing services. Could you please share details regarding pricing structures, billing periods, and the services offered? They are interested in understanding the different packages available and how they can benefit their business. Specifically, they would like to know the costs associated with each package, what services are included, and the billing frequency. Additionally, they would appreciate information on any discounts for long-term commitments or current promotions. Looking forward to your response to discuss further.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2627.0,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.9969335808429977,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.976983070445156,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9998123049681499,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999514818174928,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999986886977652,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.999988317489653,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999985694885254,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2817.4,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.9999898672613365,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-66c08083c2",
+   "text": "The data analytics system has been experiencing inconsistent performance, which has impacted investment optimization. Despite updating the software, restarting systems, and checking hardware connections, the issue continues to persist. It is suspected that the problem could be due to software incompatibility or hardware issues, which are affecting the system's performance. Assistance is required to resolve this issue and ensure the system functions as expected.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1614.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9781906603346544,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.8741322227637837,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9939354061463102,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999002218260641,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9984976053560134,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.904639957598954,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2096.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9998750764635949,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.8520106519007895,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.7316156289466418,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999985694895231,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9988333836265973,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-66ca3c189e",
+   "text": "Subject: Problems with JIRA Software Integration\n\nThe team is facing regular crashes while using JIRA Software in conjunction with Smartsheet and Figma. Recent software updates might be causing compatibility issues. Despite attempting to restart and clear caches, the crashes continue. We require your assistance to resolve this issue.",
+   "gold": {
+    "queue": "IT Support",
+    "priority": "low",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1904.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8797471562063661,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9541748164170922,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.7814086133129282,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999950051307329,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9924206136793764,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8807850508075457,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999972581862338,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3091.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9988333836265973,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9890134350227241,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9398718714282059,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999998807907171,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9525773346914514,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-6810685923",
+   "text": "Subject: Digital Campaign Fell Short Due to Errors\n\nPreparing a report on the marketing agency's digital campaign reveals underperformance caused by inconsistent data from SQL Server and VPN-Router connectivity problems. Efforts to resolve these issues involved rebooting the VPN-Router, checking SQL Server logs, updating the Google Nest WiFi Router firmware, and scanning systems with McAfee Total Protection.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1921.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.5550540049897618,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.615105270390035,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9272304755008888,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9968059062719222,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9626662126027413,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9706783298261176,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999977350235625,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2873.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9998312138959775,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9998760300249125,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.7316156289466418,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999785425582142,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9398718714282059,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-692753eb06",
+   "text": "Subject: Reported Access Difficulties for Healthcare Provider Today\n\nA healthcare provider faced sporadic access problems with medical data on hospital systems. The potential cause might be CPU performance issues on the VPN-Router. Efforts to resolve included rebooting the VPN-Router, updating Symantec Endpoint Protection, and checking CPU and memory usage metrics, but the problem continues.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "low",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2839.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.829756316667427,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.6504257326807921,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.591828173182479,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.8353875841406807,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.6791655399033409,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9148864153233579,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999977350235625,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2381.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9997215658699792,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9626302108213645,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.9933086206505375,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999870062714192,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-6d1e22d43f",
+   "text": "Subject: Advice on Enhancing Investment Strategies with Data Analytics\n\nSeeking assistance in optimizing investment strategies through the use of data analytics with Smartsheet and Bitbucket. Could you share some resources or examples?",
+   "gold": {
+    "queue": "Customer Service",
+    "priority": "high",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2857.7,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.43642132519391735,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9923563004101994,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9999480247508258,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999213218719007,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999988079071329,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999976158140953,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999992847442343,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1919.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9847969275389854,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-6fd6cfd21f",
+   "text": "Customer Support, please address the underperformance of our digital marketing campaigns, which has led to stagnant brand growth despite our efforts to optimize keywords and adjust target demographics. We believe the root cause might be outdated strategies that are not aligned with our target audience. We would greatly appreciate your guidance on how to revamp our approach to get the campaigns back on track. Specifically, we are interested in learning about new tools and techniques.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "low",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1862.3,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.5609523037297693,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.7768682770393148,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9985597730166249,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999952554704187,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999917745591989,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9626650219813916,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 1894.1,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.7063416394256196,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.999941827559082,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9999017763692567,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.7316156289466418,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-73fc51c0d1",
+   "text": "Subject: Advice on Securing Medical Data in RapidMiner for Hospitals\n\nNeed guidance on securing medical data for RapidMiner hospital setup. Planning to implement a new data analytics system and want to ensure patient data is protected. Would appreciate advice and recommendations for securing medical data in RapidMiner.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2850.1,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.692658472327646,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.932295144486178,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9998817443853169,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9998822212244008,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999972581862338,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999994039535594,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2616.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9626302108213645,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9990887028337012,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999999642372194,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-78dcc39947",
+   "text": "Subject: Enhancing Digital Marketing Strategies for Improved Brand Growth\n\nI need assistance in improving my digital marketing strategies through better analytics to boost brand growth.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Change"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3032.1,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.5579050530878458,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9767717721841173,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9997254013920567,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999454021443316,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999989271164011,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.999994397163171,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999994039535594,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3930.4,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.7772811761563689,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9999997615814484,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-7b7161f020",
+   "text": "Subject: Discrepancy in Billing Found\n\nDetected an unexpected billing discrepancy where charges seem higher than agreed-upon fees, likely due to an error in the billing cycle or system update.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 1763.6,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9999076128556033,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9433040016019463,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.919540169603239,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999551773076136,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999829530713756,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9740363957949381,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9796633129601331,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 3907.2,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9999997615814484,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9999892712215538,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9525773346914514,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.5631446537543375,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9984981382248634,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-7c4004097b",
+   "text": "Subject: Seeking Guidance on Data Analytics for Investment Optimization\n\nHello Customer Support, I am reaching out to inquire about how data analytics can enhance investment optimization strategies, particularly in portfolio management and risk assessment. I would greatly appreciate any information or resources you can provide. Thank you for your assistance, and I look forward to hearing from you soon.",
+   "gold": {
+    "queue": "Customer Service",
+    "priority": "medium",
+    "type": "Request"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2386.7,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.4268496032630241,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9974863530338836,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.9998602867091223,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999582767496193,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9999980926513672,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999977350235625,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999991655349802,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2753.6,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.42841786054332404,
+       "confidence": null
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-869867e8ff",
+   "text": "Subject: Problem with Billing System\n\nThe company encountered unforeseen billing mistakes impacting several products. It is suspected that a system malfunction or data synchronization problem was the cause. Efforts to resolve the issue included restarting accounts and verifying payment information.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2150.0,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9619369675460807,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.6764429282541942,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9082061620784352,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9924040436177192,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9740381248092845,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9840883011404932,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9998196959517942,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2281.9,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.9999008227883849,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9239460837156731,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9914309682463265,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.999999642372194,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999251393681969,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-88a4aa4013",
+   "text": "Subject: Support for Unauthorised Access Incident\n\nThere has been an unauthorized access attempt on the hospital system, which may have compromised secure medical data. Immediate assistance is required.",
+   "gold": {
+    "queue": "Product Support",
+    "priority": "high",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3010.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9661719191745672,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9999626874936456,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.988976001412422,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.9998867511779401,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9859309197079965,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9241315119091885,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.999994039535551,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2281.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.998071624909013,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.999991059342968,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8807749623595528,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-8b4be502bd",
+   "text": "Subject: Issue of Medical Data Inaccessibility Noted\n\nAn incident led to medical data becoming inaccessible, possibly due to a billing error or system misconfigurations following updates. We have attempted to reconfigure access permissions and reviewed recent transaction logs.",
+   "gold": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2039.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9406008728211713,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.95751589519385,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8253701306086166,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.562135925444604,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.7772899286076672,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9770132300048946,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9986730813864929,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2020.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.997196320471151,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9992907179595119,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9999041603229153,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.8520106519007895,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.9859396274705614,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9999647146725418,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-9294af1729",
+   "text": "Subject: Support Needed for Login Problems\n\nA user is encountering intermittent login difficulties with the SaaS platform. This might be related to recent server updates. The user has already attempted clearing the cache and logging in from multiple browsers, but these steps have not resolved the issue. Additionally, the user has tried different login credentials, and the problem still persists. The user is experiencing frustration and is requesting assistance to resolve the issue as soon as possible. Could you please look into this matter and provide a solution or workaround?",
+   "gold": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Incident"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2038.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9978654980873748,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.5616353690752665,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.8489685097588809,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.999944925307857,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9964039326579642,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.9991949200390552,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999945163727091,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2725.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9999960661011378,
+       "confidence": null
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.9968312031682032,
+       "confidence": null
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.9999792577991224,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-9620bd8553",
+   "text": "Subject: SaaS Platform Performance Issue\n\nCurrently facing sporadic slowdowns and crashes on the SaaS platform, likely due to server overload or coding errors. Attempts such as restarting servers, applying code patches, and adjusting load balancing have not resolved the problem. Our team is actively working to find a solution and would appreciate any assistance in pinpointing the root cause and implementing an effective fix. Your guidance and support would be highly valued to help us resolve this issue promptly.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 2275.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.98662763817801,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.6780345411761851,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.8342568916874291,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.9999394416810959,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.8807879645002092,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.7772837898949719,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999947547913735,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2251.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9999893904292819,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9239460837156731,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9525773346914514,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.5631446537543375,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9968312031682032,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "tb-9a0ef917c4",
+   "text": "Subject: Assistance Required for Data Breach\n\nA healthcare organization encountered data security incidents due to obsolete security measures. Efforts to update firewalls and reset passwords have been unsuccessful. Seeking help to address this problem and prevent similar breaches in the future.",
+   "gold": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Problem"
+   },
+   "systems": {
+    "together-small": {
+     "latency_ms": 3156.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9871991276332154,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9994606375585203,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.6139315948439451,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.999976515769231,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.9953878521964552,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8670219232429811,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.9999904632568363,
+       "confidence": null
+      }
+     }
+    },
+    "together-large": {
+     "latency_ms": 2970.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.9999194177669226,
+       "confidence": null
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": null
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.995918994528247,
+       "confidence": null
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.5008712234296745,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ticket Triage Benchmark</title>
+<meta name="description" content="TypeSafe Jev vs Together.ai LLMs on customer support ticket triage: accuracy, confidence, cost and latency, from cached API responses.">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --surface-2: #f3f2ee;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #6f6e69;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.10);
+  --s1: #2a78d6; /* Jev */
+  --s2: #eb6834; /* small LLM */
+  --s3: #1baf7a; /* large LLM */
+  --good: #006300;
+  --bad: #b3261e;
+  --focus: #2a78d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --surface-2: #232321;
+    --ink: #ffffff;
+    --ink-2: #c3c2b7;
+    --muted: #9a9890;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --s1: #3987e5;
+    --s2: #d95926;
+    --s3: #199e70;
+    --good: #0ca30c;
+    --bad: #e66767;
+    --focus: #3987e5;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --surface-2: #232321;
+  --ink: #ffffff;
+  --ink-2: #c3c2b7;
+  --muted: #9a9890;
+  --grid: #2c2c2a;
+  --axis: #383835;
+  --border: rgba(255, 255, 255, 0.10);
+  --s1: #3987e5;
+  --s2: #d95926;
+  --s3: #199e70;
+  --good: #0ca30c;
+  --bad: #e66767;
+  --focus: #3987e5;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+h2 { font-size: 19px; margin: 0 0 4px; }
+p { margin: 0 0 12px; }
+a { color: var(--s1); }
+.lede { color: var(--ink-2); font-size: 16px; max-width: 70ch; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
+.meta li { font-size: 13px; color: var(--ink-2); background: var(--surface-2); border-radius: 999px; padding: 2px 10px; }
+.note {
+  display: flex; gap: 10px; align-items: flex-start;
+  margin: 20px 0 0; padding: 12px 14px; border-radius: 10px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--ink-2); font-size: 14px;
+}
+.note svg { flex: none; margin-top: 2px; }
+section { margin-top: 36px; }
+.section-sub { color: var(--ink-2); font-size: 14px; margin-bottom: 14px; max-width: 75ch; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+
+/* filter row */
+.filters {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center;
+  margin: 28px -16px 0; padding: 12px 16px;
+  background: color-mix(in srgb, var(--page) 92%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+}
+.filters .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; }
+.seg { display: inline-flex; background: var(--surface-2); border-radius: 8px; padding: 2px; }
+.seg button {
+  font: inherit; font-size: 14px; border: 0; background: transparent; color: var(--ink-2);
+  padding: 5px 12px; border-radius: 6px; cursor: pointer; min-height: 32px;
+}
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 0 0 1px var(--border); font-weight: 600; }
+.seg button:disabled { opacity: 0.45; cursor: not-allowed; }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* stat tiles */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 20px; }
+.tile { position: relative; overflow: hidden; }
+.tile::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--c); }
+.tile .who { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.tile .name { font-weight: 650; }
+.tile .model { font-size: 12px; color: var(--muted); }
+.tile .hero { font-size: 40px; font-weight: 650; line-height: 1.1; margin: 10px 0 2px; letter-spacing: -0.02em; }
+.tile .hero small { font-size: 14px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; }
+.tile dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 10px 0 0; font-size: 13px; }
+.tile dt { color: var(--muted); }
+.tile dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.tile.pending .hero { color: var(--muted); font-size: 22px; margin-top: 16px; }
+
+/* charts */
+.chart-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 820px) { .chart-grid.two { grid-template-columns: 1fr 1fr; } }
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { font: 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--muted); }
+.chart .tick { font-variant-numeric: tabular-nums; }
+.chart .gridline { stroke: var(--grid); stroke-width: 1; }
+.chart .axis { stroke: var(--axis); stroke-width: 1; }
+.chart .endlabel { font-weight: 600; fill: var(--ink-2); }
+.chart .barlabel { fill: var(--ink-2); font-variant-numeric: tabular-nums; }
+.chart .ref { stroke: var(--ink-2); stroke-width: 1; }
+.chart .reflabel { fill: var(--ink-2); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0 0 10px; padding: 0; list-style: none; font-size: 13px; color: var(--ink-2); }
+.legend li { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 3px; border-radius: 2px; background: var(--c); display: inline-block; }
+.legend i.dot { width: 10px; height: 10px; border-radius: 3px; }
+.tooltip {
+  position: absolute; pointer-events: none; z-index: 4; min-width: 170px;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; font-size: 13px; box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  opacity: 0; transition: opacity 0.1s;
+}
+.tooltip.show { opacity: 1; }
+.tooltip .t-head { color: var(--ink-2); margin-bottom: 4px; }
+.tooltip .t-row { display: flex; align-items: center; gap: 8px; }
+.tooltip .t-row b { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; }
+.tooltip i { width: 10px; height: 10px; border-radius: 3px; background: var(--c); display: inline-block; }
+
+/* slider */
+.slider-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 14px; }
+.slider-row label { font-weight: 600; }
+.slider-row output { font-size: 22px; font-weight: 650; min-width: 3.2em; }
+input[type=range] { flex: 1 1 220px; accent-color: var(--ink-2); min-height: 32px; }
+.auto-rows { display: grid; gap: 10px; }
+.auto-row { display: grid; grid-template-columns: 150px 1fr; gap: 12px; align-items: center; }
+.auto-row .who { font-size: 14px; font-weight: 600; }
+.auto-row .who small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+.track { position: relative; height: 28px; background: var(--surface-2); border-radius: 6px; }
+.fill { position: absolute; inset: 0 auto 0 0; background: var(--c); border-radius: 6px 4px 4px 6px; min-width: 2px; transition: width 0.2s; }
+.track span { position: absolute; top: 50%; transform: translateY(-50%); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink); white-space: nowrap; }
+@media (max-width: 520px) { .auto-row { grid-template-columns: 1fr; gap: 4px; } }
+
+/* explorer */
+.ex-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 12px; font-size: 14px; color: var(--ink-2); }
+.ex-list { display: grid; gap: 10px; }
+.ticket { padding: 14px 16px; }
+.ticket .txt { white-space: pre-wrap; font-size: 14px; color: var(--ink); max-height: 7.5em; overflow: hidden; position: relative; }
+.ticket .txt.clamped::after { content: ""; position: absolute; inset: auto 0 0 0; height: 2.5em; background: linear-gradient(transparent, var(--surface)); }
+.ticket .more { font: inherit; font-size: 13px; background: none; border: 0; color: var(--s1); padding: 4px 0; cursor: pointer; }
+.ticket table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+.ticket th, .ticket td { text-align: left; padding: 6px 8px 6px 0; border-top: 1px solid var(--grid); vertical-align: top; }
+.ticket th { color: var(--muted); font-weight: 500; white-space: nowrap; }
+.pred { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.ok { color: var(--good); font-weight: 600; white-space: nowrap; }
+.no { color: var(--bad); font-weight: 600; white-space: nowrap; }
+.pbar { display: inline-block; width: 44px; height: 6px; border-radius: 3px; background: var(--surface-2); vertical-align: middle; position: relative; overflow: hidden; }
+.pbar b { position: absolute; inset: 0 auto 0 0; background: var(--c); border-radius: 3px; }
+.num { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.table-scroll { overflow-x: auto; }
+
+/* full table */
+table.data { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.data th, table.data td { padding: 8px 10px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+table.data th:first-child, table.data td:first-child, table.data th:nth-child(2), table.data td:nth-child(2) { text-align: left; }
+table.data thead th { color: var(--muted); font-weight: 500; }
+details summary { cursor: pointer; font-weight: 600; }
+.method li { margin-bottom: 6px; color: var(--ink-2); }
+footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Jev vs LLMs on support ticket triage</h1>
+    <p class="lede">Can a System One model (<a href="https://docs.typesafe.ai/introduction">TypeSafe Jev</a>) route support tickets as accurately as general-purpose LLMs, for less money and in less time? And can its confidence decide which tickets are safe to automate?</p>
+    <ul class="meta" id="meta"></ul>
+    <div id="banner"></div>
+  </header>
+
+  <div class="filters" role="toolbar" aria-label="Filters">
+    <div><span class="label">Dataset</span><span class="seg" id="f-dataset"></span></div>
+    <div id="f-field-wrap"><span class="label">Field</span><span class="seg" id="f-field"></span></div>
+    <div id="f-labels-wrap"><span class="label">Scored against</span><span class="seg" id="f-labels"></span></div>
+  </div>
+
+  <section aria-labelledby="h-summary">
+    <h2 id="h-summary">Headline</h2>
+    <p class="section-sub" id="summary-sub"></p>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <section aria-labelledby="h-auto">
+    <h2 id="h-auto">Automate the confident ones</h2>
+    <p class="section-sub">Rank tickets by how confident each system is and hand the most confident ones to automation. Pick the accuracy you need on the automated share. Each bar shows how many tickets clear that bar, and the rest go to a human.</p>
+    <div class="card">
+      <div class="slider-row">
+        <label for="target">Required accuracy on automated tickets</label>
+        <output id="target-out" for="target">90%</output>
+        <input type="range" id="target" min="50" max="99" step="1" value="90">
+      </div>
+      <div class="auto-rows" id="auto-rows"></div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <ul class="legend" id="curve-legend"></ul>
+      <div class="chart" id="curve"></div>
+      <p class="section-sub" style="margin:8px 0 0">Accuracy on the most-confident share of tickets. A curve that stays high further to the right means the confidence score is more useful. The horizontal rule marks the required accuracy.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-ops">
+    <h2 id="h-ops">Cost and speed</h2>
+    <p class="section-sub">Measured from the token usage each API returned, multiplied by the listed price. Latency is wall-clock time per call, including network time.</p>
+    <div class="chart-grid two">
+      <div class="card"><h3 style="margin:0 0 8px;font-size:15px">Cost per 1,000 tickets (USD)</h3><div class="chart" id="cost"></div></div>
+      <div class="card"><h3 style="margin:0 0 8px;font-size:15px">Median latency per ticket</h3><div class="chart" id="latency"></div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-ex">
+    <h2 id="h-ex">Ticket explorer</h2>
+    <p class="section-sub" id="ex-sub"></p>
+    <div class="ex-controls">
+      <span class="seg" id="ex-filter"></span>
+      <span id="ex-count"></span>
+    </div>
+    <div class="ex-list" id="ex-list"></div>
+    <button type="button" class="more" id="ex-more" style="margin-top:10px;font:inherit;font-size:14px;background:none;border:0;color:var(--s1);cursor:pointer;padding:6px 0"></button>
+  </section>
+
+  <section aria-labelledby="h-table">
+    <h2 id="h-table">All numbers</h2>
+    <p class="section-sub">Every value above, as a table. Where a system was run 3 times, accuracy is the mean with the range in brackets.</p>
+    <div class="card table-scroll"><table class="data" id="table"></table></div>
+  </section>
+
+  <section aria-labelledby="h-method">
+    <h2 id="h-method">Method and caveats</h2>
+    <ul class="method" id="method"></ul>
+  </section>
+
+  <footer id="footer"></footer>
+</main>
+
+<script>
+const DATA = /*__DATA__*/null;
+
+const SYS = {
+  "jev": { name: "Jev", color: "var(--s1)", org: "TypeSafe" },
+  "together-small": { name: "Qwen3.5-9B", color: "var(--s2)", org: "Together.ai" },
+  "together-large": { name: "Llama-3.3-70B", color: "var(--s3)", org: "Together.ai" },
+};
+const ORDER = ["jev", "together-small", "together-large"];
+const DATASETS = {
+  banking77: { name: "Banking77 intent", unit: "messages", fields: ["intent"] },
+  tickets: { name: "Support tickets", unit: "tickets", fields: ["queue", "priority", "type"] },
+};
+const FIELD_NAMES = { intent: "Intent (77)", queue: "Queue (10)", priority: "Priority (3)", type: "Type (4)" };
+
+const state = { dataset: "banking77", field: "intent", labels: "original", target: 90, exFilter: "all", exShown: 8 };
+const EX_PAGE = 8;
+const M = DATA.metrics;
+const pct = (x, d = 0) => (x == null ? "–" : (x * 100).toFixed(d) + "%");
+const usd = (x) => (x == null ? "–" : x < 0.01 ? "$" + x.toFixed(4) : x < 1 ? "$" + x.toFixed(3) : "$" + x.toFixed(2));
+const ms = (x) => (x == null ? "–" : x >= 1000 ? (x / 1000).toFixed(2) + " s" : Math.round(x) + " ms");
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function runFor(system, dataset = state.dataset, labels = state.labels) {
+  return M.runs.find((r) => r.system === system && r.dataset === dataset && r.labels === labels);
+}
+function present(dataset = state.dataset) {
+  return ORDER.filter((s) => runFor(s, dataset));
+}
+
+// ---- coverage maths on ranked [p, correct] pairs (most confident first) ----
+function curveFrom(ranked) {
+  let hits = 0;
+  return ranked.map((r, i) => { hits += r[1]; return { cov: (i + 1) / ranked.length, acc: hits / (i + 1), p: r[0] }; });
+}
+function coverageAt(ranked, target) {
+  let hits = 0, best = 0, pAt = null;
+  ranked.forEach((r, i) => { hits += r[1]; if (hits / (i + 1) >= target - 1e-9) { best = (i + 1) / ranked.length; pAt = r[0]; } });
+  return { coverage: best, p: pAt };
+}
+
+// ---- small SVG helpers ----
+const NS = "http://www.w3.org/2000/svg";
+function el(tag, attrs = {}, parent) {
+  const n = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+  if (parent) parent.appendChild(n);
+  return n;
+}
+function tooltipFor(container) {
+  let t = container.querySelector(".tooltip");
+  if (!t) { t = document.createElement("div"); t.className = "tooltip"; t.setAttribute("role", "status"); container.appendChild(t); }
+  return t;
+}
+function placeTip(tip, container, x, y) {
+  const w = container.clientWidth, tw = tip.offsetWidth, th = tip.offsetHeight;
+  let left = x + 14; if (left + tw > w) left = x - tw - 14;
+  tip.style.left = Math.max(0, left) + "px";
+  tip.style.top = Math.max(0, y - th / 2) + "px";
+}
+
+// ---- filters ----
+function seg(container, options, current, onPick) {
+  container.innerHTML = "";
+  for (const o of options) {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = o.label;
+    b.setAttribute("aria-pressed", String(o.value === current));
+    if (o.disabled) { b.disabled = true; b.title = o.title || ""; }
+    b.addEventListener("click", () => onPick(o.value));
+    container.appendChild(b);
+  }
+}
+function renderFilters() {
+  seg(document.getElementById("f-dataset"),
+    Object.entries(DATASETS).map(([k, v]) => ({ value: k, label: v.name })), state.dataset,
+    (v) => { state.dataset = v; state.exShown = EX_PAGE; state.field = DATASETS[v].fields[0]; if (v !== "tickets") state.labels = "original"; render(); });
+  const fields = DATASETS[state.dataset].fields;
+  document.getElementById("f-field-wrap").hidden = fields.length < 2;
+  seg(document.getElementById("f-field"), fields.map((f) => ({ value: f, label: FIELD_NAMES[f] })), state.field,
+    (v) => { state.field = v; render(); });
+  const hasGold = M.gold_status === "adjudicated";
+  document.getElementById("f-labels-wrap").hidden = state.dataset !== "tickets";
+  seg(document.getElementById("f-labels"), [
+    { value: "original", label: "Original labels" },
+    { value: "adjudicated", label: "Adjudicated gold", disabled: !hasGold, title: "Hand-checked labels are not published yet" },
+  ], state.labels, (v) => { state.labels = v; render(); });
+}
+
+// ---- tiles ----
+function renderTiles() {
+  const box = document.getElementById("tiles");
+  box.innerHTML = "";
+  const unit = DATASETS[state.dataset].unit;
+  const any = runFor(present()[0]);
+  document.getElementById("summary-sub").textContent = any
+    ? `${FIELD_NAMES[state.field]} on ${any.n} ${unit} (${M.split} set). Accuracy is exact match. Always guessing the most common label would score ${pct(any.fields[state.field].majority_baseline)}.`
+    : "";
+  for (const s of ORDER) {
+    const run = runFor(s);
+    const d = document.createElement("div");
+    d.className = "card tile" + (run ? "" : " pending");
+    d.style.setProperty("--c", SYS[s].color);
+    const model = run ? run.model : (M.systems[s] || {}).model || "";
+    let body;
+    if (!run) {
+      body = `<div class="hero">Results pending</div><p class="section-sub" style="margin:4px 0 0">${s === "jev" ? "Waiting for TypeSafe API access. Jev runs on the same frozen prompts as soon as a key is available." : "Not run on this dataset yet."}</p>`;
+    } else {
+      const f = run.fields[state.field];
+      const range = run.repeats.length > 1 ? ` <small>range ${pct(f.accuracy_min)}–${pct(f.accuracy_max)} over ${run.repeats.length} runs</small>` : "";
+      body = `<div class="hero">${pct(f.accuracy, 1)}${range}</div>
+        <dl>
+          <dt>Macro-F1</dt><dd>${f.macro_f1.toFixed(2)}</dd>
+          ${f.within_one != null ? `<dt>Within one level</dt><dd>${pct(f.within_one)}</dd>` : ""}
+          <dt>Automatable at 90%</dt><dd>${pct(f.coverage_at_90)}</dd>
+          <dt>Cost per 1,000</dt><dd>${usd(run.ops.cost_per_1k_usd)}</dd>
+          <dt>Median latency</dt><dd>${ms(run.ops.latency_ms_p50)}</dd>
+        </dl>`;
+    }
+    d.innerHTML = `<div class="who"><span class="name">${SYS[s].name}</span><span class="model">${esc(model)} · ${SYS[s].org}</span></div>${body}`;
+    box.appendChild(d);
+  }
+}
+
+// ---- automation slider ----
+function renderAuto() {
+  const target = state.target / 100;
+  document.getElementById("target-out").textContent = state.target + "%";
+  const rows = document.getElementById("auto-rows");
+  rows.innerHTML = "";
+  for (const s of ORDER) {
+    const run = runFor(s);
+    const r = document.createElement("div");
+    r.className = "auto-row";
+    r.style.setProperty("--c", SYS[s].color);
+    if (!run) {
+      r.innerHTML = `<div class="who">${SYS[s].name}<small>pending</small></div><div class="track"><span style="left:10px;color:var(--muted)">No results yet</span></div>`;
+    } else {
+      const { coverage, p } = coverageAt(run.fields[state.field].ranked, target);
+      const n = Math.round(coverage * run.n);
+      const label = coverage > 0 ? `${pct(coverage)} automated (${n} of ${run.n}) · confidence ≥ ${p == null ? "–" : p.toFixed(2)}` : "none reach this accuracy";
+      const inside = coverage > 0.55;
+      r.innerHTML = `<div class="who">${SYS[s].name}<small>${esc(run.model)}</small></div>
+        <div class="track" role="img" aria-label="${SYS[s].name}: ${label}"><div class="fill" style="width:${coverage * 100}%"></div>
+        <span style="${inside ? "left:10px;color:#fff" : `left:calc(${coverage * 100}% + 8px)`}">${label}</span></div>`;
+    }
+    rows.appendChild(r);
+  }
+  renderCurve();
+}
+
+// ---- coverage curve (line chart, one y-axis) ----
+function renderCurve() {
+  const box = document.getElementById("curve");
+  const legend = document.getElementById("curve-legend");
+  const systems = present();
+  legend.innerHTML = systems.map((s) => `<li style="--c:${SYS[s].color}"><i></i>${SYS[s].name}</li>`).join("");
+  box.querySelector("svg")?.remove();
+  if (!systems.length) return;
+  const W = Math.max(320, box.clientWidth), H = Math.round(Math.min(360, Math.max(240, W * 0.42)));
+  const m = { t: 12, r: 104, b: 34, l: 44 };
+  const series = systems.map((s) => ({ s, pts: curveFrom(runFor(s).fields[state.field].ranked).filter((d) => d.cov >= 0.05) }));
+  const lo = Math.min(state.target / 100, ...series.flatMap((d) => d.pts.map((p) => p.acc)));
+  const y0 = Math.max(0, Math.floor(lo * 10) / 10), y1 = 1;
+  const x = (v) => m.l + v * (W - m.l - m.r);
+  const y = (v) => m.t + (1 - (v - y0) / (y1 - y0)) * (H - m.t - m.b);
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Accuracy on the most-confident share of items, per system" }, box);
+  for (let v = y0; v <= 1.0001; v += 0.1) {
+    el("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), class: v === y0 ? "axis" : "gridline" }, svg);
+    el("text", { x: m.l - 8, y: y(v) + 4, "text-anchor": "end", class: "tick" }, svg).textContent = pct(v);
+  }
+  for (let v = 0; v <= 1.0001; v += 0.25) {
+    el("text", { x: x(v), y: H - m.b + 18, "text-anchor": v === 0 ? "start" : v === 1 ? "end" : "middle", class: "tick" }, svg).textContent = pct(v);
+  }
+  el("text", { x: (m.l + W - m.r) / 2, y: H - 2, "text-anchor": "middle" }, svg).textContent = "Share of items automated (most confident first)";
+  const ty = y(state.target / 100);
+  el("line", { x1: m.l, x2: W - m.r, y1: ty, y2: ty, class: "ref" }, svg);
+  el("text", { x: W - m.r + 6, y: ty + 4, class: "reflabel" }, svg).textContent = `target ${state.target}%`;
+  const ends = [];
+  for (const { s, pts } of series) {
+    const d = pts.map((p, i) => `${i ? "L" : "M"}${x(p.cov).toFixed(1)},${y(p.acc).toFixed(1)}`).join("");
+    el("path", { d, fill: "none", stroke: SYS[s].color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+    const last = pts[pts.length - 1];
+    ends.push({ s, y: y(last.acc) });
+  }
+  ends.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 15) ends[i].y = ends[i - 1].y + 15;
+  for (const e of ends) el("text", { x: W - m.r + 6, y: e.y + 4, class: "endlabel" }, svg).textContent = SYS[e.s].name;
+
+  // crosshair + tooltip
+  const cross = el("line", { y1: m.t, y2: H - m.b, class: "axis", opacity: 0 }, svg);
+  const dots = series.map(({ s }) => el("circle", { r: 4.5, fill: SYS[s].color, stroke: "var(--surface)", "stroke-width": 2, opacity: 0 }, svg));
+  const hit = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: "transparent", tabindex: 0 }, svg);
+  const tip = tooltipFor(box);
+  const show = (cov) => {
+    cov = Math.min(1, Math.max(0.05, cov));
+    cross.setAttribute("x1", x(cov)); cross.setAttribute("x2", x(cov)); cross.setAttribute("opacity", 1);
+    let rows = "";
+    series.forEach(({ s, pts }, i) => {
+      const p = pts.reduce((a, b) => (Math.abs(b.cov - cov) < Math.abs(a.cov - cov) ? b : a));
+      dots[i].setAttribute("cx", x(p.cov)); dots[i].setAttribute("cy", y(p.acc)); dots[i].setAttribute("opacity", 1);
+      rows += `<div class="t-row" style="--c:${SYS[s].color}"><i></i>${SYS[s].name}<b>${pct(p.acc, 1)}</b></div>`;
+    });
+    tip.innerHTML = `<div class="t-head">Top ${pct(cov)} most confident</div>${rows}`;
+    tip.classList.add("show");
+    const scale = box.clientWidth / W;
+    placeTip(tip, box, x(cov) * scale, (m.t + (H - m.b)) / 2 * scale);
+  };
+  const hide = () => { tip.classList.remove("show"); cross.setAttribute("opacity", 0); dots.forEach((d) => d.setAttribute("opacity", 0)); };
+  hit.addEventListener("pointermove", (ev) => {
+    const r = svg.getBoundingClientRect();
+    show(((ev.clientX - r.left) * (W / r.width) - m.l) / (W - m.l - m.r));
+  });
+  hit.addEventListener("pointerleave", hide);
+  let kcov = 0.5;
+  hit.addEventListener("focus", () => show(kcov));
+  hit.addEventListener("blur", hide);
+  hit.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight" || e.key === "ArrowLeft") { kcov += e.key === "ArrowRight" ? 0.05 : -0.05; kcov = Math.min(1, Math.max(0.05, kcov)); show(kcov); e.preventDefault(); }
+  });
+}
+
+// ---- horizontal bar chart (one series per bar, colored by system identity) ----
+function renderBars(id, value, fmt, note) {
+  const box = document.getElementById(id);
+  box.innerHTML = "";
+  const systems = ORDER.filter((s) => runFor(s) && value(runFor(s)) != null);
+  if (!systems.length) { box.innerHTML = `<p class="section-sub">No data yet.</p>`; return; }
+  const W = Math.max(280, box.clientWidth), bar = 22, gap = 14, m = { t: 4, r: 90, b: 4, l: 110 };
+  const H = m.t + m.b + systems.length * (bar + gap) - gap;
+  const max = Math.max(...systems.map((s) => value(runFor(s))));
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": note }, box);
+  const tip = tooltipFor(box);
+  systems.forEach((s, i) => {
+    const v = value(runFor(s)), yy = m.t + i * (bar + gap), w = Math.max(3, (v / max) * (W - m.l - m.r));
+    el("text", { x: m.l - 10, y: yy + bar / 2 + 4, "text-anchor": "end", class: "endlabel" }, svg).textContent = SYS[s].name;
+    el("path", { d: `M${m.l},${yy}h${w - 4}a4,4 0 0 1 4,4v${bar - 8}a4,4 0 0 1 -4,4h${-(w - 4)}z`, fill: SYS[s].color }, svg);
+    el("text", { x: m.l + w + 8, y: yy + bar / 2 + 4, class: "barlabel" }, svg).textContent = fmt(v);
+    const hit = el("rect", { x: 0, y: yy - gap / 2, width: W, height: bar + gap, fill: "transparent", tabindex: 0 }, svg);
+    const on = () => {
+      const run = runFor(s);
+      tip.innerHTML = `<div class="t-head">${SYS[s].name} · ${esc(run.model)}</div>
+        <div class="t-row">Cost per 1,000<b>${usd(run.ops.cost_per_1k_usd)}</b></div>
+        <div class="t-row">Latency p50<b>${ms(run.ops.latency_ms_p50)}</b></div>
+        <div class="t-row">Latency p95<b>${ms(run.ops.latency_ms_p95)}</b></div>
+        <div class="t-row">Input tokens (mean)<b>${Math.round(run.ops.input_tokens_mean)}</b></div>`;
+      tip.classList.add("show");
+      const scale = box.clientWidth / W;
+      placeTip(tip, box, (m.l + w) * scale, (yy + bar / 2) * scale);
+    };
+    hit.addEventListener("pointerenter", on); hit.addEventListener("focus", on);
+    hit.addEventListener("pointerleave", () => tip.classList.remove("show")); hit.addEventListener("blur", () => tip.classList.remove("show"));
+  });
+}
+
+// ---- explorer ----
+function renderExplorer() {
+  const items = (DATA.explorer[state.dataset] || []);
+  const fields = state.dataset === "tickets" ? ["queue", "priority", "type"] : ["intent"];
+  seg(document.getElementById("ex-filter"), [
+    { value: "all", label: "All" }, { value: "disagree", label: "Systems disagree" }, { value: "wrong", label: "Someone is wrong" },
+  ], state.exFilter, (v) => { state.exFilter = v; state.exShown = EX_PAGE; renderExplorer(); });
+  document.getElementById("ex-sub").textContent = `Real ${DATASETS[state.dataset].unit} from the ${M.split} set, with each system's answer and the probability it gave that answer.`;
+  const f = state.field;
+  const shown = items.filter((it) => {
+    const labels = Object.values(it.systems).map((s) => s.fields[f]?.label);
+    if (state.exFilter === "disagree") return new Set(labels.map(String)).size > 1;
+    if (state.exFilter === "wrong") return labels.some((l) => l !== it.gold[f]);
+    return true;
+  });
+  document.getElementById("ex-count").textContent = `${shown.length} of ${items.length} shown · scored on ${FIELD_NAMES[f]} against the original label`;
+  const list = document.getElementById("ex-list");
+  list.innerHTML = "";
+  const more = document.getElementById("ex-more");
+  more.hidden = shown.length <= state.exShown;
+  more.textContent = `Show ${Math.min(EX_PAGE, shown.length - state.exShown)} more`;
+  more.onclick = () => { state.exShown += EX_PAGE; renderExplorer(); };
+  for (const it of shown.slice(0, state.exShown)) {
+    const card = document.createElement("article");
+    card.className = "card ticket";
+    const rows = fields.map((fld) => {
+      const cells = ORDER.filter((s) => it.systems[s]).map((s) => {
+        const a = it.systems[s].fields[fld] || {};
+        const ok = a.label === it.gold[fld];
+        const mark = a.label == null ? `<span class="no">✗ invalid</span>` : ok ? `<span class="ok">✓ correct</span>` : `<span class="no">✗ wrong</span>`;
+        const p = a.p == null ? "" : `<span class="pbar" style="--c:${SYS[s].color}" title="p = ${a.p.toFixed(2)}"><b style="width:${a.p * 100}%"></b></span><span class="num">${a.p.toFixed(2)}</span>`;
+        return `<td><div class="pred"><strong>${SYS[s].name}</strong> ${esc(a.label ?? "–")} ${p} ${mark}</div></td>`;
+      });
+      return `<tr><th scope="row">${fld}<br><span class="num">label: ${esc(it.gold[fld])}</span></th>${cells.join("")}</tr>`;
+    }).join("");
+    const long = it.text.length > 360;
+    card.innerHTML = `<div class="txt${long ? " clamped" : ""}">${esc(it.text)}</div>
+      ${long ? `<button class="more" type="button">Show full text</button>` : ""}
+      <div class="table-scroll"><table>${rows}</table></div>`;
+    const btn = card.querySelector(".more");
+    if (btn) btn.addEventListener("click", () => {
+      const t = card.querySelector(".txt"); const open = t.style.maxHeight === "none";
+      t.style.maxHeight = open ? "" : "none"; t.classList.toggle("clamped", open); btn.textContent = open ? "Show full text" : "Show less";
+    });
+    list.appendChild(card);
+  }
+}
+
+// ---- full table ----
+function renderTable() {
+  const t = document.getElementById("table");
+  const head = ["System", "Dataset · field", "Labels", "n", "Accuracy", "Macro-F1", "Majority", "Invalid", "ECE", "Auto @90%", "Auto @95%", "p50", "p95", "$ / 1k"];
+  let html = `<thead><tr>${head.map((h) => `<th scope="col">${h}</th>`).join("")}</tr></thead><tbody>`;
+  for (const run of M.runs) {
+    for (const [fname, f] of Object.entries(run.fields)) {
+      const acc = run.repeats.length > 1 ? `${pct(f.accuracy, 1)} (${pct(f.accuracy_min)}–${pct(f.accuracy_max)})` : pct(f.accuracy, 1);
+      html += `<tr><td>${SYS[run.system].name}</td><td>${DATASETS[run.dataset].name} · ${fname}</td><td>${run.labels}</td><td>${run.n}</td>
+        <td>${acc}</td><td>${f.macro_f1.toFixed(2)}</td><td>${pct(f.majority_baseline)}</td><td>${pct(f.invalid_rate, 1)}</td>
+        <td>${f.calibration.ece.toFixed(3)}</td><td>${pct(f.coverage_at_90)}</td><td>${pct(f.coverage_at_95)}</td>
+        <td>${ms(run.ops.latency_ms_p50)}</td><td>${ms(run.ops.latency_ms_p95)}</td><td>${usd(run.ops.cost_per_1k_usd)}</td></tr>`;
+    }
+  }
+  t.innerHTML = html + "</tbody>";
+}
+
+// ---- static text ----
+function renderStatic() {
+  const n = (d) => { const r = M.runs.find((x) => x.dataset === d); return r ? r.n : "–"; };
+  document.getElementById("meta").innerHTML = [
+    `${M.split} set`, `Banking77: ${n("banking77")} messages`, `Tickets: ${n("tickets")} tickets`,
+    `Gold labels: ${M.gold_status}`, `Generated ${M.generated.slice(0, 10)}`,
+  ].map((x) => `<li>${esc(x)}</li>`).join("");
+  const jevDone = M.runs.some((r) => r.system === "jev");
+  document.getElementById("banner").innerHTML = jevDone ? "" : `<div class="note" role="note">
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 7v4M8 4.5v.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span><strong>Jev results pending.</strong> TypeSafe signups are currently restricted. The two Together.ai baselines are shown. Jev will run on exactly the same frozen tickets and label descriptions.</span></div>`;
+  const det = DATA.determinism || {};
+  const detLine = Object.entries(det).map(([k, v]) => {
+    const worst = Math.min(...Object.values(v.fields).map((f) => f.label_identical));
+    const [s, d] = k.split("/");
+    return `${SYS[s] ? SYS[s].name : s} on ${DATASETS[d] ? DATASETS[d].name : d}: ${pct(worst)}`;
+  }).join("; ");
+  const prices = Object.entries(M.prices).map(([m, p]) => `${m}: $${p.input_per_m}/M in, $${p.output_per_m}/M out (${p.as_of})`).join("; ");
+  document.getElementById("method").innerHTML = [
+    `<b>Same information for every system.</b> Each system gets identical ticket text and identical label names and descriptions from one source file. The descriptions were written from dev-set examples only. A rewrite that matched the dataset's own conventions was tested on dev and reverted because it made results worse.`,
+    `<b>Jev</b> answers typed questions: a Choice per label field, a Score for priority (taking the most likely level), and Nouls for the yes/no signals. All questions go in one request per ticket.`,
+    `<b>LLMs</b> run at temperature 0, with JSON output restricted to the listed labels. Confidence is the probability the model gave to the tokens of its chosen label. An invalid answer counts as wrong.`,
+    `<b>Datasets.</b> <a href="https://github.com/PolyAI-LDN/task-specific-datasets">Banking77</a> (CC-BY-4.0): real banking queries, 77 intents, clean labels, 10 per intent from the official test split. <a href="https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets">Tobi-Bueck customer support tickets</a> (CC-BY-NC-4.0, synthetic): English only, 600 test tickets.`,
+    `<b>Label noise.</b> The original ticket queue and priority labels are noisy. A supervised TF-IDF model trained on 15k other tickets reaches only 63% on queue and 61% on priority, but 93% on type. Treat ticket accuracy against the original labels as a relative comparison, not an absolute score. Hand-adjudicated gold labels for 150 tickets: ${esc(M.gold_status)}.`,
+    `<b>Run-to-run variation.</b> Temperature 0 is not fully deterministic. Label agreement across 3 repeated runs (worst field): ${esc(detLine || "not measured")}. Ticket results are averaged over 3 runs.`,
+    `<b>Prices</b> are the published list prices on the date shown: ${esc(prices)}.`,
+  ].map((x) => `<li>${x}</li>`).join("");
+  document.getElementById("footer").innerHTML = `Code, frozen splits and every cached API response: <a href="${DATA.repo}">${esc(DATA.repo.replace("https://", ""))}</a>. All numbers on this page are regenerated from that cache.`;
+}
+
+function render() {
+  renderFilters(); renderTiles(); renderAuto(); renderExplorer(); renderTable();
+  renderBars("cost", (r) => r.ops.cost_per_1k_usd, usd, "Cost per 1,000 items by system");
+  renderBars("latency", (r) => r.ops.latency_ms_p50, ms, "Median latency by system");
+}
+
+document.getElementById("target").addEventListener("input", (e) => { state.target = +e.target.value; renderAuto(); });
+let rz; window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(render, 120); });
+renderStatic();
+render();
+</script>
+</body>
+</html>
