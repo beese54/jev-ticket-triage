@@ -1,0 +1,361 @@
+{
+  "timestamp": "2026-09-26T11:55:54",
+  "TOGETHER_SMALL_MODEL": {
+    "model": "Qwen/Qwen3.5-9B",
+    "latency_ms": 1479.8,
+    "usage": {
+      "prompt_tokens": 113,
+      "total_tokens": 128,
+      "completion_tokens": 15,
+      "reasoning_tokens": 0
+    },
+    "content": "{\"queue\": \"Billing and Payments\", \"priority\": \"high\"}",
+    "parsed_ok": true,
+    "logprobs_available": true,
+    "top_logprobs_available": true,
+    "tokens": [
+      {
+        "token": "{\"",
+        "p": 0.5312,
+        "top": {
+          "{\"": 0.5312,
+          "{": 0.4688,
+          "{}": 0.0,
+          "\"": 0.0,
+          "!": 0.0
+        }
+      },
+      {
+        "token": "queue",
+        "p": 0.9999,
+        "top": {
+          "queue": 0.9999,
+          "priority": 0.0,
+          "que": 0.0,
+          "Queue": 0.0,
+          " queue": 0.0
+        }
+      },
+      {
+        "token": "\":",
+        "p": 0.9968,
+        "top": {
+          "\":": 0.9968,
+          "\":\"": 0.0032,
+          "\"": 0.0,
+          "\\\":": 0.0,
+          "\u201d:": 0.0
+        }
+      },
+      {
+        "token": " \"",
+        "p": 0.9999,
+        "top": {
+          " \"": 0.9999,
+          " [\"": 0.0001,
+          " {\"": 0.0,
+          " \"\",": 0.0,
+          " \"$": 0.0
+        }
+      },
+      {
+        "token": "Billing",
+        "p": 0.8574,
+        "top": {
+          "Billing": 0.8574,
+          "Technical": 0.116,
+          "Customer": 0.0259,
+          "Bill": 0.0002,
+          " Billing": 0.0001
+        }
+      },
+      {
+        "token": " and",
+        "p": 1.0,
+        "top": {
+          " and": 1.0,
+          " &": 0.0,
+          "\",": 0.0,
+          " Support": 0.0,
+          " And": 0.0
+        }
+      },
+      {
+        "token": " Payments",
+        "p": 0.9998,
+        "top": {
+          " Payments": 0.9998,
+          "Payments": 0.0002,
+          " payments": 0.0,
+          "_payments": 0.0,
+          " Payment": 0.0
+        }
+      },
+      {
+        "token": "\",",
+        "p": 0.9994,
+        "top": {
+          "\",": 0.9994,
+          "\",\"": 0.0006,
+          "\\\",": 0.0,
+          "\"": 0.0,
+          "\"}": 0.0
+        }
+      },
+      {
+        "token": " \"",
+        "p": 1.0,
+        "top": {
+          " \"": 1.0,
+          " ": 0.0,
+          "\n": 0.0,
+          " \"_": 0.0,
+          " \"\"": 0.0
+        }
+      },
+      {
+        "token": "priority",
+        "p": 1.0,
+        "top": {
+          "priority": 1.0,
+          "prior": 0.0,
+          "riority": 0.0,
+          "severity": 0.0,
+          "Priority": 0.0
+        }
+      },
+      {
+        "token": "\":",
+        "p": 1.0,
+        "top": {
+          "\":": 1.0,
+          "\":\"": 0.0,
+          "\\\":": 0.0,
+          "}:": 0.0,
+          "**:": 0.0
+        }
+      },
+      {
+        "token": " \"",
+        "p": 1.0,
+        "top": {
+          " \"": 1.0,
+          " [\"": 0.0,
+          " ": 0.0,
+          " \"\"": 0.0,
+          " {\"": 0.0
+        }
+      },
+      {
+        "token": "high",
+        "p": 0.9997,
+        "top": {
+          "high": 0.9997,
+          "medium": 0.0002,
+          "low": 0.0001,
+          "High": 0.0,
+          "critical": 0.0
+        }
+      },
+      {
+        "token": "\"}",
+        "p": 1.0,
+        "top": {
+          "\"}": 1.0,
+          "\",": 0.0,
+          "\"": 0.0,
+          " \"}": 0.0,
+          "'}": 0.0
+        }
+      },
+      {
+        "token": "<|im_end|>",
+        "p": 1.0,
+        "top": {
+          "<|im_end|>": 1.0,
+          "#": 0.0,
+          "!": 0.0,
+          "$": 0.0,
+          "\"": 0.0
+        }
+      }
+    ]
+  },
+  "TOGETHER_LARGE_MODEL": {
+    "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "latency_ms": 2110.8,
+    "usage": {
+      "prompt_tokens": 136,
+      "completion_tokens": 15,
+      "total_tokens": 151,
+      "cached_tokens": 0
+    },
+    "content": "{\"queue\": \"Billing and Payments\", \"priority\": \"high\"}",
+    "parsed_ok": true,
+    "logprobs_available": true,
+    "top_logprobs_available": true,
+    "tokens": [
+      {
+        "token": "{\"",
+        "p": 1.0,
+        "top": {
+          "{\"": 1.0,
+          "{\n": 0.0,
+          "{": 0.0,
+          "[\"": 0.0,
+          "{\n\n": 0.0
+        }
+      },
+      {
+        "token": "queue",
+        "p": 1.0,
+        "top": {
+          "queue": 1.0,
+          "(queue": 0.0,
+          ".queue": 0.0,
+          " queue": 0.0,
+          "_queue": 0.0
+        }
+      },
+      {
+        "token": "\":",
+        "p": 1.0,
+        "top": {
+          "\":": 1.0,
+          "\":\"": 0.0,
+          "':": 0.0,
+          "\u201d:": 0.0,
+          " \":": 0.0
+        }
+      },
+      {
+        "token": " \"",
+        "p": 1.0,
+        "top": {
+          " \"": 1.0,
+          " \"_": 0.0,
+          " \"[": 0.0,
+          " \"-": 0.0,
+          " [\"": 0.0
+        }
+      },
+      {
+        "token": "Billing",
+        "p": 0.9989,
+        "top": {
+          "Billing": 0.9989,
+          "Technical": 0.0009,
+          " Billing": 0.0001,
+          "billing": 0.0,
+          "Customer": 0.0
+        }
+      },
+      {
+        "token": " and",
+        "p": 1.0,
+        "top": {
+          " and": 1.0,
+          " Payments": 0.0,
+          " \u0438": 0.0,
+          " v\u00e0": 0.0,
+          " AND": 0.0
+        }
+      },
+      {
+        "token": " Payments",
+        "p": 1.0,
+        "top": {
+          " Payments": 1.0,
+          "Payments": 0.0,
+          " payments": 0.0,
+          "_payments": 0.0,
+          " Notifications": 0.0
+        }
+      },
+      {
+        "token": "\",",
+        "p": 1.0,
+        "top": {
+          "\",": 1.0,
+          "\u201d,": 0.0,
+          " \",": 0.0,
+          "\",\"": 0.0,
+          "',": 0.0
+        }
+      },
+      {
+        "token": " \"",
+        "p": 1.0,
+        "top": {
+          " \"": 1.0,
+          " \"_": 0.0,
+          " \"-": 0.0,
+          " ": 0.0,
+          " \"[": 0.0
+        }
+      },
+      {
+        "token": "priority",
+        "p": 1.0,
+        "top": {
+          "priority": 1.0,
+          " priority": 0.0,
+          "prior": 0.0,
+          "riority": 0.0,
+          "prefix": 0.0
+        }
+      },
+      {
+        "token": "\":",
+        "p": 1.0,
+        "top": {
+          "\":": 1.0,
+          "':": 0.0,
+          "\u201d:": 0.0,
+          "}:": 0.0,
+          "):": 0.0
+        }
+      },
+      {
+        "token": " \"",
+        "p": 1.0,
+        "top": {
+          " \"": 1.0,
+          " \"_": 0.0,
+          " \"-": 0.0,
+          " \"[": 0.0,
+          " \"(": 0.0
+        }
+      },
+      {
+        "token": "high",
+        "p": 1.0,
+        "top": {
+          "high": 1.0,
+          "medium": 0.0,
+          "-high": 0.0,
+          "\u9ad8": 0.0,
+          "_high": 0.0
+        }
+      },
+      {
+        "token": "\"}",
+        "p": 1.0,
+        "top": {
+          "\"}": 1.0,
+          "`}": 0.0,
+          " \"}": 0.0,
+          ")}": 0.0,
+          "'}": 0.0
+        }
+      },
+      {
+        "token": "<|eot_id|>",
+        "p": 1.0,
+        "top": {
+          "<|eot_id|>": 1.0
+        }
+      }
+    ]
+  }
+}

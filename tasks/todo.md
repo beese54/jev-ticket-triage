@@ -112,9 +112,24 @@ jev_first_project/
 
 ## 5. Phases & checklist
 
-- [ ] **P0 Setup** — git init, uv project, `.env` keys, verify both APIs with one call
-      each; confirm Together model IDs + prices + logprobs support; confirm Jev German
-      behavior is out of scope (EN only; DE = optional stretch).
+- [x] **P0 Setup** (Together side) — German is out of scope (user decision 2026-09-26; EN only).
+  - [x] git init, uv project (py3.12, typesafe-sdk 0.7.1, httpx), .gitignore, .env.example
+  - [x] public GitHub repo; pre-commit hook blocks `.env` + any .env key value (tested both)
+  - [x] Together models chosen (2026-09-26, serverless on this account, top-5 logprobs):
+    - small `Qwen/Qwen3.5-9B` — $0.17 in / $0.25 out per M; needs
+      `chat_template_kwargs.enable_thinking=false` or it burns max_tokens on reasoning
+    - large `meta-llama/Llama-3.3-70B-Instruct-Turbo` — $1.04 in / $1.04 out per M
+    - rejected: most catalog models are dedicated-endpoint only; Qwen3.7-Max / 3.8-Flash
+      are streaming-only; DeepSeek-V4-Flash returns no top-k alternatives
+  - [x] smoke run → `results/p0_smoke.json`: both parse JSON; label tokens carry real
+        distributions (Qwen queue: Billing .86 / Technical .12 / Customer .03)
+  - Gotchas: Together `/models` is a bare list (OpenAI client can't parse) → raw httpx;
+    logprobs come in two shapes (Llama native vs Qwen OpenAI-style) → `normalize_logprobs`;
+    special tokens may have null logprobs.
+  - [ ] **BLOCKED: Jev smoke test** — TypeSafe signups restricted. Options: wait, or
+        route via OpenRouter (`~typesafe/jev-latest`, same SDK, different base_url/key).
+  - Note: Jev Score returns an expected value (e.g. 1.43) → use argmax of
+    `probabilities` for the priority label.
 - [ ] **P1 Data** — load, clean, stratified dev/test/holdout splits, freeze IDs.
 - [ ] **P2 Gold** — adjudicate 150 Tobi-Bueck tickets (user review step).
 - [ ] **P3 Runners** — Jev + Together runners with caching; smoke test on 10 dev tickets.

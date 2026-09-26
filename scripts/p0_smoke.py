@@ -14,8 +14,8 @@ import os
 import time
 from pathlib import Path
 
+import httpx
 from dotenv import load_dotenv
-from openai import OpenAI
 from typesafe_sdk import Choice, Noul, Score, TypeSafeClient
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -66,21 +66,59 @@ def check_jev() -> dict:
     return out
 
 
-def together_client() -> OpenAI:
-    return OpenAI(api_key=os.environ["TOGETHER_API_KEY"], base_url=TOGETHER_BASE_URL)
+def together_headers() -> dict:
+    return {"Authorization": f"Bearer {os.environ['TOGETHER_API_KEY']}"}
+
+
+def normalize_logprobs(lp: dict | None) -> list[dict]:
+    """Together returns two logprob shapes depending on the model:
+    native {tokens, token_logprobs, top_logprobs: [{tok: lp}]} (e.g. Llama) or
+    OpenAI-style {content: [{token, logprob, top_logprobs: [{token, logprob}]}]} (e.g. Qwen).
+    Normalize to [{token, p, top: {token: p}}]."""
+    if not lp:
+        return []
+    if "content" in lp:
+        return [
+            {
+                "token": t["token"],
+                "p": math.exp(t["logprob"]),
+                "top": {
+                    a["token"]: math.exp(a["logprob"])
+                    for a in t.get("top_logprobs") or []
+                },
+            }
+            for t in lp["content"] or []
+        ]
+    tops = lp.get("top_logprobs") or [{}] * len(lp.get("tokens", []))
+    return [
+        {
+            "token": tok,
+            "p": math.exp(l),
+            "top": {k: math.exp(v) for k, v in (top or {}).items() if v is not None},
+        }
+        for tok, l, top in zip(lp["tokens"], lp["token_logprobs"], tops)
+        # special tokens (e.g. <|eot_id|>) can carry a null logprob
+        if l is not None
+    ]
 
 
 def list_together_models() -> list[dict]:
+    # Together's /models returns a bare JSON list, which the OpenAI client can't page.
+    resp = httpx.get(
+        f"{TOGETHER_BASE_URL}/models",
+        headers={"Authorization": f"Bearer {os.environ['TOGETHER_API_KEY']}"},
+        timeout=30,
+    )
+    resp.raise_for_status()
     rows = []
-    for m in together_client().models.list():
-        extra = m.model_extra or {}
-        if extra.get("type") != "chat":
+    for m in resp.json():
+        if m.get("type") != "chat":
             continue
-        pricing = extra.get("pricing") or {}
+        pricing = m.get("pricing") or {}
         rows.append(
             {
-                "id": m.id,
-                "context": extra.get("context_length"),
+                "id": m["id"],
+                "context": m.get("context_length"),
                 "input_per_M": pricing.get("input"),
                 "output_per_M": pricing.get("output"),
             }
@@ -99,34 +137,48 @@ def check_together(model: str) -> dict:
         '{"queue": <one of ' + json.dumps(list(QUEUES)) + ">, "
         '"priority": <one of ' + json.dumps(PRIORITIES) + ">}\n\n" + TICKET
     )
+    body = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+        "max_tokens": 100,
+        "response_format": {"type": "json_object"},
+        "logprobs": 5,
+        # Hybrid-thinking models (Qwen3.5) would otherwise spend max_tokens on reasoning.
+        "chat_template_kwargs": {"enable_thinking": False},
+    }
     t0 = time.perf_counter()
-    resp = together_client().chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0,
-        max_tokens=100,
-        response_format={"type": "json_object"},
-        logprobs=True,
-        top_logprobs=5,
+    resp = httpx.post(
+        f"{TOGETHER_BASE_URL}/chat/completions",
+        headers=together_headers(),
+        json=body,
+        timeout=90,
     )
     latency_ms = (time.perf_counter() - t0) * 1000
-    choice = resp.choices[0]
-    content = choice.message.content
+    resp.raise_for_status()
+    data = resp.json()
+    choice = data["choices"][0]
+    content = choice["message"]["content"]
     try:
         parsed = json.loads(content)
     except (json.JSONDecodeError, TypeError):
         parsed = None
-    tokens = (choice.logprobs.content or []) if choice.logprobs else []
+    tokens = normalize_logprobs(choice.get("logprobs"))
     out = {
         "model": model,
         "latency_ms": round(latency_ms, 1),
-        "usage": resp.usage.model_dump() if resp.usage else None,
+        "usage": data.get("usage"),
         "content": content,
         "parsed_ok": parsed is not None,
         "logprobs_available": bool(tokens),
-        "top_logprobs_available": bool(tokens and tokens[0].top_logprobs),
-        "first_tokens": [
-            {"token": t.token, "p": round(math.exp(t.logprob), 4)} for t in tokens[:12]
+        "top_logprobs_available": any(len(t["top"]) > 1 for t in tokens),
+        "tokens": [
+            {
+                "token": t["token"],
+                "p": round(t["p"], 4),
+                "top": {k: round(v, 4) for k, v in t["top"].items()},
+            }
+            for t in tokens
         ],
     }
     print(json.dumps(out, indent=2))
@@ -144,8 +196,11 @@ def main() -> None:
         return
 
     report: dict = {"timestamp": time.strftime("%Y-%m-%dT%H:%M:%S")}
-    print("== Jev ==")
-    report["jev"] = check_jev()
+    if os.environ.get("TYPESAFE_API_KEY"):
+        print("== Jev ==")
+        report["jev"] = check_jev()
+    else:
+        print("skip Jev: TYPESAFE_API_KEY not set")
     for key in ("TOGETHER_SMALL_MODEL", "TOGETHER_LARGE_MODEL"):
         model = os.environ.get(key)
         if not model:
