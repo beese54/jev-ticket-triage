@@ -1,0 +1,12 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# raw downloaded datasets (re-fetched by scripts; splits/ + cache/ ARE committed)
+data/raw/
