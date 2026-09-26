@@ -6,19 +6,25 @@ fi
 [ -f .env ] || exit 0
 
 # Every *_KEY value from .env with >= 8 chars, as fixed-string patterns (never printed).
-# The patterns file lives inside .git/ (never committed) and is removed on exit.
-patterns="$(git rev-parse --git-dir)/secret-patterns.$$"
-trap 'rm -f "$patterns"' EXIT
+# Scratch files live inside .git/ (never committed) and are removed on exit.
+gitdir=$(git rev-parse --git-dir)
+patterns="$gitdir/secret-patterns.$$"
+staged="$gitdir/secret-scan.$$"
+trap 'rm -rf "$patterns" "$staged"' EXIT
 grep -E '^[A-Z_]*KEY=.+' .env | cut -d= -f2- | tr -d '\r"'"'" | awk 'length >= 8' > "$patterns"
 [ -s "$patterns" ] || exit 0
 
 if git diff --cached -U0 | grep -qF -f "$patterns"; then
   echo "pre-commit: a secret value from .env appears in the staged changes" >&2; exit 1
 fi
-# git diff shows gzip files as binary, so check the staged .gz blobs decompressed.
-for f in $(git diff --cached --name-only --diff-filter=AM -- '*.gz'); do
-  if git show ":$f" | gzip -dc 2>/dev/null | grep -qF -f "$patterns"; then
-    echo "pre-commit: a secret value from .env appears inside $f" >&2; exit 1
+# git diff shows gzip files as binary, so export the staged .gz blobs in one command
+# and scan them decompressed in a single pass.
+if git diff --cached --name-only --diff-filter=AM -z -- '*.gz' | grep -qz .; then
+  mkdir -p "$staged"
+  git diff --cached --name-only --diff-filter=AM -z -- '*.gz' \
+    | git checkout-index -z --stdin --prefix="$staged/"
+  if find "$staged" -type f -name '*.gz' -print0 | xargs -0 gzip -dc 2>/dev/null | grep -qF -f "$patterns"; then
+    echo "pre-commit: a secret value from .env appears inside a staged .gz file" >&2; exit 1
   fi
-done
+fi
 exit 0
