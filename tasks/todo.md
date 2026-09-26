@@ -140,8 +140,17 @@ jev_first_project/
   - Size: Banking77 ≈13 tokens/text, tickets ≈100 → prompts dominated by label
     descriptions; est. ≈$2 per full Together pass (both models, all splits).
 - [ ] **P2 Gold** — adjudicate 150 Tobi-Bueck tickets (user review step).
-      ⏸ **Deferred by user 2026-09-26 — remind them before P5 test runs** (gold is needed
-      for headline ticket metrics; Banking77 doesn't depend on it). Ask: CSV or local web page?
+      ⏸ **Deferred by user 2026-09-26: user does the review at home.**
+  - [x] Rubric: `data/gold/RUBRIC.md`. Claude's blind first pass (text only, no original labels,
+        no model outputs): `data/gold/claude_labels.jsonl`. Agreement with original labels:
+        queue 27%, priority 37%, type 79% → 139/150 tickets, 235 disputed fields.
+  - [x] Blind review page: https://beese54.github.io/jev-ticket-triage/review.html
+        (Option A/B random order, seeded ticket order, saves progress locally, export = copy JSON;
+        only tickets up to the furthest one reached count, so partial reviews stay a random sample).
+  - [ ] User reviews → paste JSON into `data/gold/review_decisions.json` →
+        `uv run python scripts/apply_review.py` → report + dashboard rebuild.
+  - Caveat to state publicly: first pass is by an LLM (Claude, not a system under test);
+    every disputed field is decided by a human.
 - [x] **P3 Runners** — `labels.py` (single source of label text), `tasks.py`, `backends.py`,
       `runner.py`, `cache.py`, `logprobs.py`, `config.py`, `scripts/run.py`; 16 tests pass.
   - Jev: official SDK, dict questions; Score → argmax level (not expected value);

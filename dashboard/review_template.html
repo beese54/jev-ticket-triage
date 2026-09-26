@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gold Label Review</title>
+<meta name="description" content="Blind review of disputed ticket labels for the Jev vs LLM triage benchmark.">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --surface-2: #f0efeb; --ink: #0b0b0b; --ink-2: #52514e;
+  --muted: #6f6e69; --border: rgba(11,11,11,0.12); --accent: #2a78d6; --accent-ink: #ffffff; --good: #006300;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --surface-2: #262624; --ink: #ffffff; --ink-2: #c3c2b7;
+    --muted: #9a9890; --border: rgba(255,255,255,0.12); --accent: #3987e5; --accent-ink: #ffffff; --good: #0ca30c;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --surface-2: #262624; --ink: #ffffff; --ink-2: #c3c2b7;
+  --muted: #9a9890; --border: rgba(255,255,255,0.12); --accent: #3987e5; --accent-ink: #ffffff; --good: #0ca30c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 20px 16px 120px; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+p { margin: 0 0 10px; color: var(--ink-2); }
+details { margin: 8px 0 16px; color: var(--ink-2); font-size: 14px; }
+details summary { cursor: pointer; color: var(--ink); font-weight: 600; }
+details table { border-collapse: collapse; margin-top: 8px; font-size: 13px; }
+details td { padding: 4px 8px 4px 0; vertical-align: top; border-top: 1px solid var(--border); }
+.progress { position: sticky; top: 0; z-index: 3; background: var(--page); padding: 10px 0; border-bottom: 1px solid var(--border); }
+.bar { height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; margin-top: 6px; }
+.bar b { display: block; height: 100%; background: var(--accent); width: 0; transition: width 0.2s; }
+.progress .row { display: flex; justify-content: space-between; font-size: 14px; color: var(--ink-2); gap: 8px; flex-wrap: wrap; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-top: 16px; }
+.ticket { white-space: pre-wrap; font-size: 15px; }
+.subject { font-weight: 650; margin-bottom: 6px; }
+.field { margin-top: 18px; }
+.field h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 6px; }
+.agreed { font-size: 15px; color: var(--ink-2); }
+.agreed b { color: var(--ink); }
+.opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.opt { font: inherit; font-size: 15px; text-align: left; padding: 10px 12px; min-height: 48px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--ink); cursor: pointer; }
+.opt small { display: block; color: var(--muted); font-size: 12px; }
+.opt[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.opt[aria-pressed="true"] small { color: var(--accent-ink); opacity: 0.85; }
+.other { margin-top: 8px; font-size: 14px; color: var(--ink-2); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+select { font: inherit; font-size: 15px; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--ink); min-height: 40px; }
+.nav { position: fixed; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 10px 16px; }
+.nav .inner { max-width: 720px; margin: 0 auto; display: flex; gap: 8px; align-items: center; }
+.btn { font: inherit; font-size: 15px; padding: 10px 16px; min-height: 44px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface-2); color: var(--ink); cursor: pointer; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); margin-left: auto; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+button:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.done { text-align: center; }
+textarea { width: 100%; min-height: 140px; font: 12px ui-monospace, monospace; background: var(--surface-2); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 8px; }
+.ok { color: var(--good); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gold label review</h1>
+  <p>For each ticket, pick the label a sensible support lead would assign. The two options come from different sources and are shown in random order, so neither is favoured. If both are wrong, choose another under <em>Neither</em>. Progress saves in this browser automatically.</p>
+  <details>
+    <summary>Label definitions</summary>
+    <div id="defs"></div>
+  </details>
+  <div class="progress"><div class="row"><span id="count"></span><span id="done-n"></span></div><div class="bar"><b id="bar"></b></div></div>
+  <div id="stage"></div>
+</main>
+<div class="nav"><div class="inner">
+  <button class="btn" id="prev" type="button">Back</button>
+  <button class="btn" id="finish" type="button">Finish &amp; export</button>
+  <button class="btn primary" id="next" type="button">Next</button>
+</div></div>
+<script>
+const DATA = /*__DATA__*/null;
+const KEY = "gold-review-v1";
+const FIELDS = ["queue", "priority", "type"];
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { saved = {}; }
+const st = { i: Math.min(saved.i || 0, DATA.tickets.length - 1), max: saved.max || 0, decisions: saved.decisions || {} };
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+document.getElementById("defs").innerHTML = FIELDS.map((f) =>
+  `<p style="margin:10px 0 0"><b>${f}</b></p><table>${Object.entries(DATA.labels[f]).map(([k, v]) => `<tr><td><b>${esc(k)}</b></td><td>${esc(v)}</td></tr>`).join("")}</table>`).join("");
+
+function complete(t) {
+  return t.disputed.every((f) => st.decisions[t.id] && st.decisions[t.id][f]);
+}
+// Only tickets up to the furthest one reached count, so partial reviews stay a random sample.
+const reached = () => DATA.tickets.slice(0, st.max + 1).filter(complete);
+function render() {
+  const t = DATA.tickets[st.i];
+  st.max = Math.max(st.max, st.i);
+  const nDone = reached().length;
+  document.getElementById("count").textContent = `Ticket ${st.i + 1} of ${DATA.tickets.length}`;
+  document.getElementById("done-n").textContent = `${nDone} complete`;
+  document.getElementById("bar").style.width = (100 * nDone / DATA.tickets.length) + "%";
+  const d = st.decisions[t.id] || {};
+  let html = `<article class="card"><div class="subject">${esc(t.subject || "(no subject)")}</div><div class="ticket">${esc(t.body)}</div>`;
+  for (const f of FIELDS) {
+    html += `<div class="field"><h3>${f}</h3>`;
+    if (!t.disputed.includes(f)) {
+      html += `<div class="agreed">Both sources agree, no action needed: <b>${esc(t.options[f][0])}</b></div>`;
+    } else {
+      html += `<div class="opts">${t.options[f].map((lab, k) =>
+        `<button type="button" class="opt" data-f="${f}" data-v="${esc(lab)}" aria-pressed="${d[f] === lab}"><small>Option ${"AB"[k]}</small>${esc(lab)}</button>`).join("")}</div>
+        <div class="other"><label for="o-${f}">Neither:</label><select id="o-${f}" data-f="${f}"><option value="">choose another…</option>${Object.keys(DATA.labels[f]).filter((l) => !t.options[f].includes(l)).map((l) => `<option ${d[f] === l ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></div>`;
+    }
+    html += `</div>`;
+  }
+  html += `</article>`;
+  document.getElementById("stage").innerHTML = html;
+  document.querySelectorAll(".opt").forEach((b) => b.addEventListener("click", () => pick(b.dataset.f, b.dataset.v)));
+  document.querySelectorAll("select[data-f]").forEach((s) => s.addEventListener("change", () => s.value && pick(s.dataset.f, s.value)));
+  document.getElementById("prev").disabled = st.i === 0;
+  document.getElementById("next").textContent = st.i === DATA.tickets.length - 1 ? "Last ticket" : "Next";
+  document.getElementById("next").disabled = st.i === DATA.tickets.length - 1;
+}
+function pick(f, v) {
+  const t = DATA.tickets[st.i];
+  st.decisions[t.id] = { ...(st.decisions[t.id] || {}), [f]: v };
+  save(); render();
+}
+function move(delta) { st.i = Math.max(0, Math.min(DATA.tickets.length - 1, st.i + delta)); save(); render(); window.scrollTo(0, 0); }
+document.getElementById("prev").addEventListener("click", () => move(-1));
+document.getElementById("next").addEventListener("click", () => move(1));
+document.getElementById("finish").addEventListener("click", () => {
+  const done = reached().map((t) => ({ id: t.id, ...(st.decisions[t.id] || {}) }));
+  const payload = JSON.stringify({ version: DATA.version, reviewed: done.length, decisions: done });
+  document.getElementById("stage").innerHTML = `<div class="card done">
+    <p><span class="ok">${done.length} complete tickets</span> of ${DATA.tickets.length}. Tickets up to the furthest one you reached are exported, if complete.</p>
+    <p><button class="btn primary" id="copy" type="button" style="margin:0">Copy results</button></p>
+    <p id="copied" role="status"></p>
+    <p style="font-size:13px">Paste the copied text into the chat. It is also below if copying is blocked.</p>
+    <textarea readonly aria-label="Exported review results">${esc(payload)}</textarea>
+    <p style="margin-top:12px"><button class="btn" id="back" type="button">Back to reviewing</button></p></div>`;
+  document.getElementById("copy").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(payload); document.getElementById("copied").textContent = "Copied."; }
+    catch (e) { const ta = document.querySelector("textarea"); ta.select(); document.getElementById("copied").textContent = "Select-all done: copy it manually."; }
+  });
+  document.getElementById("back").addEventListener("click", render);
+});
+render();
+</script>
+</body>
+</html>

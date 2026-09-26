@@ -1,0 +1,150 @@
+{"id": "tb-03572978b2", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "data compromise in the customer's own hospital systems"}
+{"id": "tb-0423003b8a", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "advice on aligning compliance framework; nothing broken"}
+{"id": "tb-06aa4e5593", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "extensive SaaS service disruption"}
+{"id": "tb-074d853115", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "capabilities info to check the service meets needs"}
+{"id": "tb-07ec25e89a", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "unauthorized access attempts, own firewall"}
+{"id": "tb-0a631ef6cf", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "inconsistent audio persisting after driver updates"}
+{"id": "tb-0bd159077f", "queue": "Technical Support", "priority": "high", "type": "Problem", "reason": "intermittent connectivity, dashboards inaccessible, urgent"}
+{"id": "tb-101a2d659b", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "security incident on own medical data systems, urgent"}
+{"id": "tb-10e1fc301e", "queue": "Product Support", "priority": "low", "type": "Change", "reason": "asks for onboarding process to be redesigned"}
+{"id": "tb-1246e3005c", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "how to integrate SPSS; information request"}
+{"id": "tb-12c6964555", "queue": "Billing and Payments", "priority": "medium", "type": "Incident", "reason": "charges higher than agreed"}
+{"id": "tb-1599204e60", "queue": "Technical Support", "priority": "low", "type": "Problem", "reason": "occasional connection problems, no stated impact"}
+{"id": "tb-1610b11d92", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "marketing strategy advice"}
+{"id": "tb-188c3566ee", "queue": "Billing and Payments", "priority": "low", "type": "Request", "reason": "payment plans and cost breakdown"}
+{"id": "tb-1c4e9d461f", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "critical outage of several services"}
+{"id": "tb-1d7e5090fa", "queue": "IT Support", "priority": "medium", "type": "Problem", "reason": "own servers slower after own code update; root cause under investigation"}
+{"id": "tb-1dc0879fed", "queue": "General Inquiry", "priority": "low", "type": "Change", "reason": "asks to revise strategy guidelines"}
+{"id": "tb-1f86ffa002", "queue": "General Inquiry", "priority": "medium", "type": "Problem", "reason": "engagement decline hurting growth"}
+{"id": "tb-202bdbd29f", "queue": "Product Support", "priority": "low", "type": "Change", "reason": "requests new interface features"}
+{"id": "tb-2077c3d0bd", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "outage blocking access to medical data"}
+{"id": "tb-2324847359", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "information about brand strategy techniques"}
+{"id": "tb-235f48005d", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "persistent prediction deviation, possible algorithm error"}
+{"id": "tb-281cd2b5f4", "queue": "General Inquiry", "priority": "medium", "type": "Problem", "reason": "strategies underperforming; pressing but not blocking"}
+{"id": "tb-2900e28e7a", "queue": "General Inquiry", "priority": "low", "type": "Change", "reason": "asks for strategies to be overhauled"}
+{"id": "tb-29c471bb1a", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "own services/permissions; medical data inaccessible"}
+{"id": "tb-2acbcff389", "queue": "Product Support", "priority": "low", "type": "Request", "reason": "guidance on using two products for security"}
+{"id": "tb-2df043f478", "queue": "Product Support", "priority": "low", "type": "Change", "reason": "requests an update to a tool"}
+{"id": "tb-2e40e2fba1", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "current data discrepancies from an integration"}
+{"id": "tb-2e6502648c", "queue": "Technical Support", "priority": "high", "type": "Incident", "reason": "report discrepancies after update, urgent, decisions at risk"}
+{"id": "tb-2ead76a1bc", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "technical specs and integration options"}
+{"id": "tb-3267564639", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "targeting advice"}
+{"id": "tb-37e50b7d22", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "general analytics advice"}
+{"id": "tb-3c42f329e2", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "asks which services the company offers"}
+{"id": "tb-3d82e92b51", "queue": "Product Support", "priority": "medium", "type": "Problem", "reason": "persistent performance issues across products"}
+{"id": "tb-3eb97ccf00", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "delays caused by data integration problems"}
+{"id": "tb-3faf6e1334", "queue": "IT Support", "priority": "medium", "type": "Problem", "reason": "sporadic login failures, own servers"}
+{"id": "tb-4250735cfa", "queue": "IT Support", "priority": "high", "type": "Change", "reason": "urgent request to strengthen security protocols"}
+{"id": "tb-43323ed811", "queue": "Service Outages and Maintenance", "priority": "medium", "type": "Incident", "reason": "unplanned downtime from network disturbance"}
+{"id": "tb-433713fb14", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "integration failures from version incompatibility"}
+{"id": "tb-4475a8b877", "queue": "Technical Support", "priority": "low", "type": "Incident", "reason": "access failure after update, already resolved"}
+{"id": "tb-470721b6c5", "queue": "Product Support", "priority": "low", "type": "Change", "reason": "asks to integrate advanced analytics"}
+{"id": "tb-4748991516", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "information on digital strategies"}
+{"id": "tb-4829a8d8e8", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "sporadic access problems persisting"}
+{"id": "tb-4940edd234", "queue": "Billing and Payments", "priority": "low", "type": "Request", "reason": "cost reduction and discounts"}
+{"id": "tb-4d5eab7dd2", "queue": "IT Support", "priority": "medium", "type": "Change", "reason": "modify network security device configuration"}
+{"id": "tb-4feaa02ab7", "queue": "IT Support", "priority": "medium", "type": "Problem", "reason": "intermittent HR-system outages (infrastructure, not an HR process)"}
+{"id": "tb-51c2fe695c", "queue": "IT Support", "priority": "medium", "type": "Problem", "reason": "own servers slower after own code update; under investigation"}
+{"id": "tb-55f2246567", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "pricing details"}
+{"id": "tb-560ee47df9", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "service interruption hitting critical operations"}
+{"id": "tb-563a83d4ad", "queue": "General Inquiry", "priority": "medium", "type": "Problem", "reason": "engagement drop; root cause wanted"}
+{"id": "tb-5701ea0b38", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "information on solutions offered"}
+{"id": "tb-57f39c2c47", "queue": "General Inquiry", "priority": "medium", "type": "Problem", "reason": "strategies failing, root cause is targeting"}
+{"id": "tb-5838868796", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "potential breach in own health-data systems"}
+{"id": "tb-59486c870e", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "breach of the provider's own systems"}
+{"id": "tb-59dec834f4", "queue": "IT Support", "priority": "medium", "type": "Change", "reason": "deploy revised security procedures"}
+{"id": "tb-5b5c0f5e37", "queue": "General Inquiry", "priority": "low", "type": "Change", "reason": "asks to revise marketing plans"}
+{"id": "tb-63cd9e3c7f", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "sporadic login failures after a Redis update"}
+{"id": "tb-68006e41b4", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "optimization guidance"}
+{"id": "tb-687055e468", "queue": "Product Support", "priority": "low", "type": "Request", "reason": "integration feature details"}
+{"id": "tb-6ad2994b1d", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "slow growth, improving; advice"}
+{"id": "tb-6ec95a255d", "queue": "IT Support", "priority": "medium", "type": "Change", "reason": "implement enhanced security protocols"}
+{"id": "tb-6f4b47ef99", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "offerings, case studies, testimonials"}
+{"id": "tb-6f7faad7b8", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration options and APIs"}
+{"id": "tb-6fdc6cb209", "queue": "Product Support", "priority": "medium", "type": "Change", "reason": "integration enhancements requested soon"}
+{"id": "tb-70596953d6", "queue": "Product Support", "priority": "high", "type": "Incident", "reason": "SSD encryption failing; secure storage at risk"}
+{"id": "tb-70ce3c6e06", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "information on strategies"}
+{"id": "tb-722b8ce6b7", "queue": "General Inquiry", "priority": "medium", "type": "Problem", "reason": "engagement decline; content/targeting cause"}
+{"id": "tb-7292e84a8d", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "marketing strategy information"}
+{"id": "tb-7296186277", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "documentation and setup guides"}
+{"id": "tb-73f20df97d", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "several essential services down"}
+{"id": "tb-742252110c", "queue": "Product Support", "priority": "low", "type": "Request", "reason": "product feature information"}
+{"id": "tb-7651786307", "queue": "IT Support", "priority": "medium", "type": "Incident", "reason": "access attempt already mitigated"}
+{"id": "tb-77f20031c5", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "recurring crashes across devices"}
+{"id": "tb-7a1c3abc17", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Problem", "reason": "critical recurring outages; root cause in orchestration"}
+{"id": "tb-7a86c1e02a", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "report delays after update"}
+{"id": "tb-7bc9477265", "queue": "IT Support", "priority": "low", "type": "Problem", "reason": "intermittent access issues, reported resolved"}
+{"id": "tb-7fca99927f", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "scalability documentation"}
+{"id": "tb-81879577f4", "queue": "Product Support", "priority": "medium", "type": "Incident", "reason": "interruptions affecting two products"}
+{"id": "tb-82acbb0ab4", "queue": "Technical Support", "priority": "high", "type": "Incident", "reason": "platform failed; data loss and financial risk"}
+{"id": "tb-830c91171f", "queue": "Technical Support", "priority": "high", "type": "Incident", "reason": "serious sync failure hitting project timelines"}
+{"id": "tb-838c2d8dc1", "queue": "Product Support", "priority": "medium", "type": "Change", "reason": "requests updates and optimizations"}
+{"id": "tb-83d1ea84b8", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "unauthorized access to medical data, anomalies continuing"}
+{"id": "tb-884288c4a2", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "connectivity problems after updates"}
+{"id": "tb-8a88cbd3d2", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "product features and benefits"}
+{"id": "tb-8c4848bc1a", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "breach attempt, urgent"}
+{"id": "tb-8c90618149", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration documentation"}
+{"id": "tb-8f42068f90", "queue": "Technical Support", "priority": "high", "type": "Incident", "reason": "urgent: significant disruptions"}
+{"id": "tb-92016a902d", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "abrupt analytics outage"}
+{"id": "tb-9223708d71", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "marketing insights"}
+{"id": "tb-93f80468d2", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "scaling best-practice documentation"}
+{"id": "tb-94bbea5e95", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "platform security advice"}
+{"id": "tb-95f516b8a7", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "downtime blocking critical data, deadlines at risk"}
+{"id": "tb-9707074da8", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration instructions"}
+{"id": "tb-973e00f469", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "marketing strategy guidance"}
+{"id": "tb-98c1df8486", "queue": "IT Support", "priority": "low", "type": "Request", "reason": "proactive guidance on securing own data"}
+{"id": "tb-98c85a3d48", "queue": "IT Support", "priority": "low", "type": "Request", "reason": "security practice information"}
+{"id": "tb-99283f95c2", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration guidance"}
+{"id": "tb-9c55829105", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "crashes recurring at peak hours"}
+{"id": "tb-9fbbfdde70", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "metrics inconsistencies, tracking root cause"}
+{"id": "tb-a13267f471", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "visualizations wrong lately, persisting"}
+{"id": "tb-a192ed0c44", "queue": "Billing and Payments", "priority": "medium", "type": "Incident", "reason": "billed amounts inconsistent, payment confirmation delayed"}
+{"id": "tb-a31ffc7727", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "analysis discrepancies from data sync"}
+{"id": "tb-a40391d3cc", "queue": "Technical Support", "priority": "high", "type": "Incident", "reason": "several tools stopped working, campaigns disrupted"}
+{"id": "tb-a84f64b10f", "queue": "General Inquiry", "priority": "medium", "type": "Problem", "reason": "significant campaign underperformance"}
+{"id": "tb-a8e0ef4d57", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "features and pricing plans"}
+{"id": "tb-a9cc18075b", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "breach attempt, urgent"}
+{"id": "tb-b2cc0de505", "queue": "Product Support", "priority": "low", "type": "Request", "reason": "how to use a product's features"}
+{"id": "tb-b3cf83650f", "queue": "Product Support", "priority": "medium", "type": "Change", "reason": "update product integration compatibility; prioritize"}
+{"id": "tb-b4438321fe", "queue": "IT Support", "priority": "medium", "type": "Incident", "reason": "access attempt; policies need reinforcing"}
+{"id": "tb-b4b12a274d", "queue": "Service Outages and Maintenance", "priority": "high", "type": "Incident", "reason": "outage across products, urgent"}
+{"id": "tb-b5993b62e5", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "marketing methods information"}
+{"id": "tb-b75018f89c", "queue": "Billing and Payments", "priority": "medium", "type": "Incident", "reason": "billing discrepancies after migration"}
+{"id": "tb-b9efea5026", "queue": "Technical Support", "priority": "medium", "type": "Change", "reason": "update integration settings causing sync issues"}
+{"id": "tb-c1db0ea94d", "queue": "Technical Support", "priority": "medium", "type": "Problem", "reason": "dashboard frequently wrong despite fixes"}
+{"id": "tb-c50b33621c", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "service capabilities and customization"}
+{"id": "tb-c5d85841bc", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "data breach in own hospital systems"}
+{"id": "tb-c6b674298e", "queue": "General Inquiry", "priority": "low", "type": "Problem", "reason": "engagement decreased; strategy outdated"}
+{"id": "tb-c8fcdb7d15", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration steps and requirements"}
+{"id": "tb-c9ec5a2da1", "queue": "General Inquiry", "priority": "low", "type": "Problem", "reason": "engagement still not improving"}
+{"id": "tb-cb736dc482", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "brand strategy insights"}
+{"id": "tb-cd95f3f240", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "metrics reporting delayed after updates"}
+{"id": "tb-d0a2c7b140", "queue": "Technical Support", "priority": "high", "type": "Incident", "reason": "critical multi-product disruption, immediate help"}
+{"id": "tb-d215193f72", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "requests information"}
+{"id": "tb-d297c26f34", "queue": "General Inquiry", "priority": "low", "type": "Request", "reason": "marketing strategy information"}
+{"id": "tb-d6de02af13", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration guidelines"}
+{"id": "tb-d78df16ff4", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration documentation"}
+{"id": "tb-d83921620e", "queue": "Product Support", "priority": "low", "type": "Change", "reason": "requests analytics integration and a plan"}
+{"id": "tb-d8e7dfc3ab", "queue": "Product Support", "priority": "low", "type": "Request", "reason": "tool documentation and tutorials"}
+{"id": "tb-d989961e24", "queue": "General Inquiry", "priority": "low", "type": "Change", "reason": "asks to revise marketing tactics"}
+{"id": "tb-dbd72d0560", "queue": "IT Support", "priority": "medium", "type": "Problem", "reason": "persistent slowdown in own systems; root cause unknown"}
+{"id": "tb-dd7b491548", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "potential breach via device vulnerability"}
+{"id": "tb-de0423c016", "queue": "Customer Service", "priority": "low", "type": "Request", "reason": "update organizational records on the account"}
+{"id": "tb-de202f9407", "queue": "IT Support", "priority": "high", "type": "Incident", "reason": "data breach, immediate action required"}
+{"id": "tb-e1071acc4b", "queue": "Product Support", "priority": "low", "type": "Request", "reason": "best practices for using the platform"}
+{"id": "tb-e13e26041e", "queue": "General Inquiry", "priority": "medium", "type": "Change", "reason": "strategy update requested; service issues hurting reputation"}
+{"id": "tb-e4e53c67b8", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "investment report data discrepancies (not product returns)"}
+{"id": "tb-e53da01c8d", "queue": "General Inquiry", "priority": "low", "type": "Change", "reason": "revise marketing strategy"}
+{"id": "tb-e94c44fce9", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "sync failures between two apps"}
+{"id": "tb-e966140193", "queue": "Technical Support", "priority": "low", "type": "Request", "reason": "integration guidance"}
+{"id": "tb-ebfee6f23a", "queue": "General Inquiry", "priority": "low", "type": "Problem", "reason": "campaigns underperforming"}
+{"id": "tb-ecf98b6047", "queue": "IT Support", "priority": "high", "type": "Change", "reason": "urgent security enhancements for compliance"}
+{"id": "tb-efda21d16d", "queue": "Technical Support", "priority": "high", "type": "Incident", "reason": "significant issue affecting many users"}
+{"id": "tb-f00ac16836", "queue": "IT Support", "priority": "medium", "type": "Incident", "reason": "own network equipment blocking tool access"}
+{"id": "tb-f2e33120a8", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "service information"}
+{"id": "tb-f47a0eb2d7", "queue": "IT Support", "priority": "low", "type": "Request", "reason": "advice on securing own data"}
+{"id": "tb-f56f21221b", "queue": "Sales and Pre-Sales", "priority": "low", "type": "Request", "reason": "customization options before choosing a platform"}
+{"id": "tb-f7ee893b10", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "error saving project data"}
+{"id": "tb-fcedb63047", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "compatibility issues after update"}
+{"id": "tb-fdfc90c482", "queue": "Technical Support", "priority": "medium", "type": "Incident", "reason": "data integration errors"}
+{"id": "tb-ff9a28d0d8", "queue": "IT Support", "priority": "low", "type": "Request", "reason": "best practices for securing medical data"}
