@@ -165,8 +165,17 @@ jev_first_project/
   - [ ] Once Jev is available: run Jev on dev with the same frozen descriptions and check nothing
         is broken for it (e.g. Score orientation). No system-specific tuning.
 - [ ] **P5 Test runs** — full test for Jev + 2 LLMs, both datasets; determinism check.
-- [ ] **P6 Metrics** — report.py → results; holdout sanity check.
-- [ ] **P7 Dashboard** — static HTML: headline cards (accuracy / cost / latency),
+  - [x] Determinism (dev, 3 repeats): Qwen labels 98–100% identical; Llama 98% Banking77, 92% ticket queue/type
+        → tickets test run ×3, Banking77 ×1 (`results/determinism.json`).
+  - [x] Together test + holdout complete, 0 failures, total Together spend **$3.31**.
+        (First background run was stopped by the host for low memory; resumed from cache in foreground chunks.)
+  - Test (original labels): Banking77 81.3% (9B) vs 80.3% (70B); tickets queue 32/31, priority 37/38
+    (**below** the 39.5% majority baseline), type 60/65. Ticket ECE 0.27–0.61 (LLM confidence ≈ 1.0 even
+    when wrong) → almost nothing is automatable at 90% on queue/priority. Banking77: ~80% automatable at 90%.
+  - [ ] Jev: `uv run python scripts/run_all.py --system jev` once a key exists.
+- [x] **P6 Metrics** — `metrics.py`, `report.py`, `scripts/report.py`; holdout check in ledger.
+- [x] **P7 Dashboard** (Together-only; Jev slot pending) — `scripts/build_dashboard.py` → `docs/index.html`;
+      checked light/dark/375px. static HTML: headline cards (accuracy / cost / latency),
       coverage-vs-accuracy chart with confidence slider, ticket explorer
       (side-by-side answers + probabilities), methodology + caveats section.
 - [ ] **P8 LinkedIn** — post draft (Pattern V), 1–2 charts, link to dashboard/repo.

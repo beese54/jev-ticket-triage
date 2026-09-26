@@ -160,9 +160,10 @@ input[type=range] { flex: 1 1 220px; accent-color: var(--ink-2); min-height: 32p
 .auto-row { display: grid; grid-template-columns: 150px 1fr; gap: 12px; align-items: center; }
 .auto-row .who { font-size: 14px; font-weight: 600; }
 .auto-row .who small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
-.track { position: relative; height: 28px; background: var(--surface-2); border-radius: 6px; }
-.fill { position: absolute; inset: 0 auto 0 0; background: var(--c); border-radius: 6px 4px 4px 6px; min-width: 2px; transition: width 0.2s; }
-.track span { position: absolute; top: 50%; transform: translateY(-50%); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink); white-space: nowrap; }
+.track { position: relative; height: 12px; background: var(--surface-2); border-radius: 4px; }
+.fill { position: absolute; inset: 0 auto 0 0; background: var(--c); border-radius: 4px; min-width: 2px; transition: width 0.2s; }
+.auto-label { font-size: 13px; color: var(--ink-2); margin-top: 4px; font-variant-numeric: tabular-nums; }
+.auto-label b { color: var(--ink); font-weight: 650; }
 @media (max-width: 520px) { .auto-row { grid-template-columns: 1fr; gap: 4px; } }
 
 /* explorer */
@@ -375,7 +376,7 @@ function renderTiles() {
       body = `<div class="hero">Results pending</div><p class="section-sub" style="margin:4px 0 0">${s === "jev" ? "Waiting for TypeSafe API access. Jev runs on the same frozen prompts as soon as a key is available." : "Not run on this dataset yet."}</p>`;
     } else {
       const f = run.fields[state.field];
-      const range = run.repeats.length > 1 ? ` <small>range ${pct(f.accuracy_min)}–${pct(f.accuracy_max)} over ${run.repeats.length} runs</small>` : "";
+      const range = run.repeats.length > 1 ? ` <small>range ${pct(f.accuracy_min, 1)}–${pct(f.accuracy_max, 1)} over ${run.repeats.length} runs</small>` : "";
       body = `<div class="hero">${pct(f.accuracy, 1)}${range}</div>
         <dl>
           <dt>Macro-F1</dt><dd>${f.macro_f1.toFixed(2)}</dd>
@@ -402,15 +403,16 @@ function renderAuto() {
     r.className = "auto-row";
     r.style.setProperty("--c", SYS[s].color);
     if (!run) {
-      r.innerHTML = `<div class="who">${SYS[s].name}<small>pending</small></div><div class="track"><span style="left:10px;color:var(--muted)">No results yet</span></div>`;
+      r.innerHTML = `<div class="who">${SYS[s].name}<small>pending</small></div><div><div class="track"></div><div class="auto-label">No results yet</div></div>`;
     } else {
       const { coverage, p } = coverageAt(run.fields[state.field].ranked, target);
       const n = Math.round(coverage * run.n);
-      const label = coverage > 0 ? `${pct(coverage)} automated (${n} of ${run.n}) · confidence ≥ ${p == null ? "–" : p.toFixed(2)}` : "none reach this accuracy";
-      const inside = coverage > 0.55;
+      const label = coverage > 0
+        ? `<b>${pct(coverage)} automated</b> (${n} of ${run.n}) · confidence ≥ ${p == null ? "–" : p.toFixed(2)}`
+        : "None reach this accuracy";
       r.innerHTML = `<div class="who">${SYS[s].name}<small>${esc(run.model)}</small></div>
-        <div class="track" role="img" aria-label="${SYS[s].name}: ${label}"><div class="fill" style="width:${coverage * 100}%"></div>
-        <span style="${inside ? "left:10px;color:#fff" : `left:calc(${coverage * 100}% + 8px)`}">${label}</span></div>`;
+        <div><div class="track" aria-hidden="true"><div class="fill" style="width:${coverage * 100}%"></div></div>
+        <div class="auto-label">${label}</div></div>`;
     }
     rows.appendChild(r);
   }
@@ -437,7 +439,8 @@ function renderCurve() {
     el("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), class: v === y0 ? "axis" : "gridline" }, svg);
     el("text", { x: m.l - 8, y: y(v) + 4, "text-anchor": "end", class: "tick" }, svg).textContent = pct(v);
   }
-  for (let v = 0; v <= 1.0001; v += 0.25) {
+  const xstep = W < 480 ? 0.5 : 0.25;
+  for (let v = 0; v <= 1.0001; v += xstep) {
     el("text", { x: x(v), y: H - m.b + 18, "text-anchor": v === 0 ? "start" : v === 1 ? "end" : "middle", class: "tick" }, svg).textContent = pct(v);
   }
   el("text", { x: (m.l + W - m.r) / 2, y: H - 2, "text-anchor": "middle" }, svg).textContent = "Share of items automated (most confident first)";
@@ -536,7 +539,7 @@ function renderExplorer() {
     if (state.exFilter === "wrong") return labels.some((l) => l !== it.gold[f]);
     return true;
   });
-  document.getElementById("ex-count").textContent = `${shown.length} of ${items.length} shown · scored on ${FIELD_NAMES[f]} against the original label`;
+  document.getElementById("ex-count").textContent = `Showing ${Math.min(state.exShown, shown.length)} of ${shown.length}${shown.length < items.length ? ` (filtered from ${items.length})` : ""} · checked on ${FIELD_NAMES[f]} against the original label`;
   const list = document.getElementById("ex-list");
   list.innerHTML = "";
   const more = document.getElementById("ex-more");
@@ -576,7 +579,7 @@ function renderTable() {
   let html = `<thead><tr>${head.map((h) => `<th scope="col">${h}</th>`).join("")}</tr></thead><tbody>`;
   for (const run of M.runs) {
     for (const [fname, f] of Object.entries(run.fields)) {
-      const acc = run.repeats.length > 1 ? `${pct(f.accuracy, 1)} (${pct(f.accuracy_min)}–${pct(f.accuracy_max)})` : pct(f.accuracy, 1);
+      const acc = run.repeats.length > 1 ? `${pct(f.accuracy, 1)} (${pct(f.accuracy_min, 1)}–${pct(f.accuracy_max, 1)})` : pct(f.accuracy, 1);
       html += `<tr><td>${SYS[run.system].name}</td><td>${DATASETS[run.dataset].name} · ${fname}</td><td>${run.labels}</td><td>${run.n}</td>
         <td>${acc}</td><td>${f.macro_f1.toFixed(2)}</td><td>${pct(f.majority_baseline)}</td><td>${pct(f.invalid_rate, 1)}</td>
         <td>${f.calibration.ece.toFixed(3)}</td><td>${pct(f.coverage_at_90)}</td><td>${pct(f.coverage_at_95)}</td>

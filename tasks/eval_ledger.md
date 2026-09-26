@@ -69,3 +69,14 @@ not something to keep tuning. Further rewrites would overfit 100 dev tickets.
 hits, identical scores). Iteration-1 responses stay in the cache as evidence. The type gap
 (supervised 93% vs zero-shot 56–65%) is reported as a result about label conventions, and it applies
 equally to Jev.
+
+## Phase 4: holdout check (Together, frozen iteration-0 descriptions), 2026-09-26
+Accuracy vs original labels. Test = mean of 3 runs for tickets; holdout = 1 run.
+
+| System | Banking77 test → holdout | Tickets queue / priority / type, test → holdout |
+|---|---|---|
+| Qwen3.5-9B | 81.3 → 87.0 (n=77) | 32.1 / 36.7 / 59.7 → 32 / 28 / 60 (n=50) |
+| Llama-3.3-70B | 80.3 → 83.1 (n=77) | 30.9 / 37.8 / 65.4 → 30 / 26 / 68 (n=50) |
+
+No overfitting signal: holdout moves both ways, within the noise of 50–77 items (±6–7 pts).
+Only one description change was ever tested on dev, and it was reverted.
