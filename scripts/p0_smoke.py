@@ -9,7 +9,6 @@ Writes results/p0_smoke.json as evidence for the P0 checklist.
 
 import argparse
 import json
-import math
 import os
 import time
 from pathlib import Path
@@ -17,6 +16,8 @@ from pathlib import Path
 import httpx
 from dotenv import load_dotenv
 from typesafe_sdk import Choice, Noul, Score, TypeSafeClient
+
+from triage.logprobs import normalize
 
 ROOT = Path(__file__).resolve().parent.parent
 TOGETHER_BASE_URL = "https://api.together.xyz/v1"
@@ -68,38 +69,6 @@ def check_jev() -> dict:
 
 def together_headers() -> dict:
     return {"Authorization": f"Bearer {os.environ['TOGETHER_API_KEY']}"}
-
-
-def normalize_logprobs(lp: dict | None) -> list[dict]:
-    """Together returns two logprob shapes depending on the model:
-    native {tokens, token_logprobs, top_logprobs: [{tok: lp}]} (e.g. Llama) or
-    OpenAI-style {content: [{token, logprob, top_logprobs: [{token, logprob}]}]} (e.g. Qwen).
-    Normalize to [{token, p, top: {token: p}}]."""
-    if not lp:
-        return []
-    if "content" in lp:
-        return [
-            {
-                "token": t["token"],
-                "p": math.exp(t["logprob"]),
-                "top": {
-                    a["token"]: math.exp(a["logprob"])
-                    for a in t.get("top_logprobs") or []
-                },
-            }
-            for t in lp["content"] or []
-        ]
-    tops = lp.get("top_logprobs") or [{}] * len(lp.get("tokens", []))
-    return [
-        {
-            "token": tok,
-            "p": math.exp(l),
-            "top": {k: math.exp(v) for k, v in (top or {}).items() if v is not None},
-        }
-        for tok, l, top in zip(lp["tokens"], lp["token_logprobs"], tops)
-        # special tokens (e.g. <|eot_id|>) can carry a null logprob
-        if l is not None
-    ]
 
 
 def list_together_models() -> list[dict]:
@@ -163,7 +132,7 @@ def check_together(model: str) -> dict:
         parsed = json.loads(content)
     except (json.JSONDecodeError, TypeError):
         parsed = None
-    tokens = normalize_logprobs(choice.get("logprobs"))
+    tokens = normalize(choice.get("logprobs"))
     out = {
         "model": model,
         "latency_ms": round(latency_ms, 1),

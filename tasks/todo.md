@@ -140,7 +140,22 @@ jev_first_project/
   - Size: Banking77 ≈13 tokens/text, tickets ≈100 → prompts dominated by label
     descriptions; est. ≈$2 per full Together pass (both models, all splits).
 - [ ] **P2 Gold** — adjudicate 150 Tobi-Bueck tickets (user review step).
-- [ ] **P3 Runners** — Jev + Together runners with caching; smoke test on 10 dev tickets.
+      ⏸ **Deferred by user 2026-09-26 — remind them before P5 test runs** (gold is needed
+      for headline ticket metrics; Banking77 doesn't depend on it). Ask: CSV or local web page?
+- [x] **P3 Runners** — `labels.py` (single source of label text), `tasks.py`, `backends.py`,
+      `runner.py`, `cache.py`, `logprobs.py`, `config.py`, `scripts/run.py`; 16 tests pass.
+  - Jev: official SDK, dict questions; Score → argmax level (not expected value);
+    Noul → bool at 0.5. Route = TypeSafe key, else OpenRouter key. **Not yet run live.**
+  - Together: JSON-schema **enum-constrained** output (strongest fair baseline), temp 0,
+    top-5 logprobs; `p(label)` = product of the value's token probs; invalid → None (wrong).
+  - Shared: both get identical label descriptions; `p` = prob of chosen label is the
+    common confidence signal; Jev's native `confidence` kept alongside.
+  - Cache: `cache/<system>/<dataset>/<id>.<requesthash>.json.gz` (compact+gzip, 7.7× smaller;
+    est. ~20 MB for the whole project). Failed calls aren't cached → reruns retry them.
+  - Budget cap enforced from summed `cost_usd` across the cache.
+  - Smoke (10 dev rows each, $0.024 total): 0 failures, all fields have p.
+    Banking77 intent 90% (small) / 100% (large). Tickets vs *raw* labels: queue 50–60%,
+    priority 40–50%, type 10–20% → type definitions / label noise to examine in P4.
 - [ ] **P4 Dev tuning** — label descriptions/prompt iterated on dev only; ledger rows.
 - [ ] **P5 Test runs** — full test for Jev + 2 LLMs, both datasets; determinism check.
 - [ ] **P6 Metrics** — report.py → results; holdout sanity check.

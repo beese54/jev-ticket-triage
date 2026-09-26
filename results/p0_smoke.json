@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-26T11:55:54",
+  "timestamp": "2026-09-26T12:31:30",
   "TOGETHER_SMALL_MODEL": {
     "model": "Qwen/Qwen3.5-9B",
-    "latency_ms": 1479.8,
+    "latency_ms": 1578.7,
     "usage": {
       "prompt_tokens": 113,
       "total_tokens": 128,
@@ -183,7 +183,7 @@
   },
   "TOGETHER_LARGE_MODEL": {
     "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-    "latency_ms": 2110.8,
+    "latency_ms": 1507.2,
     "usage": {
       "prompt_tokens": 136,
       "completion_tokens": 15,
