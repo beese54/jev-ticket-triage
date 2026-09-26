@@ -114,7 +114,8 @@ PRIORITIES: dict[str, str] = {
 }
 PRIORITY_INSTRUCTION = "How urgent is this ticket?"
 
-# ITIL ticket types.
+# ITIL ticket types. A dataset-convention rewrite was tried and reverted
+# (tasks/eval_ledger.md, iteration 1).
 TYPES: dict[str, str] = {
     "Incident": "Something that was working is broken or disrupted right now",
     "Problem": "An underlying or recurring issue whose root cause needs investigation",

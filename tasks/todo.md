@@ -156,7 +156,14 @@ jev_first_project/
   - Smoke (10 dev rows each, $0.024 total): 0 failures, all fields have p.
     Banking77 intent 90% (small) / 100% (large). Tickets vs *raw* labels: queue 50–60%,
     priority 40–50%, type 10–20% → type definitions / label noise to examine in P4.
-- [ ] **P4 Dev tuning** — label descriptions/prompt iterated on dev only; ledger rows.
+- [ ] **P4 Dev tuning** — ledger: `tasks/eval_ledger.md`; analysis: `analysis/label_semantics.py`,
+      `analysis/dev_confusion.py`.
+  - [x] System-neutral label check (2026-09-26): supervised reference on pool tickets →
+        queue 63% / priority 61% / type 93% (so type labels are consistent, queue/priority are noisy).
+  - [x] Iteration 1 (type descriptions matching the dataset's convention) → regressed → **reverted**.
+        Descriptions frozen at iteration 0.
+  - [ ] Once Jev is available: run Jev on dev with the same frozen descriptions and check nothing
+        is broken for it (e.g. Score orientation). No system-specific tuning.
 - [ ] **P5 Test runs** — full test for Jev + 2 LLMs, both datasets; determinism check.
 - [ ] **P6 Metrics** — report.py → results; holdout sanity check.
 - [ ] **P7 Dashboard** — static HTML: headline cards (accuracy / cost / latency),
