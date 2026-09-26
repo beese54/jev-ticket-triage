@@ -1251,6 +1251,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "high",
+    "type": "Problem"
    }
   },
   {
@@ -1342,6 +1347,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -1433,6 +1443,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -1524,6 +1539,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "high",
+    "type": "Request"
    }
   },
   {
@@ -1615,6 +1635,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -1706,6 +1731,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Customer Service",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -1797,6 +1827,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Problem"
    }
   },
   {
@@ -1888,6 +1923,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -1979,6 +2019,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "low",
+    "type": "Change"
    }
   },
   {
@@ -2070,6 +2115,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -2161,6 +2211,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -2252,6 +2307,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "low",
+    "type": "Problem"
    }
   },
   {
@@ -2343,6 +2403,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Customer Service",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -2434,6 +2499,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Billing and Payments",
+    "priority": "medium",
+    "type": "Request"
    }
   },
   {
@@ -2525,6 +2595,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -2616,6 +2691,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -2707,6 +2787,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Product Support",
+    "priority": "high",
+    "type": "Change"
    }
   },
   {
@@ -2798,6 +2883,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -2889,6 +2979,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Product Support",
+    "priority": "low",
+    "type": "Change"
    }
   },
   {
@@ -2980,6 +3075,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -3071,6 +3171,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "high",
+    "type": "Request"
    }
   },
   {
@@ -3162,6 +3267,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -3253,6 +3363,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "high",
+    "type": "Problem"
    }
   },
   {
@@ -3344,6 +3459,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "medium",
+    "type": "Change"
    }
   },
   {
@@ -3435,6 +3555,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "low",
+    "type": "Incident"
    }
   },
   {
@@ -3526,6 +3651,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Product Support",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -3617,6 +3747,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Change"
    }
   },
   {
@@ -3708,6 +3843,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -3799,6 +3939,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -3890,6 +4035,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -3981,6 +4131,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -4072,6 +4227,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -4163,6 +4323,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -4254,6 +4419,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -4345,6 +4515,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Incident"
    }
   },
   {
@@ -4436,6 +4611,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -4527,6 +4707,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "high",
+    "type": "Change"
    }
   },
   {
@@ -4618,6 +4803,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -4709,6 +4899,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -4800,6 +4995,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Incident"
    }
   },
   {
@@ -4891,6 +5091,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Product Support",
+    "priority": "low",
+    "type": "Change"
    }
   },
   {
@@ -4982,6 +5187,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -5073,6 +5283,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -5164,6 +5379,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Billing and Payments",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -5255,6 +5475,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "medium",
+    "type": "Change"
    }
   },
   {
@@ -5346,6 +5571,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Incident"
    }
   },
   {
@@ -5437,6 +5667,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "medium",
+    "type": "Incident"
    }
   },
   {
@@ -5528,6 +5763,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -5619,6 +5859,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Service Outages and Maintenance",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -5710,6 +5955,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -5801,6 +6051,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -5892,6 +6147,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -5983,6 +6243,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "high",
+    "type": "Problem"
    }
   },
   {
@@ -6074,6 +6339,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "IT Support",
+    "priority": "high",
+    "type": "Incident"
    }
   },
   {
@@ -6165,6 +6435,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Product Support",
+    "priority": "medium",
+    "type": "Change"
    }
   },
   {
@@ -6256,6 +6531,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "low",
+    "type": "Change"
    }
   },
   {
@@ -6347,6 +6627,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Technical Support",
+    "priority": "medium",
+    "type": "Problem"
    }
   },
   {
@@ -6438,6 +6723,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Customer Service",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -6529,6 +6819,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "Sales and Pre-Sales",
+    "priority": "low",
+    "type": "Request"
    }
   },
   {
@@ -6620,6 +6915,11 @@
       }
      }
     }
+   },
+   "adjudicated": {
+    "queue": "General Inquiry",
+    "priority": "low",
+    "type": "Request"
    }
   }
  ]

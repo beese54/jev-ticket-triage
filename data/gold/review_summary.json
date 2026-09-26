@@ -1,0 +1,21 @@
+{
+  "settled": 150,
+  "of": 150,
+  "sided": {
+    "queue": {
+      "original": 30,
+      "claude": 79,
+      "other": 0
+    },
+    "priority": {
+      "original": 23,
+      "claude": 71,
+      "other": 0
+    },
+    "type": {
+      "original": 9,
+      "claude": 23,
+      "other": 0
+    }
+  }
+}

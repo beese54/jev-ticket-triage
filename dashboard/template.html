@@ -343,7 +343,7 @@ function seg(container, options, current, onPick) {
 function renderFilters() {
   seg(document.getElementById("f-dataset"),
     Object.entries(DATASETS).map(([k, v]) => ({ value: k, label: v.name })), state.dataset,
-    (v) => { state.dataset = v; state.exShown = EX_PAGE; state.field = DATASETS[v].fields[0]; if (v !== "tickets") state.labels = "original"; render(); });
+    (v) => { state.dataset = v; state.exShown = EX_PAGE; state.field = DATASETS[v].fields[0]; state.labels = v === "tickets" && M.gold_status === "adjudicated" ? "adjudicated" : "original"; render(); });
   const fields = DATASETS[state.dataset].fields;
   document.getElementById("f-field-wrap").hidden = fields.length < 2;
   seg(document.getElementById("f-field"), fields.map((f) => ({ value: f, label: FIELD_NAMES[f] })), state.field,
@@ -352,7 +352,7 @@ function renderFilters() {
   document.getElementById("f-labels-wrap").hidden = state.dataset !== "tickets";
   seg(document.getElementById("f-labels"), [
     { value: "original", label: "Original labels" },
-    { value: "adjudicated", label: "Adjudicated gold", disabled: !hasGold, title: "Hand-checked labels are not published yet" },
+    { value: "adjudicated", label: "Adjudicated gold (150)", disabled: !hasGold, title: "Hand-checked labels are not published yet" },
   ], state.labels, (v) => { state.labels = v; render(); });
 }
 
@@ -533,13 +533,16 @@ function renderExplorer() {
   ], state.exFilter, (v) => { state.exFilter = v; state.exShown = EX_PAGE; renderExplorer(); });
   document.getElementById("ex-sub").textContent = `Real ${DATASETS[state.dataset].unit} from the ${M.split} set, with each system's answer and the probability it gave that answer.`;
   const f = state.field;
+  const adj = state.dataset === "tickets" && state.labels === "adjudicated";
+  const truth = (it) => (adj ? it.adjudicated : it.gold);
   const shown = items.filter((it) => {
+    if (adj && !it.adjudicated) return false;
     const labels = Object.values(it.systems).map((s) => s.fields[f]?.label);
     if (state.exFilter === "disagree") return new Set(labels.map(String)).size > 1;
-    if (state.exFilter === "wrong") return labels.some((l) => l !== it.gold[f]);
+    if (state.exFilter === "wrong") return labels.some((l) => l !== truth(it)[f]);
     return true;
   });
-  document.getElementById("ex-count").textContent = `Showing ${Math.min(state.exShown, shown.length)} of ${shown.length}${shown.length < items.length ? ` (filtered from ${items.length})` : ""} · checked on ${FIELD_NAMES[f]} against the original label`;
+  document.getElementById("ex-count").textContent = `Showing ${Math.min(state.exShown, shown.length)} of ${shown.length}${shown.length < items.length ? ` (filtered from ${items.length})` : ""} · checked on ${FIELD_NAMES[f]} against the ${adj ? "adjudicated gold" : "original"} label`;
   const list = document.getElementById("ex-list");
   list.innerHTML = "";
   const more = document.getElementById("ex-more");
@@ -552,12 +555,13 @@ function renderExplorer() {
     const rows = fields.map((fld) => {
       const cells = ORDER.filter((s) => it.systems[s]).map((s) => {
         const a = it.systems[s].fields[fld] || {};
-        const ok = a.label === it.gold[fld];
+        const ok = a.label === truth(it)[fld];
         const mark = a.label == null ? `<span class="no">✗ invalid</span>` : ok ? `<span class="ok">✓ correct</span>` : `<span class="no">✗ wrong</span>`;
         const p = a.p == null ? "" : `<span class="pbar" style="--c:${SYS[s].color}" title="p = ${a.p.toFixed(2)}"><b style="width:${a.p * 100}%"></b></span><span class="num">${a.p.toFixed(2)}</span>`;
         return `<td><div class="pred"><strong>${SYS[s].name}</strong> ${esc(a.label ?? "–")} ${p} ${mark}</div></td>`;
       });
-      return `<tr><th scope="row">${fld}<br><span class="num">label: ${esc(it.gold[fld])}</span></th>${cells.join("")}</tr>`;
+      const lab = adj && it.gold[fld] !== truth(it)[fld] ? `gold: ${esc(truth(it)[fld])}<br>original: ${esc(it.gold[fld])}` : `label: ${esc(truth(it)[fld])}`;
+      return `<tr><th scope="row">${fld}<br><span class="num">${lab}</span></th>${cells.join("")}</tr>`;
     }).join("");
     const long = it.text.length > 360;
     card.innerHTML = `<div class="txt${long ? " clamped" : ""}">${esc(it.text)}</div>
@@ -590,6 +594,13 @@ function renderTable() {
 }
 
 // ---- static text ----
+function noiseLine() {
+  const g = M.gold_summary;
+  const base = `<b>Label noise.</b> The dataset's own queue and priority labels are noisy. A supervised TF-IDF model trained on 15k other tickets reaches only 63% on queue and 61% on priority, but 93% on type.`;
+  if (!g) return base + ` Hand-adjudicated gold labels for 150 tickets: ${esc(M.gold_status)}.`;
+  const fl = (f) => `${f} ${pct(g.fields[f].original_matches_gold)}`;
+  return base + ` For 150 test tickets (15 per queue), a gold label was set for every field: where the original label and a blind first pass by Claude (text only, not a system under test) agreed, that label was kept. Otherwise a human chose between the two, shown blind in random order. Measured against this gold, the original labels are correct for ${fl("queue")}, ${fl("priority")} and ${fl("type")} of tickets. <b>Caveat:</b> the reviewer never used the "neither" option, so every gold label comes from either the original data or an LLM's first pass (which matches gold on ${pct(g.fields.queue.first_pass_matches_gold)} / ${pct(g.fields.priority.first_pass_matches_gold)} / ${pct(g.fields.type.first_pass_matches_gold)} of queue / priority / type). LLM baselines may read tickets the way that first pass did, which could favour them over a non-LLM system on this gold set.`;
+}
 function renderStatic() {
   const n = (d) => { const r = M.runs.find((x) => x.dataset === d); return r ? r.n : "–"; };
   document.getElementById("meta").innerHTML = [
@@ -612,7 +623,7 @@ function renderStatic() {
     `<b>Jev</b> answers typed questions: a Choice per label field, a Score for priority (taking the most likely level), and Nouls for the yes/no signals. All questions go in one request per ticket.`,
     `<b>LLMs</b> run at temperature 0, with JSON output restricted to the listed labels. Confidence is the probability the model gave to the tokens of its chosen label. An invalid answer counts as wrong.`,
     `<b>Datasets.</b> <a href="https://github.com/PolyAI-LDN/task-specific-datasets">Banking77</a> (CC-BY-4.0): real banking queries, 77 intents, clean labels, 10 per intent from the official test split. <a href="https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets">Tobi-Bueck customer support tickets</a> (CC-BY-NC-4.0, synthetic): English only, 600 test tickets.`,
-    `<b>Label noise.</b> The original ticket queue and priority labels are noisy. A supervised TF-IDF model trained on 15k other tickets reaches only 63% on queue and 61% on priority, but 93% on type. Treat ticket accuracy against the original labels as a relative comparison, not an absolute score. Hand-adjudicated gold labels for 150 tickets: ${esc(M.gold_status)}.`,
+    noiseLine(),
     `<b>Run-to-run variation.</b> Temperature 0 is not fully deterministic. Label agreement across 3 repeated runs (worst field): ${esc(detLine || "not measured")}. Ticket results are averaged over 3 runs.`,
     `<b>Prices</b> are the published list prices on the date shown: ${esc(prices)}.`,
   ].map((x) => `<li>${x}</li>`).join("");

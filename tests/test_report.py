@@ -26,6 +26,7 @@ def fake_response(labels: dict) -> dict:
 
 def test_report_rebuilds_metrics_from_cache(tmp_path, monkeypatch):
     monkeypatch.setattr(cache, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(report, "GOLD_FILE", tmp_path / "no_gold.jsonl")
     backend = TogetherBackend("together-small", "Qwen/Qwen3.5-9B")
     rows = data.read_split("tickets", "dev").to_dict(orient="records")
     signals = {

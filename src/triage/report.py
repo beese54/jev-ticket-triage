@@ -42,6 +42,30 @@ def load_gold() -> dict[str, dict] | None:
     return {r["id"]: r for r in rows}
 
 
+def gold_summary(gold_labels: dict[str, dict]) -> dict:
+    """How far the original labels and Claude's blind first pass sit from the adjudicated gold."""
+    test = {
+        r["id"]: r for r in data.read_split("tickets", "test").to_dict(orient="records")
+    }
+    claude_file = data.SPLITS_DIR.parent / "gold" / "claude_labels.jsonl"
+    claude = {
+        r["id"]: r
+        for r in map(json.loads, claude_file.read_text(encoding="utf-8").splitlines())
+    }
+    out = {"n": len(gold_labels), "fields": {}}
+    for f in ("queue", "priority", "type"):
+        ids = list(gold_labels)
+        out["fields"][f] = {
+            "original_matches_gold": sum(test[i][f] == gold_labels[i][f] for i in ids)
+            / len(ids),
+            "first_pass_matches_gold": sum(
+                claude[i][f] == gold_labels[i][f] for i in ids
+            )
+            / len(ids),
+        }
+    return out
+
+
 def collect(
     backend: Backend, task: Task, rows: list[dict]
 ) -> dict[int, list[tuple[dict, dict, dict]]]:
@@ -114,6 +138,8 @@ def build(split: str) -> dict:
         "runs": [],
         "gold_status": "adjudicated" if gold_labels else "pending (P2)",
     }
+    if gold_labels and split == "test":
+        report["gold_summary"] = gold_summary(gold_labels)
     for system in SYSTEMS:
         backend = offline_backend(system)
         report["systems"][system] = {"model": backend.model, "datasets": []}
@@ -124,8 +150,8 @@ def build(split: str) -> dict:
                 continue
             report["systems"][system]["datasets"].append(dataset)
             label_sets = [("original", rows, task.gold)]
-            if dataset == "tickets" and gold_labels:
-                gold_rows = [r for r in rows if r["id"] in gold_labels]
+            gold_rows = [r for r in rows if r["id"] in (gold_labels or {})]
+            if dataset == "tickets" and gold_rows:  # gold covers test tickets only
                 label_sets.append(
                     ("adjudicated", gold_rows, lambda r: gold_labels[r["id"]])
                 )
@@ -158,6 +184,7 @@ def build(split: str) -> dict:
 
 def explorer(split: str) -> dict:
     """A small side-by-side sample for the dashboard's ticket explorer."""
+    gold_labels = load_gold() or {}
     out = {}
     for dataset, task in TASKS.items():
         rows = data.read_split(dataset, split).to_dict(orient="records")
@@ -173,6 +200,10 @@ def explorer(split: str) -> dict:
                 "gold": task.gold(row),
                 "systems": {},
             }
+            if dataset == "tickets" and row["id"] in gold_labels:
+                entry["adjudicated"] = {
+                    k: v for k, v in gold_labels[row["id"]].items() if k != "id"
+                }
             for system in SYSTEMS:
                 backend = offline_backend(system)
                 rec = cached_record(backend, task, row)
