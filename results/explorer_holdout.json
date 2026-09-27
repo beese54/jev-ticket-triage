@@ -7,6 +7,16 @@
     "intent": "card_arrival"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 466.4,
+     "fields": {
+      "intent": {
+       "label": "card_arrival",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2156.3,
      "fields": {
@@ -36,6 +46,16 @@
     "intent": "card_linking"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 474.2,
+     "fields": {
+      "intent": {
+       "label": "card_linking",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1607.1,
      "fields": {
@@ -65,6 +85,16 @@
     "intent": "exchange_rate"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 486.9,
+     "fields": {
+      "intent": {
+       "label": "exchange_rate",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2378.5,
      "fields": {
@@ -94,6 +124,16 @@
     "intent": "card_payment_wrong_exchange_rate"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 458.2,
+     "fields": {
+      "intent": {
+       "label": "card_payment_wrong_exchange_rate",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1368.1,
      "fields": {
@@ -123,6 +163,16 @@
     "intent": "extra_charge_on_statement"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 472.8,
+     "fields": {
+      "intent": {
+       "label": "extra_charge_on_statement",
+       "p": 0.6900000000000001,
+       "confidence": 0.67
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1876.9,
      "fields": {
@@ -152,6 +202,16 @@
     "intent": "pending_cash_withdrawal"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 1589.8,
+     "fields": {
+      "intent": {
+       "label": "pending_cash_withdrawal",
+       "p": 0.89,
+       "confidence": 0.88
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 881.4,
      "fields": {
@@ -181,6 +241,16 @@
     "intent": "fiat_currency_support"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 560.3,
+     "fields": {
+      "intent": {
+       "label": "exchange_via_app",
+       "p": 0.91,
+       "confidence": 0.9
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2382.9,
      "fields": {
@@ -210,6 +280,16 @@
     "intent": "card_delivery_estimate"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 427.6,
+     "fields": {
+      "intent": {
+       "label": "card_delivery_estimate",
+       "p": 0.9,
+       "confidence": 0.89
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1596.9,
      "fields": {
@@ -239,6 +319,16 @@
     "intent": "automatic_top_up"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 437.6,
+     "fields": {
+      "intent": {
+       "label": "automatic_top_up",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1594.4,
      "fields": {
@@ -268,6 +358,16 @@
     "intent": "card_not_working"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 405.2,
+     "fields": {
+      "intent": {
+       "label": "card_not_working",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1620.2,
      "fields": {
@@ -297,6 +397,16 @@
     "intent": "exchange_via_app"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 409.3,
+     "fields": {
+      "intent": {
+       "label": "exchange_via_app",
+       "p": 0.96,
+       "confidence": 0.95
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1349.1,
      "fields": {
@@ -326,6 +436,16 @@
     "intent": "lost_or_stolen_card"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 465.1,
+     "fields": {
+      "intent": {
+       "label": "lost_or_stolen_card",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1105.5,
      "fields": {
@@ -355,6 +475,16 @@
     "intent": "age_limit"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 416.5,
+     "fields": {
+      "intent": {
+       "label": "age_limit",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1932.3,
      "fields": {
@@ -384,6 +514,16 @@
     "intent": "pin_blocked"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 455.5,
+     "fields": {
+      "intent": {
+       "label": "pin_blocked",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1912.1,
      "fields": {
@@ -413,6 +553,16 @@
     "intent": "contactless_not_working"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 398.2,
+     "fields": {
+      "intent": {
+       "label": "contactless_not_working",
+       "p": 1.0,
+       "confidence": 0.99
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1657.4,
      "fields": {
@@ -442,6 +592,16 @@
     "intent": "top_up_by_bank_transfer_charge"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 447.1,
+     "fields": {
+      "intent": {
+       "label": "top_up_by_bank_transfer_charge",
+       "p": 0.99,
+       "confidence": 0.98
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1405.3,
      "fields": {
@@ -471,6 +631,16 @@
     "intent": "pending_top_up"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 462.7,
+     "fields": {
+      "intent": {
+       "label": "pending_top_up",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1156.9,
      "fields": {
@@ -500,6 +670,16 @@
     "intent": "cancel_transfer"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 432.2,
+     "fields": {
+      "intent": {
+       "label": "cancel_transfer",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 904.9,
      "fields": {
@@ -529,6 +709,16 @@
     "intent": "top_up_limits"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 446.7,
+     "fields": {
+      "intent": {
+       "label": "top_up_limits",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2534.9,
      "fields": {
@@ -558,6 +748,16 @@
     "intent": "wrong_amount_of_cash_received"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 416.0,
+     "fields": {
+      "intent": {
+       "label": "wrong_amount_of_cash_received",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1794.8,
      "fields": {
@@ -587,6 +787,16 @@
     "intent": "card_payment_fee_charged"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 462.7,
+     "fields": {
+      "intent": {
+       "label": "card_payment_fee_charged",
+       "p": 0.87,
+       "confidence": 0.86
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2032.0,
      "fields": {
@@ -616,6 +826,16 @@
     "intent": "transfer_not_received_by_recipient"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 394.1,
+     "fields": {
+      "intent": {
+       "label": "transfer_not_received_by_recipient",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1307.5,
      "fields": {
@@ -645,6 +865,16 @@
     "intent": "supported_cards_and_currencies"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 436.2,
+     "fields": {
+      "intent": {
+       "label": "topping_up_by_card",
+       "p": 0.7,
+       "confidence": 0.68
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 8128.7,
      "fields": {
@@ -674,6 +904,16 @@
     "intent": "getting_virtual_card"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 439.9,
+     "fields": {
+      "intent": {
+       "label": "getting_virtual_card",
+       "p": 0.98,
+       "confidence": 0.98
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 588.8,
      "fields": {
@@ -703,6 +943,16 @@
     "intent": "card_acceptance"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 483.1,
+     "fields": {
+      "intent": {
+       "label": "card_acceptance",
+       "p": 0.99,
+       "confidence": 0.99
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2028.3,
      "fields": {
@@ -732,6 +982,16 @@
     "intent": "top_up_reverted"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 465.5,
+     "fields": {
+      "intent": {
+       "label": "top_up_reverted",
+       "p": 0.99,
+       "confidence": 0.99
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1792.7,
      "fields": {
@@ -761,6 +1021,16 @@
     "intent": "balance_not_updated_after_cheque_or_cash_deposit"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 407.2,
+     "fields": {
+      "intent": {
+       "label": "balance_not_updated_after_cheque_or_cash_deposit",
+       "p": 0.89,
+       "confidence": 0.89
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2285.4,
      "fields": {
@@ -790,6 +1060,16 @@
     "intent": "card_payment_not_recognised"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 480.0,
+     "fields": {
+      "intent": {
+       "label": "card_payment_not_recognised",
+       "p": 0.97,
+       "confidence": 0.97
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1282.3,
      "fields": {
@@ -819,6 +1099,16 @@
     "intent": "edit_personal_details"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 444.5,
+     "fields": {
+      "intent": {
+       "label": "edit_personal_details",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 818.0,
      "fields": {
@@ -848,6 +1138,16 @@
     "intent": "why_verify_identity"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 427.8,
+     "fields": {
+      "intent": {
+       "label": "why_verify_identity",
+       "p": 0.83,
+       "confidence": 0.82
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1783.8,
      "fields": {
@@ -877,6 +1177,16 @@
     "intent": "unable_to_verify_identity"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 446.1,
+     "fields": {
+      "intent": {
+       "label": "unable_to_verify_identity",
+       "p": 0.53,
+       "confidence": 0.52
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1550.1,
      "fields": {
@@ -906,6 +1216,16 @@
     "intent": "get_physical_card"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 458.1,
+     "fields": {
+      "intent": {
+       "label": "get_physical_card",
+       "p": 0.87,
+       "confidence": 0.86
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1057.7,
      "fields": {
@@ -935,6 +1255,16 @@
     "intent": "visa_or_mastercard"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 1498.1,
+     "fields": {
+      "intent": {
+       "label": "visa_or_mastercard",
+       "p": 0.99,
+       "confidence": 0.98
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1046.3,
      "fields": {
@@ -964,6 +1294,16 @@
     "intent": "topping_up_by_card"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 462.3,
+     "fields": {
+      "intent": {
+       "label": "topping_up_by_card",
+       "p": 0.47000000000000003,
+       "confidence": 0.45
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 805.1,
      "fields": {
@@ -993,6 +1333,16 @@
     "intent": "disposable_card_limits"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 457.1,
+     "fields": {
+      "intent": {
+       "label": "disposable_card_limits",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1801.4,
      "fields": {
@@ -1022,6 +1372,16 @@
     "intent": "compromised_card"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 482.5,
+     "fields": {
+      "intent": {
+       "label": "compromised_card",
+       "p": 0.94,
+       "confidence": 0.94
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1561.9,
      "fields": {
@@ -1051,6 +1411,16 @@
     "intent": "atm_support"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 433.7,
+     "fields": {
+      "intent": {
+       "label": "atm_support",
+       "p": 0.97,
+       "confidence": 0.97
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1094.2,
      "fields": {
@@ -1080,6 +1450,16 @@
     "intent": "direct_debit_payment_not_recognised"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 420.6,
+     "fields": {
+      "intent": {
+       "label": "direct_debit_payment_not_recognised",
+       "p": 1.0,
+       "confidence": 1.0
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1105.7,
      "fields": {
@@ -1109,6 +1489,16 @@
     "intent": "passcode_forgotten"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 433.2,
+     "fields": {
+      "intent": {
+       "label": "passcode_forgotten",
+       "p": 1.0,
+       "confidence": 0.99
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1629.5,
      "fields": {
@@ -1138,6 +1528,16 @@
     "intent": "declined_cash_withdrawal"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 468.9,
+     "fields": {
+      "intent": {
+       "label": "card_not_working",
+       "p": 0.72,
+       "confidence": 0.71
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2211.0,
      "fields": {
@@ -1171,6 +1571,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 444.2,
+     "fields": {
+      "queue": {
+       "label": "General Inquiry",
+       "p": 0.87,
+       "confidence": 0.85
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.96,
+       "confidence": 0.94
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.92,
+       "confidence": 0.89
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.71,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 3644.6,
      "fields": {
@@ -1262,6 +1702,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 417.3,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.66,
+       "confidence": 0.61
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.53,
+       "confidence": 0.29
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.95,
+       "confidence": 0.94
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.97,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.71,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.71,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2421.3,
      "fields": {
@@ -1353,6 +1833,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 494.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.56,
+       "confidence": 0.5
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.99,
+       "confidence": 0.99
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.57,
+       "confidence": 0.43
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.86,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.69,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2190.1,
      "fields": {
@@ -1444,6 +1964,46 @@
     "type": "Change"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 577.2,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.55,
+       "confidence": 0.5
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.88,
+       "confidence": 0.81
+      },
+      "type": {
+       "label": "Request",
+       "p": 0.8,
+       "confidence": 0.74
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.74,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1946.4,
      "fields": {
@@ -1535,6 +2095,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 481.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.93,
+       "confidence": 0.92
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.97,
+       "confidence": 0.96
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.49,
+       "confidence": 0.33
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.87,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.8,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1456.8,
      "fields": {
@@ -1626,6 +2226,46 @@
     "type": "Change"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 432.5,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.58,
+       "confidence": 0.52
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.97,
+       "confidence": 0.96
+      },
+      "type": {
+       "label": "Change",
+       "p": 0.88,
+       "confidence": 0.83
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.94,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.77,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1455.1,
      "fields": {
@@ -1717,6 +2357,46 @@
     "type": "Change"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 458.7,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.62,
+       "confidence": 0.56
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.9400000000000001,
+       "confidence": 0.9
+      },
+      "type": {
+       "label": "Change",
+       "p": 0.52,
+       "confidence": 0.36
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.97,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2405.1,
      "fields": {
@@ -1808,6 +2488,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 459.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.79,
+       "confidence": 0.76
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.94,
+       "confidence": 0.85
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2395.3,
      "fields": {
@@ -1899,6 +2619,46 @@
     "type": "Change"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 393.9,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.73,
+       "confidence": 0.69
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9,
+       "confidence": 0.79
+      },
+      "type": {
+       "label": "Change",
+       "p": 0.91,
+       "confidence": 0.88
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.89,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2154.1,
      "fields": {
@@ -1990,6 +2750,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 489.5,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.97,
+       "confidence": 0.97
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.99,
+       "confidence": 0.98
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.74,
+       "confidence": 0.65
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.59,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.55,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1896.7,
      "fields": {
@@ -2081,6 +2881,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 469.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.97,
+       "confidence": 0.97
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.5,
+       "confidence": 0.25
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.99,
+       "confidence": 0.98
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.88,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.53,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1661.1,
      "fields": {
@@ -2172,6 +3012,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 491.3,
+     "fields": {
+      "queue": {
+       "label": "General Inquiry",
+       "p": 0.39,
+       "confidence": 0.32
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1405.8,
      "fields": {
@@ -2263,6 +3143,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 419.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.94,
+       "confidence": 0.93
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.88,
+       "confidence": 0.81
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.63,
+       "confidence": 0.51
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.78,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.64,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2450.4,
      "fields": {
@@ -2354,6 +3274,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 573.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.62,
+       "confidence": 0.58
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.53,
+       "confidence": 0.3
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.58,
+       "confidence": 0.44
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.69,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.6,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 3253.1,
      "fields": {
@@ -2445,6 +3405,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 485.0,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.73,
+       "confidence": 0.7
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.97,
+       "confidence": 0.95
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.64,
+       "confidence": 0.52
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.87,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.79,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2233.5,
      "fields": {
@@ -2536,6 +3536,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 386.3,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.73,
+       "confidence": 0.59
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.82,
+       "confidence": 0.76
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.91,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.69,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.8200000000000001,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1987.0,
      "fields": {
@@ -2627,6 +3667,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 404.4,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.72,
+       "confidence": 0.68
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.81,
+       "confidence": 0.71
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.56,
+       "confidence": 0.42
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.87,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.76,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2517.1,
      "fields": {
@@ -2718,6 +3798,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 420.4,
+     "fields": {
+      "queue": {
+       "label": "Service Outages and Maintenance",
+       "p": 0.79,
+       "confidence": 0.76
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.79,
+       "confidence": 0.69
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.98,
+       "confidence": 0.97
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.97,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.95,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.7,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1473.6,
      "fields": {
@@ -2809,6 +3929,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 502.0,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.53,
+       "confidence": 0.47
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.98,
+       "confidence": 0.97
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.58,
+       "confidence": 0.43
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.75,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.5900000000000001,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 3249.4,
      "fields": {
@@ -2900,6 +4060,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 1668.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.88,
+       "confidence": 0.86
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.63,
+       "confidence": 0.45
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.7,
+       "confidence": 0.61
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.51,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.62,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2472.2,
      "fields": {
@@ -2991,6 +4191,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 1060.4,
+     "fields": {
+      "queue": {
+       "label": "General Inquiry",
+       "p": 0.66,
+       "confidence": 0.62
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1932.1,
      "fields": {
@@ -3082,6 +4322,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 420.3,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.9,
+       "confidence": 0.89
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2472.7,
      "fields": {
@@ -3173,6 +4453,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 449.9,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.95,
+       "confidence": 0.94
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1710.0,
      "fields": {
@@ -3264,6 +4584,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 493.4,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.81,
+       "confidence": 0.79
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.97,
+       "confidence": 0.96
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.69,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1959.3,
      "fields": {
@@ -3355,6 +4715,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 420.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.8,
+       "confidence": 0.78
+      },
+      "priority": {
+       "label": "medium",
+       "p": 0.99,
+       "confidence": 0.98
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.82,
+       "confidence": 0.77
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.6699999999999999,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.51,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2921.9,
      "fields": {
@@ -3446,6 +4846,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 435.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.4,
+       "confidence": 0.32
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.71,
+       "confidence": 0.23
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2196.6,
      "fields": {
@@ -3537,6 +4977,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 412.7,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.53,
+       "confidence": 0.47
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2416.0,
      "fields": {
@@ -3628,6 +5108,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 420.6,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.92,
+       "confidence": 0.91
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2637.2,
      "fields": {
@@ -3719,6 +5239,46 @@
     "type": "Change"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 438.6,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9,
+       "confidence": 0.74
+      },
+      "type": {
+       "label": "Change",
+       "p": 0.83,
+       "confidence": 0.77
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.9299999999999999,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1698.3,
      "fields": {
@@ -3810,6 +5370,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 447.9,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.99,
+       "confidence": 0.99
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.9400000000000001,
+       "confidence": 0.91
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.54,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.87,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.53,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.97,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2441.8,
      "fields": {
@@ -3901,6 +5501,46 @@
     "type": "Change"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 431.4,
+     "fields": {
+      "queue": {
+       "label": "General Inquiry",
+       "p": 0.59,
+       "confidence": 0.55
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.99,
+       "confidence": 0.99
+      },
+      "type": {
+       "label": "Change",
+       "p": 0.77,
+       "confidence": 0.69
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1895.0,
      "fields": {
@@ -3992,6 +5632,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 388.0,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.62,
+       "confidence": 0.58
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.87,
+       "confidence": 0.81
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.81,
+       "confidence": 0.74
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.97,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.74,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.55,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2196.8,
      "fields": {
@@ -4083,6 +5763,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 464.5,
+     "fields": {
+      "queue": {
+       "label": "Service Outages and Maintenance",
+       "p": 0.92,
+       "confidence": 0.9
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.9,
+       "confidence": 0.84
+      },
+      "type": {
+       "label": "Incident",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.97,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.93,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.69,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.94,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2212.0,
      "fields": {
@@ -4174,6 +5894,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 477.1,
+     "fields": {
+      "queue": {
+       "label": "Sales and Pre-Sales",
+       "p": 0.74,
+       "confidence": 0.7
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1986.9,
      "fields": {
@@ -4265,6 +6025,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 414.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.68,
+       "confidence": 0.64
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.56,
+       "confidence": 0.34
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.93,
+       "confidence": 0.9
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.6699999999999999,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2415.7,
      "fields": {
@@ -4356,6 +6156,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 520.8,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.54,
+       "confidence": 0.3
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.83,
+       "confidence": 0.77
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.91,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.63,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1472.6,
      "fields": {
@@ -4447,6 +6287,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 378.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.53,
+       "confidence": 0.47
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1486.3,
      "fields": {
@@ -4538,6 +6418,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 407.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.78,
+       "confidence": 0.75
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.98,
+       "confidence": 0.97
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.82,
+       "confidence": 0.76
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.8200000000000001,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.81,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.72,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2733.2,
      "fields": {
@@ -4629,6 +6549,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 413.0,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.55,
+       "confidence": 0.5
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.75,
+       "confidence": 0.38
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2274.8,
      "fields": {
@@ -4720,6 +6680,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 457.7,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.84,
+       "confidence": 0.82
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.55,
+       "confidence": 0.4
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.61,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.53,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 3000.2,
      "fields": {
@@ -4811,6 +6811,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 460.3,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.99,
+       "confidence": 0.99
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Incident",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.87,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.74,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2051.5,
      "fields": {
@@ -4902,6 +6942,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 493.5,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.99,
+       "confidence": 0.98
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.68,
+       "confidence": 0.58
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.98,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.81,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.65,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 50613.1,
      "fields": {
@@ -4993,6 +7073,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 474.8,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.47000000000000003,
+       "confidence": 0.4
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1561.2,
      "fields": {
@@ -5084,6 +7204,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 423.1,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.97,
+       "confidence": 0.96
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.73,
+       "confidence": 0.28
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2956.0,
      "fields": {
@@ -5175,6 +7335,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 472.6,
+     "fields": {
+      "queue": {
+       "label": "General Inquiry",
+       "p": 0.95,
+       "confidence": 0.94
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1937.7,
      "fields": {
@@ -5266,6 +7466,46 @@
     "type": "Problem"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 410.5,
+     "fields": {
+      "queue": {
+       "label": "Product Support",
+       "p": 0.42,
+       "confidence": 0.36
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.67,
+       "confidence": 0.41
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.78,
+       "confidence": 0.69
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.96,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.88,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.95,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 2196.0,
      "fields": {
@@ -5357,6 +7597,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 479.8,
+     "fields": {
+      "queue": {
+       "label": "IT Support",
+       "p": 0.93,
+       "confidence": 0.92
+      },
+      "priority": {
+       "label": "high",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Incident",
+       "p": 0.87,
+       "confidence": 0.81
+      },
+      "security_or_data_breach": {
+       "label": true,
+       "p": 0.95,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.92,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.63,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1697.3,
      "fields": {
@@ -5448,6 +7728,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 461.3,
+     "fields": {
+      "queue": {
+       "label": "Billing and Payments",
+       "p": 0.84,
+       "confidence": 0.82
+      },
+      "priority": {
+       "label": "low",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1464.5,
      "fields": {
@@ -5539,6 +7859,46 @@
     "type": "Request"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 424.7,
+     "fields": {
+      "queue": {
+       "label": "Technical Support",
+       "p": 0.85,
+       "confidence": 0.82
+      },
+      "priority": {
+       "label": "low",
+       "p": 0.97,
+       "confidence": 0.95
+      },
+      "type": {
+       "label": "Request",
+       "p": 1.0,
+       "confidence": 1.0
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.99,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 1.0,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1491.4,
      "fields": {
@@ -5630,6 +7990,46 @@
     "type": "Incident"
    },
    "systems": {
+    "jev": {
+     "latency_ms": 390.3,
+     "fields": {
+      "queue": {
+       "label": "Service Outages and Maintenance",
+       "p": 0.52,
+       "confidence": 0.46
+      },
+      "priority": {
+       "label": "high",
+       "p": 0.95,
+       "confidence": 0.92
+      },
+      "type": {
+       "label": "Problem",
+       "p": 0.64,
+       "confidence": 0.51
+      },
+      "security_or_data_breach": {
+       "label": false,
+       "p": 0.97,
+       "confidence": null
+      },
+      "service_outage": {
+       "label": true,
+       "p": 0.98,
+       "confidence": null
+      },
+      "customer_frustrated": {
+       "label": true,
+       "p": 0.63,
+       "confidence": null
+      },
+      "asks_for_refund": {
+       "label": false,
+       "p": 0.98,
+       "confidence": null
+      }
+     }
+    },
     "together-small": {
      "latency_ms": 1200.0,
      "fields": {

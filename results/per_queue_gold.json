@@ -1,0 +1,83 @@
+{
+  "n": 150,
+  "per_queue": {
+    "Billing and Payments": {
+      "n": 5,
+      "jev": 5,
+      "together-small": 5,
+      "together-large": 5
+    },
+    "Customer Service": {
+      "n": 6,
+      "jev": 0,
+      "together-small": 0,
+      "together-large": 0
+    },
+    "General Inquiry": {
+      "n": 29,
+      "jev": 19,
+      "together-small": 0,
+      "together-large": 0
+    },
+    "IT Support": {
+      "n": 27,
+      "jev": 19,
+      "together-small": 1,
+      "together-large": 2
+    },
+    "Product Support": {
+      "n": 16,
+      "jev": 4,
+      "together-small": 10,
+      "together-large": 8
+    },
+    "Sales and Pre-Sales": {
+      "n": 15,
+      "jev": 10,
+      "together-small": 11,
+      "together-large": 9
+    },
+    "Service Outages and Maintenance": {
+      "n": 15,
+      "jev": 11,
+      "together-small": 9,
+      "together-large": 4
+    },
+    "Technical Support": {
+      "n": 37,
+      "jev": 32,
+      "together-small": 30,
+      "together-large": 35
+    }
+  },
+  "predicted_distribution": {
+    "jev": {
+      "Technical Support": 47,
+      "General Inquiry": 32,
+      "IT Support": 26,
+      "Service Outages and Maintenance": 14,
+      "Sales and Pre-Sales": 14,
+      "Product Support": 9,
+      "Billing and Payments": 5,
+      "Customer Service": 3
+    },
+    "together-small": {
+      "Technical Support": 71,
+      "Product Support": 35,
+      "Sales and Pre-Sales": 27,
+      "Service Outages and Maintenance": 9,
+      "Billing and Payments": 5,
+      "Customer Service": 2,
+      "IT Support": 1
+    },
+    "together-large": {
+      "Technical Support": 87,
+      "Sales and Pre-Sales": 26,
+      "Product Support": 21,
+      "Billing and Payments": 5,
+      "Service Outages and Maintenance": 4,
+      "IT Support": 4,
+      "Customer Service": 3
+    }
+  }
+}

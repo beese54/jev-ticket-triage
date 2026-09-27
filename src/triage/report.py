@@ -10,7 +10,7 @@ import statistics
 import time
 from pathlib import Path
 
-from triage import config, data, metrics
+from triage import cache, config, data, metrics
 from triage.backends import SYSTEMS, Backend, JevBackend, TogetherBackend
 from triage.runner import cached_record
 from triage.tasks import TASKS, Task
@@ -26,7 +26,11 @@ EXPLORER_ROWS = {"tickets": 60, "banking77": 40}
 def offline_backend(system: str) -> Backend:
     """A backend for building payloads and parsing only (no API key needed)."""
     if system == "jev":
-        return JevBackend(config.JevRoute("", None, "jev-latest", "offline"))
+        # Jev's model name depends on the route it was run through (TypeSafe direct
+        # "jev-latest" or OpenRouter "~typesafe/jev-latest"), and the cache key includes it,
+        # so use the name the cached records were made with.
+        model = next((r["model"] for r in cache.iter_records("jev")), "jev-latest")
+        return JevBackend(config.JevRoute("", None, model, "offline"))
     return TogetherBackend(system, config.together_models()[system])
 
 

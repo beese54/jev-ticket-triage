@@ -80,3 +80,13 @@ Accuracy vs original labels. Test = mean of 3 runs for tickets; holdout = 1 run.
 
 No overfitting signal: holdout moves both ways, within the noise of 50–77 items (±6–7 pts).
 Only one description change was ever tested on dev, and it was reverted.
+
+## Jev, 2026-09-27 (same frozen descriptions, no tuning)
+| Split | Banking77 | Tickets queue / priority / type (original labels) |
+|---|---|---|
+| dev | 88.3 | 25 / 39 / 65 |
+| test | 83.0 | 27.4 / 37.8 / 72.1 (mean of 3 runs) |
+| holdout | 89.6 (n=77) | 30 / 20 / 68 (n=50) |
+
+Against the adjudicated gold (150): queue 67.1, priority 73.8, type 84.2. Holdout agrees with test within
+noise. No overfitting signal (and nothing was tuned for Jev).

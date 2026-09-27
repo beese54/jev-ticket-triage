@@ -31,6 +31,9 @@ PRICES: dict[str, Price] = {
         1.04, 1.04, "2026-09-26", "together /v1/models"
     ),
     "jev-latest": Price(0.042, 0.0, "2026-09-26", "docs.typesafe.ai/models"),
+    # Same model via OpenRouter; confirmed by the account's usage delta for one call
+    # (764 input tokens -> $0.000032088 = $0.042/M input, output not billed).
+    "~typesafe/jev-latest": Price(0.042, 0.0, "2026-09-27", "openrouter credits delta"),
 }
 
 

@@ -167,8 +167,8 @@ jev_first_project/
         queue 63% / priority 61% / type 93% (so type labels are consistent, queue/priority are noisy).
   - [x] Iteration 1 (type descriptions matching the dataset's convention) → regressed → **reverted**.
         Descriptions frozen at iteration 0.
-  - [ ] Once Jev is available: run Jev on dev with the same frozen descriptions and check nothing
-        is broken for it (e.g. Score orientation). No system-specific tuning.
+  - [x] Jev run with the same frozen descriptions; checked nothing is broken (0 invalid, correct
+        Score direction). No system-specific tuning was done.
 - [ ] **P5 Test runs** — full test for Jev + 2 LLMs, both datasets; determinism check.
   - [x] Determinism (dev, 3 repeats): Qwen labels 98–100% identical; Llama 98% Banking77, 92% ticket queue/type
         → tickets test run ×3, Banking77 ×1 (`results/determinism.json`).
@@ -177,7 +177,15 @@ jev_first_project/
   - Test (original labels): Banking77 81.3% (9B) vs 80.3% (70B); tickets queue 32/31, priority 37/38
     (**below** the 39.5% majority baseline), type 60/65. Ticket ECE 0.27–0.61 (LLM confidence ≈ 1.0 even
     when wrong) → almost nothing is automatable at 90% on queue/priority. Banking77: ~80% automatable at 90%.
-  - [ ] Jev: `uv run python scripts/run_all.py --system jev` once a key exists.
+  - [x] Jev via OpenRouter (`~typesafe/jev-latest` → jev-1.13-20260917), 2026-09-27: 4,951 calls,
+        0 failures, **$0.16** total (price confirmed from the account's usage delta: $0.042/M input, output free).
+        No system-specific tuning (frozen iteration-0 descriptions). Checks: 0 invalid, runs stable within
+        1.5 pts, Score direction correct (average level 0.08 low → 1.84 high).
+  - Test headline: Banking77 Jev 83.0 / Qwen 81.3 / Llama 80.3; automatable at 90%: 86 / 80 / 81.
+    Tickets vs gold: queue 67 / 44 / 43, priority 74 / 77 / 82, type 84 / 63 / 72. ECE Jev 0.06–0.14
+    vs LLMs 0.11–0.50. p50 latency ~0.44 s vs 1.8–2.4 s. Cost per 1k (Banking77) $0.09 / $0.24 / $1.48.
+  - Jev's queue lead comes mostly from General Inquiry (19/29 vs 0) and IT Support (19/27 vs 1–2):
+    the LLMs route ~60% of tickets to Technical Support (`results/per_queue_gold.json`).
 - [x] **P6 Metrics** — `metrics.py`, `report.py`, `scripts/report.py`; holdout check in ledger.
 - [x] **P7 Dashboard** (Together-only; Jev slot pending) — `scripts/build_dashboard.py` → `docs/index.html`;
       checked light/dark/375px. static HTML: headline cards (accuracy / cost / latency),

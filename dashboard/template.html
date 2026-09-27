@@ -116,7 +116,7 @@ button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px 
 .tile .name { font-weight: 650; }
 .tile .model { font-size: 12px; color: var(--muted); }
 .tile .hero { font-size: 40px; font-weight: 650; line-height: 1.1; margin: 10px 0 2px; letter-spacing: -0.02em; }
-.tile .hero small { font-size: 14px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; }
+.tile .hero small { display: block; margin-top: 4px; font-size: 13px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; }
 .tile dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 10px 0 0; font-size: 13px; }
 .tile dt { color: var(--muted); }
 .tile dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); }
@@ -599,7 +599,7 @@ function noiseLine() {
   const base = `<b>Label noise.</b> The dataset's own queue and priority labels are noisy. A supervised TF-IDF model trained on 15k other tickets reaches only 63% on queue and 61% on priority, but 93% on type.`;
   if (!g) return base + ` Hand-adjudicated gold labels for 150 tickets: ${esc(M.gold_status)}.`;
   const fl = (f) => `${f} ${pct(g.fields[f].original_matches_gold)}`;
-  return base + ` For 150 test tickets (15 per queue), a gold label was set for every field: where the original label and a blind first pass by Claude (text only, not a system under test) agreed, that label was kept. Otherwise a human chose between the two, shown blind in random order. Measured against this gold, the original labels are correct for ${fl("queue")}, ${fl("priority")} and ${fl("type")} of tickets. <b>Caveat:</b> the reviewer never used the "neither" option, so every gold label comes from either the original data or an LLM's first pass (which matches gold on ${pct(g.fields.queue.first_pass_matches_gold)} / ${pct(g.fields.priority.first_pass_matches_gold)} / ${pct(g.fields.type.first_pass_matches_gold)} of queue / priority / type). LLM baselines may read tickets the way that first pass did, which could favour them over a non-LLM system on this gold set.`;
+  return base + ` For 150 test tickets (15 per queue), a gold label was set for every field: where the original label and a blind first pass by Claude (text only, not a system under test) agreed, that label was kept. Otherwise a human chose between the two, shown blind in random order. Measured against this gold, the original labels are correct for ${fl("queue")}, ${fl("priority")} and ${fl("type")} of tickets. <b>Caveat:</b> the reviewer never used the "neither" option, so every gold label comes from either the original data or an LLM's first pass (which matches gold on ${pct(g.fields.queue.first_pass_matches_gold)} / ${pct(g.fields.priority.first_pass_matches_gold)} / ${pct(g.fields.type.first_pass_matches_gold)} of queue / priority / type). This could favour the LLM baselines. In the other direction, the gold labels follow the rubric's reading of two queues ("IT Support" for problems in the customer's own infrastructure, "General Inquiry" for advice requests). The systems only saw the one-line descriptions. Most of Jev's queue lead comes from those two queues, which the LLMs almost never choose (they route about 60% of tickets to "Technical Support"). See <code>results/per_queue_gold.json</code> in the repo.`;
 }
 function renderStatic() {
   const n = (d) => { const r = M.runs.find((x) => x.dataset === d); return r ? r.n : "–"; };
@@ -620,7 +620,7 @@ function renderStatic() {
   const prices = Object.entries(M.prices).map(([m, p]) => `${m}: $${p.input_per_m}/M in, $${p.output_per_m}/M out (${p.as_of})`).join("; ");
   document.getElementById("method").innerHTML = [
     `<b>Same information for every system.</b> Each system gets identical ticket text and identical label names and descriptions from one source file. The descriptions were written from dev-set examples only. A rewrite that matched the dataset's own conventions was tested on dev and reverted because it made results worse.`,
-    `<b>Jev</b> answers typed questions: a Choice per label field, a Score for priority (taking the most likely level), and Nouls for the yes/no signals. All questions go in one request per ticket.`,
+    `<b>Jev</b> (jev-1.13, called through OpenRouter as <code>~typesafe/jev-latest</code> at the same $0.042 per million input tokens as TypeSafe direct) answers typed questions: a Choice per label field, a Score for priority (taking the most likely level), and Nouls for the yes/no signals. All questions go in one request per ticket.`,
     `<b>LLMs</b> run at temperature 0, with JSON output restricted to the listed labels. Confidence is the probability the model gave to the tokens of its chosen label. An invalid answer counts as wrong.`,
     `<b>Datasets.</b> <a href="https://github.com/PolyAI-LDN/task-specific-datasets">Banking77</a> (CC-BY-4.0): real banking queries, 77 intents, clean labels, 10 per intent from the official test split. <a href="https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets">Tobi-Bueck customer support tickets</a> (CC-BY-NC-4.0, synthetic): English only, 600 test tickets.`,
     noiseLine(),
