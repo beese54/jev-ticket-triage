@@ -11,3 +11,6 @@ __pycache__/
 # raw downloaded datasets (re-fetched by scripts; splits/ + cache/ ARE committed)
 data/raw/
 logs/
+
+# local drafts (LinkedIn post, backlog) - not published
+content/
