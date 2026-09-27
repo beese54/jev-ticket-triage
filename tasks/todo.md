@@ -1,6 +1,6 @@
 # Ticket Triage: Jev vs Together.ai LLMs — Plan
 
-Status: **PLANNING — awaiting approval before any code** (2026-09-26)
+Status: **COMPLETE** (2026-09-27)
 
 ## 1. The claim we are testing
 
@@ -191,7 +191,8 @@ jev_first_project/
       checked light/dark/375px. static HTML: headline cards (accuracy / cost / latency),
       coverage-vs-accuracy chart with confidence slider, ticket explorer
       (side-by-side answers + probabilities), methodology + caveats section.
-- [ ] **P8 LinkedIn** — post draft (Pattern V), 1–2 charts, link to dashboard/repo.
+- [x] **P8 LinkedIn** — prose post finalized by the author (2026-09-27); 5 dashboard screenshots
+      captured via Claude in Chrome and added to the README (`assets/screenshots/`). Draft kept local (`content/`, gitignored).
 
 ## 6. Size & cost estimate (to confirm in P0)
 - Banking77: ~1,000 stratified test + dev/holdout. Tobi-Bueck: ~600 EN test (150 gold).
