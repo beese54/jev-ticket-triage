@@ -70,10 +70,13 @@ LLMs sent it to the catch-all "Technical Support".
 
 ## How the benchmark works
 
-1. **The task.** Each system reads a message and labels it. **Banking77**: 770 real banking
-   customer messages, one of 77 intents each (10 per intent). **Support tickets**: 600 synthetic
-   English tickets, each with a queue (10 teams), a priority (low / medium / high) and a type
-   (Incident / Problem / Request / Change).
+1. **The task.** Each system reads a message and labels it. Both datasets are public on Hugging Face.
+   **Banking77** ([PolyAI/banking77](https://huggingface.co/datasets/PolyAI/banking77), Casanueva et
+   al., 2020): 770 real banking customer messages from its official test split, one of 77 intents
+   each (10 per intent). **Support tickets**
+   ([Tobi-Bueck/customer-support-tickets](https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets),
+   by Tobias Bueck): 600 synthetic English tickets, each with a queue (10 teams), a priority
+   (low / medium / high) and a type (Incident / Problem / Request / Change).
 2. **Same information for everyone.** Every label name and its one-line description lives in one
    file, [`src/triage/labels.py`](src/triage/labels.py), and all three systems get exactly that
    text. Jev gets it as typed questions and returns a probability for every option. The LLMs get
@@ -107,9 +110,12 @@ LLMs sent it to the catch-all "Technical Support".
   TypeSafe's published $0.042 per million input tokens.
 
 ## Datasets
-- [PolyAI/banking77](https://huggingface.co/datasets/PolyAI/banking77) (CC-BY-4.0): real banking queries, clean labels.
-- [Tobi-Bueck/customer-support-tickets](https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets)
-  (CC-BY-NC-4.0, synthetic): multi-field triage (queue, priority, type). English only.
+Both come from Hugging Face. Only small, frozen subsets are used ([`data/README.md`](data/README.md) has the exact files, hashes and cleaning rules).
+
+| Dataset | Source | License | Used here |
+|---|---|---|---|
+| **Banking77**: real banking customer queries, 77 intents, clean labels | [PolyAI/banking77](https://huggingface.co/datasets/PolyAI/banking77) (raw files: [PolyAI-LDN/task-specific-datasets](https://github.com/PolyAI-LDN/task-specific-datasets)). Paper: Casanueva et al., 2020, [*Efficient Intent Detection with Dual Sentence Encoders*](https://arxiv.org/abs/2003.04807) | CC-BY-4.0 | 1,001 messages from the official test split (dev 154 / test 770 / holdout 77) |
+| **Customer Support Tickets**: synthetic helpdesk emails with queue, priority, type | [Tobi-Bueck/customer-support-tickets](https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets) by Tobias Bueck, DOI 10.57967/hf/6184 | CC-BY-NC-4.0 (non-commercial) | English rows of `aa_dataset-tickets-multi-lang-5-2-50-version.csv` (dev 100 / test 600 / holdout 50) |
 
 Frozen splits live in [`data/splits/`](data/README.md).
 
